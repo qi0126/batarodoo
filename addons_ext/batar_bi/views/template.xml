@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <!-- Add local css & js -->
+        <template id="asset_backend" name="Batar bi" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/batar_bi/static/src/css/batar_bi.css"/>
+                <script type="text/javascript" src="/batar_bi/static/src/js/product_attribute_price.js"/>
+            </xpath>
+        </template>
+        <!-- Add menu & action for product attribute value-->
+        <menuitem id="batar_bi_main" name="Batar Bi" sequence="15"/>
+        <record id="action_product_attribute_value_price" model="ir.actions.client">
+            <field name="name">Product Attribute Price</field>
+            <field name="tag">product_attribute.page</field>
+        </record>
+        <menuitem id="product_attribute_price_bi_menu" name="Product Attribute BI" action="action_product_attribute_value_price" sequence="1" parent="batar_bi_main"/>
+    </data>
+</openerp>

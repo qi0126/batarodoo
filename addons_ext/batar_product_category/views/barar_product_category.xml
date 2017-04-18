@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="batar_product_category_form_view" model="ir.ui.view">
+            <field name="name">batar.product.category</field>
+            <field name="model">batar.product.category</field>
+            <field name="arch" type="xml">
+                <form string="batar.product.category">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="parent_id" options="{'no_create': True, 'no_open': True}"/>
+                                <field name="name"  required="1"/>
+                                <field name="full_path" readonly="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="batar_product_category_tree_view" model="ir.ui.view">
+            <field name="name">batar.product.category</field>
+            <field name="model">batar.product.category</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="parent_id"/>
+                    <field name="full_path"/>
+                </tree>
+            </field>
+        </record>
+         <record id="batar_product_category_action" model="ir.actions.act_window">
+	        <field name="name">batar.product.category</field>
+	        <field name="res_model">batar.product.category</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+
+	    <menuitem name="batar product category" action="batar_product_category_action" id="menu_batar_product_category" parent="product_menu.left_menu_product_templates" sequence='3' />
+    </data>
+</openerp>

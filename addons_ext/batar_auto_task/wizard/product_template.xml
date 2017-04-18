@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="product_template_task_form" model="ir.ui.view">
+	    	<field name="name">product template task</field>
+	    	<field name="model">product.template.task</field>
+	    	<field name="arch" type="xml">
+	    	    <form string='product template task'>
+    	            <group>
+    	            	<group>
+    	            	    <field name="variants_create_auto" required='1'/>
+    	            	</group>
+    	            </group>
+	    	        <footer>
+	    	            <button name="apply" type="object" string="Confirm" class="oe_highlight"/>
+                        <button special="cancel" string="Cancel"/>
+	    	        </footer>
+	    	    </form>
+	    	</field>
+	    </record>
+	    <act_window
+		    id="product_template_task_action"
+		    multi="True"
+		    key2="client_action_relate"
+		    name="product template task"
+		    res_model='product.template.task'
+		    src_model='product.template'
+		    view_mode="form"
+		    target='new'
+		    view_type="form"/>
+	</data>
+</openerp>

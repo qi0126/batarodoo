@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* out_picking_quality
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-22 03:46+0000\n"
+"PO-Revision-Date: 2016-12-22 03:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_id
+msgid "ID"
+msgstr "ID"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: out_picking_quality
+#: model:ir.model.fields,field_description:out_picking_quality.field_out_picking_quality_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: out_picking_quality
+#: model:ir.actions.client,name:out_picking_quality.action_out_quality
+#: model:ir.ui.menu,name:out_picking_quality.out_quality_menu
+msgid "Out Quality"
+msgstr "出库质检"
+
+#. module: out_picking_quality
+#: model:ir.model,name:out_picking_quality.model_out_picking_quality
+msgid "out.picking.quality"
+msgstr "出库质检"
+

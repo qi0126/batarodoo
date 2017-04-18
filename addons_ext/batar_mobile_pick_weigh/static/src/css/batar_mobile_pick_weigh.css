@@ -1,0 +1,15 @@
+#weigh-page-left {
+	width:11%;
+	z-index:1005;
+	height:auto !important;
+	overflow:auto;
+	position:fixed;
+	height:100% !important;
+    border-right:solid 1px #444;
+
+}
+#weigh-page-right {
+	width:89%;
+	margin-left:11%;
+    float: right;
+}

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_manage_user,product.manage.user,product_manage_x.model_product_manage,base.product_manage_user,1,1,1,0
+access_product_manage_line_user,product.manage.line.user,product_manage_x.model_product_manage_line,base.product_manage_user,1,1,1,0
+access_product_manage_manager,product.manage.manager,product_manage_x.model_product_manage,base.product_manage_manager,1,1,1,1
+access_product_manage_line_manager,product.manage.line.manager,product_manage_x.model_product_manage_line,base.product_manage_manager,1,1,1,1

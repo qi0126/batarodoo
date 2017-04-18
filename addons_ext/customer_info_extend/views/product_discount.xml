@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="product_discount_form" model="ir.ui.view">
+	    	<field name="name">product discount</field>
+	    	<field name="model">product.discount</field>
+	    	<field name="arch" type="xml">
+	    	    <form string="product discount" edit="0">
+	    	        <sheet>
+	    	            <div style="color:red">
+		    	            <h2 >1.Priority: product series > Product > Product category > all</h2>
+		    	            <h2>2.Not setting the start end time will always be valid</h2>
+	    	            </div>
+	    	            <div class="oe_button_box" name="button_box" >
+                            <button name="cancel_discount" string='cancel discount' type="object" class="btn-primary" icon="fa-archive" >
+                            </button>
+                        </div>
+	    	            <group>
+	    	            	<group>
+	    	            	    <field name="partner_id"  required='1' options="{'no_create': True,'no_open':True}"/>
+	    	            	    <field name="applied_on" widget="radio" required='1'/>
+	    	            	  	<field name="categ_id" 
+	    	            	  	    
+	    	            	  	    options="{'no_create': True,'no_open':True}"
+	    	            	  	    attrs="{'invisible':[('applied_on', '!=', '2_product_category')], 'required':[('applied_on', '=', '2_product_category')]}"/>
+	    	            	    <field name="product_tmpl_id" 
+	    	            	        domain="[('sale_ok','=',True)]"
+	    	            	        options="{'no_create': True,'no_open':True}"
+	    	            	        attrs="{'invisible':[('applied_on', '!=', '1_product')],'required':[('applied_on', '=', '1_product')]}"/>
+	    	            	    <field name="product_id" 
+	    	            	        domain="[('sale_ok','=',True)]"
+	    	            	        options="{'no_create': True,'no_open':True}"
+	    	            	        attrs="{'invisible':[('applied_on', '!=', '0_product_variant')],'required':[('applied_on', '=', '0_product_variant')]}"/>
+	    	            	</group>
+	    	            	<group>
+	    	            	    <field name="date_start"/>
+	    	            	    <field name="date_end"/>
+	    	            	    <field name="active" invisible='1'/>
+	    	            	    <field name="min_quantity"></field>
+	    	            	    <field name="weight_fee"  
+	    	            	        attrs="{'invisible':[('applied_on', '!=', '0_product_variant')],'required':[('applied_on', '=', '0_product_variant')]}"
+	    	            	        readonly='1' widget="monetary"/>
+	    	        			<field name="item_fee" 
+	    	        			    attrs="{'invisible':[('applied_on', '!=', '0_product_variant')],'required':[('applied_on', '=', '0_product_variant')]}"
+	    	        			    readonly='1' widget="monetary"/>
+	    	        			<field name="additional_fee" 
+	    	        			    attrs="{'invisible':[('applied_on', '!=', '0_product_variant')],'required':[('applied_on', '=', '0_product_variant')]}"
+	    	        			    readonly='1' widget="monetary"/>
+	    	            	</group>
+	    	            	<group>
+	    	            	    <field name="ponderable" />
+	    	            	    <field name="is_percent"/>
+	    	            	    <field name="attribute_value_id"
+	    	            	         attrs="{'invisible':[('applied_on', '=', '0_product_variant')],'required':[('applied_on', '!=', '0_product_variant')]}"
+	    	            	        domain="[('attribute_id.code', '=', 'material')]"
+	    	            	        options="{'no_create': True,'no_open':True}"
+	    	            	        />
+	    	            	</group>
+	    	            	<group attrs="{'invisible':[('ponderable', '=', False)]}">
+	    	            	    <field name="item_fee_discount" widget="monetary" attrs="{'invisible':[('is_percent', '=', True)]}"/>
+	    	            	    <field name="weight_fee_discount" widget="monetary" attrs="{'invisible':[('is_percent', '=', True)]}"/>
+	    	            	    <field name="additional_fee_discount" widget="monetary" attrs="{'invisible':[('is_percent', '=', True)]}"/>
+	    	            	    <label for="item_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}"/>
+                                <div name="item_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}">
+                                    <field name="item_fee_discount_percent" class="oe_inline"/> %%
+                                </div>
+                                <label for="weight_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}"/>
+                                <div name="weight_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}">
+                                    <field name="weight_fee_discount_percent" class="oe_inline"/> %%
+                                </div>
+	    	            	  	<label for="additional_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}"/>
+                                <div name="additional_fee_discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}">
+                                    <field name="additional_fee_discount_percent" class="oe_inline"/> %%
+                                </div>
+    	            	    </group>
+	    	            	<group attrs="{'invisible':[('ponderable', '=', True)]}">
+	    	            		<field name="discount_amount" widget="monetary" attrs="{'invisible':[('is_percent', '=', True)]}"/>
+	    	            		<label for="discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}"/>
+                                <div name="discount_percent" attrs="{'invisible':[('is_percent', '=', False)]}">
+                                    <field name="discount_percent" class="oe_inline"/> %%
+                                </div>
+	    	            	</group>
+	    	            	
+    	            	     
+	    	            </group>
+	    	        </sheet>
+	    	    </form>
+	    	</field>
+	    </record>
+	    <record id="product_discount_tree" model="ir.ui.view">
+	    	<field name="name">product discount</field>
+	    	<field name="model">product.discount</field>
+	    	
+	    	<field name="arch" type="xml">
+	    	    <tree string="product discount">
+	    	        <field name="partner_id"/>
+	    	        <field name="name"/>
+	    	        <field name="min_quantity"/>
+	    	        <field name="attribute_id"/>
+	    	        <field name="attribute_value_id"/>
+	    	        <field name="weight_fee_discount"/>
+	    	        <field name="item_fee_discount"/>
+	    	        <field name="additional_fee_discount"/>
+	    	       <field name="discount_amount"></field>
+	    	    </tree>
+	    	</field>
+	    </record>
+	    <record id="product_discount_action" model="ir.actions.act_window">
+	    	<field name="name">product discount</field>
+	    	<field name="type">ir.actions.act_window</field>
+	    	<field name="res_model">product.discount</field>
+	    	<field name="view_mode">tree,form</field>
+	    	<field name="domain">[('partner_id', '=', context.get('default_partner_id'))]</field>
+	    	<field name="view_type">form</field>
+	    </record>
+	</data>
+</openerp>

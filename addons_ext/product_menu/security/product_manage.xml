@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record model="ir.module.category" id="module_category_product_management">
+            <field name="name">Product Manage</field>
+            <field name="description">The user have access to create/write/unlink product.</field>
+            <field name="sequence">1</field>
+        </record>
+	    <record id="base.product_manage_man" model="res.groups">
+            <field name="name">产品管理</field>
+            <field name="category_id" ref="module_category_product_management"/>
+            <field name="comment">The user have access to product.</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+	</data>
+</openerp>

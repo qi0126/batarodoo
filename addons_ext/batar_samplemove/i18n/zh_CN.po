@@ -1,0 +1,209 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_samplemove
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 05:52+0000\n"
+"PO-Revision-Date: 2016-07-22 05:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemovein_wizard_form
+msgid "Add"
+msgstr "添加"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_attribute_id
+msgid "Attribute"
+msgstr "属性"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_value_ids
+msgid "Attribute value"
+msgstr "属性值"
+
+#. module: batar_samplemove
+#: selection:batar.samplemove.wizard,process_type:0
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemovein_wizard_form
+msgid "Auto"
+msgstr "自动匹配"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemove_wizard_form
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemovein_wizard_form
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_create_uid
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_create_uid
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_create_date
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_create_date
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_dest_location
+msgid "Dest Location"
+msgstr "目标库位"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_display_name
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_display_name
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_id
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_id
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_id
+msgid "ID"
+msgstr "标识"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard___last_update
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line___last_update
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line___last_update
+msgid "Last Modified on"
+msgstr "最后修改日期"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_write_uid
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_write_uid
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_write_uid
+msgid "Last Updated by"
+msgstr "最近更新被"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_write_date
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_attribute_line_write_date
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_write_date
+msgid "Last Updated on"
+msgstr "最近更新在"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_line_ids
+msgid "Move line"
+msgstr "移库明细"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemove_wizard_form
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemovein_wizard_form
+msgid "Please Input Product number"
+msgstr "请输入产品编码"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_process_type
+msgid "Process Method"
+msgstr "筛选方式"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_attribute_line_ids
+msgid "Product Attribute"
+msgstr "产品属性"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_product_code
+msgid "Product Num"
+msgstr "产品编码"
+
+#. module: batar_samplemove
+#: selection:batar.samplemove.wizard,process_type:0
+msgid "Product Template"
+msgstr "产品款式"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_product_id
+msgid "Product template"
+msgstr "产品款式"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_location_adjustment_is_sample
+msgid "Sample Move"
+msgstr "样品调库"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_batar_samplemove_wizard_sample_code
+msgid "Sample Num"
+msgstr "产品编码"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemovein_wizard_form
+msgid "Sample move in"
+msgstr "样品入库"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.batar_samplemove_wizard_form
+msgid "Sample move out"
+msgstr "样品出库"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.extend_batar_asjutment_form
+msgid "Samplemove"
+msgstr "样品出库"
+
+#. module: batar_samplemove
+#: model:ir.ui.view,arch_db:batar_samplemove.extend_batar_asjutment_form
+msgid "Samplemove IN"
+msgstr "样品入库"
+
+#. module: batar_samplemove
+#: model:ir.actions.act_window,name:batar_samplemove.action_samplemovein_wizard
+msgid "Samplemove in"
+msgstr "样品入库"
+
+#. module: batar_samplemove
+#: model:ir.actions.act_window,name:batar_samplemove.action_samplemove_wizard
+msgid "Samplemove out"
+msgstr "样品出库"
+
+#. module: batar_samplemove
+#: model:ir.model.fields,field_description:batar_samplemove.field_samplemove_line_src_location
+msgid "Source Location"
+msgstr "源库位"
+
+#. module: batar_samplemove
+#: model:ir.model,name:batar_samplemove.model_batar_location_adjustment
+msgid "batar.location.adjustment"
+msgstr "batar.location.adjustment"
+
+#. module: batar_samplemove
+#: model:ir.model,name:batar_samplemove.model_batar_samplemove_wizard
+msgid "batar.samplemove.wizard"
+msgstr "batar.samplemove.wizard"
+
+#. module: batar_samplemove
+#: model:ir.model,name:batar_samplemove.model_samplemove_attribute_line
+msgid "samplemove.attribute.line"
+msgstr "samplemove.attribute.line"
+
+#. module: batar_samplemove
+#: model:ir.model,name:batar_samplemove.model_samplemove_line
+msgid "samplemove.line"
+msgstr "samplemove.line"
+

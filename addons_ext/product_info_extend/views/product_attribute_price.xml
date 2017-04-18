@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="attribute_tree_view" model="ir.ui.view">
+            <field name="name">product.attribute.tree</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.attribute_tree_view"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="name" position="attributes">
+                    	<attribute name='attrs'>{'readonly':[('code','in',('material','weight'))]}</attribute>
+                    </field>
+                    <field name="name" position="after">
+                        <field name="sequence" 
+                            readonly='1'
+                             placeholder="sequence must rather than 100"/>
+                        <field name="code"
+                            placeholder="code default is empty" 
+                             attrs="{'readonly':[('code','in',('material','style','model','weight'))]}" />
+                    </field>
+                </data>
+            </field>
+           </record>
+	    <record id="product_attribute_material_price_tree" model="ir.ui.view">
+	    	<field name="name">product attribute material price</field>
+	    	<field name="model">product.attribute.material.price</field>
+	    	<field name="arch" type="xml">
+	    	    <tree string="product attribute material price">
+	    	    	<field name="attribute_id"></field>
+	    	    	<field name="attribute_value_id"></field>
+	    	    	 <field name="active" invisible='1'/>
+	    	    	<field name="material_price"></field>
+		    	    <field name="ornament_price"></field>
+	    	    	<field name="price_unit"></field>
+	    	    </tree>
+	    	</field>
+	    </record>
+	    <record id="product_attribute_material_price_form" model="ir.ui.view">
+	    	<field name="name">product attribute material price</field>
+	    	<field name="model">product.attribute.material.price</field>
+	    	<field name="arch" type="xml">
+	    	    <form string="product attribute material price" edit="0">
+	    	        <sheet>
+	    	            <div style="color:red">
+	    	                <h2>
+	    	                    1.There is only one valid material at the same time
+	    	                </h2>
+	    	                <h2>
+	    	                    2.The new price will not be valid until the price is created.
+	    	                </h2>
+	    	                <h2>
+	    	                    3.Can only add records can not modify the record
+	    	                </h2>
+	    	            </div>
+		    	        <group>
+		    	        	<group>
+		    	        	    <field name="attribute_id"   readonly='1'/>
+		    	    			<field name="attribute_value_id"  required='1'
+		    	    			    domain="[('attribute_id.code', '=', 'material')]"
+		    	    			    options="{'no_create':True,'no_open': True}"></field>
+		    	        	</group>
+		    	        	<group>
+		    	        	     <field name="active" invisible='1'/>
+		    	        	    <field name="material_price" required='1'/>
+		    	        	    <field name="ornament_price" />
+		    	    			<field name="price_unit"
+		    	    			    readonly='1'></field>
+		    	        	</group>
+		    	        </group>
+	    	        </sheet>
+	    	    </form>
+	    	</field>
+	    </record>
+	    <record id="product_attribute_material_price_action" model="ir.actions.act_window">
+	        <field name="name">product attribute material price</field>
+            <field name="res_model">product.attribute.material.price</field>
+            <field name="view_mode">tree,form</field>
+            <field name='view_type'>form</field>
+            <field name="domain">[]</field>
+            
+            <field name='help'>product attribute material price</field>
+	    </record>
+	    <menuitem id="product_attribute_material_price_menu" name="material price setting" parent="account.menu_finance_receivables" action="product_attribute_material_price_action"/>
+	</data>
+</openerp>

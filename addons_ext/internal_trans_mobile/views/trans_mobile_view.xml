@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+    <data>
+        <!--调拨任务视图-->
+        <record id="internal_trans_mobile_form_view" model="ir.ui.view">
+            <field name="name">Trans mobile Form</field>
+            <field name="model">internal.trans.mobile</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="delivery" type="object" string="Delivery" states="assign"/>
+                        <button name="confirm_tag" type="object" string="Confirm Tag" states="tag,done"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group name="top">
+                            <group name="left">
+                                <field name="name"/>
+                                <field name="user_id"/>
+                            </group>
+                            <group name="right">
+                                <field name="trans_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="lines" string="Lines">
+                                <field name="line_ids">
+                                    <tree>
+                                        <field name="product_id"/>
+                                        <field name="qty"/>
+                                        <field name="uom_id"/>
+                                        <field name="net_weight"/>
+                                        <field name="gross_weight"/>
+                                        <field name="src_location"/>
+                                        <field name="state"/>
+                                        <field name="panwei"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="internal_trans_mobile_tree_view" model="ir.ui.view">
+            <field name="name">Trans mobile Tree</field>
+            <field name="model">internal.trans.mobile</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="trans_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id="action_trans_mobile" res_model="internal.trans.mobile" view_type="form" view_mode="tree,form" name="Trans mobile"/>
+        <menuitem id="menu_trans_mobile" action="action_trans_mobile" parent="batar_stock_menu.batar_stock_menu_root" sequence="20"/>
+    </data>
+</openerp>

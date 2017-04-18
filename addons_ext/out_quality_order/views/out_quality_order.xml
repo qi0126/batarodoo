@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="out_quality_order_form_view" model="ir.ui.view">
+            <field name="name">out quality order</field>
+            <field name="model">out.quality.order</field>
+            <field name="arch" type="xml">
+                <form string="out quality order">
+                    <header>
+                        <button name="gen_back_order" type="object"   string="gen back order" class="oe_highlight" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,wait,ok,has_back,has_exchange,done"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+	                    </div>
+                        <group>
+                            <group>
+                                <field name="partner_id" options="{'no_create': True, 'no_open': True}" domain="[('customer','=',True)]"/>
+                            </group>
+                            <group>
+                                <field name="pick_user" options="{'no_create': True, 'no_open': True}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="out quality order line">
+                                <field name="line_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="check_user_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="partner_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="product_code"/>
+                                        <field name="product_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="ref"/>
+                                        <field name="qty"/>
+                                        <field name="net_weight"/>
+                                        <field name="check_weight"/>
+                                        <field name="weight"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="out quality order back line">
+                                <field name="back_lines" >
+                                    <tree editable="bottom">
+                                        <field name="check_user_id"/>
+                                        <field name="order_line"/>
+                                        <field name="product_id"/>
+                                        <field name="qty"/>
+                                        <field name="net_weight"/>
+                                        <field name="generated"/>
+                                    </tree>
+                                </field>
+                            </page>+
+                             <page string="out quality order exchange line">
+                                <field name="exchange_lines" >
+                                    <tree editable="bottom">
+                                        <field name="check_user_id"/>
+                                        <field name="order_line"/>
+                                        <field name="product_id"/>
+                                        <field name="qty"/>
+                                        <field name="generated"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="out_quality_order_tree_view" model="ir.ui.view">
+            <field name="name">out quality order</field>
+            <field name="model">out.quality.order</field>
+            <field name="arch" type="xml">
+                <tree string="out quality order">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="pick_user"/>
+
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <menuitem id="out_quality_order_menu" name="Customer Quality Check" sequence='1'
+           parent="stock.menu_stock_root" />
+         <record id="out_quality_order_action" model="ir.actions.act_window">
+            <field name="name">out quality order</field>
+            <field name="res_model">out.quality.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+         <menuitem name="out quality order" action="out_quality_order_action" id="menu_out_quality_order_action" parent="out_quality_order_menu" sequence='12' />
+    </data>
+</openerp>

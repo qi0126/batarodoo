@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="res_partner_address_form" model="ir.ui.view">
+	    	<field name="name">res.partner.form.address</field>
+	    	<field name="model">res.partner</field>
+	    	<field name="inherit_id" ref="base.view_partner_form"/>
+	    	<field name="context">{'default_country_id':base.cn}</field>
+	    	<field name="arch" type="xml">
+	    	    <xpath expr="//group//group//field[@name='type']" position='after'>
+	    	        <field name="country_id" placeholder="country" options="{'no_create':True,'no_open': True}" />
+	    	        <field name="province_id" placeholder="province"  options="{'no_create':True,'no_open': True}"/>
+	    	        <field name="city_id" placeholder="city" options="{'no_create':True,'no_open': True}"/>
+	    	        <field name="district_id" placeholder="district" options="{'no_create':True,'no_open': True}"/>
+	    	        <field name="street" class="o_address_street" placeholder="Street..."/>
+	    	    </xpath>
+	    	    <xpath expr="//group//group//label[@for='street']" position='attributes'>
+	    	        <attribute name='invisible'>1</attribute>
+	    	    </xpath>
+	    	    <xpath expr="//group//group//div[@class='o_address_format']" position='attributes'>
+	    	        <attribute name='invisible'>1</attribute>
+	    	    </xpath>
+	    	</field>
+	    </record>
+	</data>
+</openerp>

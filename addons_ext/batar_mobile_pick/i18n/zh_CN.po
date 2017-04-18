@@ -1,0 +1,221 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_mobile_pick
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-01 09:32+0000\n"
+"PO-Revision-Date: 2016-09-01 09:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_qty
+msgid "Available qty"
+msgstr "可用托盘数"
+
+#. module: batar_mobile_pick
+#: model:ir.actions.act_window,name:batar_mobile_pick.action_batar_mobile_pick
+#: model:ir.ui.menu,name:batar_mobile_pick.menu_batar_mobile_pick
+msgid "Batar Mobile Pick"
+msgstr "手机分拣"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_create_uid
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_create_uid
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_create_date
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_create_date
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_partner_id
+msgid "Customer"
+msgstr "客户"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_default_code
+msgid "Default Code"
+msgstr "产品编码"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_dest_location
+msgid "Dest Location"
+msgstr "目标库位"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_display_name
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_display_name
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_mobile_pick
+#: selection:batar.mobile.pick,state:0
+#: selection:mobile.pick.line,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: batar_mobile_pick
+#: selection:batar.mobile.pick,state:0
+#: selection:mobile.pick.line,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_id
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_id
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick___last_update
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan___last_update
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_write_uid
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_write_uid
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_write_date
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_write_date
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_line_ids
+#: model:ir.ui.view,arch_db:batar_mobile_pick.batar_mobile_pick_form
+msgid "Lines"
+msgstr "明细"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_operation_id
+msgid "Operation"
+msgstr "操作"
+
+#. module: batar_mobile_pick
+#: model:ir.ui.view,arch_db:batar_mobile_pick.batar_mobile_pick_form
+msgid "Pick Lines"
+msgstr "关联单据"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_pick_id
+msgid "Pick Order"
+msgstr "分拣单"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_user_id
+msgid "Pick User"
+msgstr "拣货员"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_stock_picking_mobile_user
+msgid "Pick user"
+msgstr "拣货员"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_pick_ids
+msgid "Picking"
+msgstr "关联单据"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_stock_picking_sample_location
+msgid "Sample Location"
+msgstr "样品库"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_sequence
+msgid "Sequence"
+msgstr "序列号"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_src_location
+msgid "Src Location"
+msgstr "源库位"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_state
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_mobile_pick_line_state
+msgid "State"
+msgstr "状态"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_volume
+msgid "Total Volume"
+msgstr "总容量"
+
+#. module: batar_mobile_pick
+#: model:ir.model,name:batar_mobile_pick.model_stock_picking
+msgid "Transfer"
+msgstr "调拨"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_mobile_pick_tuopan_qty
+msgid "Tuopan Qty"
+msgstr "托盘数"
+
+#. module: batar_mobile_pick
+#: model:ir.model,name:batar_mobile_pick.model_batar_mobile_pick
+msgid "batar.mobile.pick"
+msgstr "batar.mobile.pick"
+
+#. module: batar_mobile_pick
+#: model:ir.model,name:batar_mobile_pick.model_batar_pick_tuopan
+msgid "batar.pick.tuopan"
+msgstr "batar.pick.tuopan"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_p_volume
+msgid "each Volume"
+msgstr "容量/格"
+
+#. module: batar_mobile_pick
+#: model:ir.model,name:batar_mobile_pick.model_mobile_pick_line
+msgid "mobile.pick.line"
+msgstr "mobile.pick.line"
+
+#. module: batar_mobile_pick
+#: model:ir.model.fields,field_description:batar_mobile_pick.field_batar_pick_tuopan_name
+msgid "name"
+msgstr "名称"
+
+#. module: batar_mobile_pick
+#: selection:batar.mobile.pick,state:0
+msgid "process"
+msgstr "处理"
+

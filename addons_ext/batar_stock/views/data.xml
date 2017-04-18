@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.cron" id="autosample_job">
+            <field name='name'>Automatically add sample</field>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active">True</field>
+            <field name="model">stock.location</field>
+            <field name="function">auto_sample_update</field>
+            <field name="args">()</field>
+        </record>
+        <record model="ir.cron" id="auto_set_seqbarcode">
+            <field name='name'>Automatically set seqbarcode</field>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>months</field>
+            <field name="numbercall">-1</field>
+            <field name="active">False</field>
+            <field name="model">stock.location</field>
+            <field name="function">auto_set_seqbarcode</field>
+            <field name="args">()</field>
+        </record>
+    </data>
+</openerp>

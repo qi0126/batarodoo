@@ -1,0 +1,163 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_product_expense
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160321\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-14 03:15+0000\n"
+"PO-Revision-Date: 2016-06-14 03:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_additional_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_additional_fee
+msgid "Additional fee"
+msgstr "附加工费"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_is_additional_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_is_additional_fee
+msgid "Additional fee?"
+msgstr "附加工费?"
+
+#. module: batar_product_expense
+#: selection:batar.product.expense,type:0
+msgid "All"
+msgstr "全部"
+
+#. module: batar_product_expense
+#: selection:batar.product.expense,type:0
+msgid "Attribute"
+msgstr "属性分类"
+
+#. module: batar_product_expense
+#: model:ir.ui.view,arch_db:batar_product_expense.batar_mass_product_expense_wizard_form
+#: model:ir.ui.view,arch_db:batar_product_expense.mass_expense_tree_wizard_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_product_expense
+#: model:ir.ui.view,arch_db:batar_product_expense.batar_mass_product_expense_wizard_form
+#: model:ir.ui.view,arch_db:batar_product_expense.mass_expense_tree_wizard_form
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_create_uid
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_create_date
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_display_name
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_id
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_id
+msgid "ID"
+msgstr "标识"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_item_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_item_fee
+msgid "Item fee"
+msgstr "单件工费"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_is_item_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_is_item_fee
+msgid "Item fee?"
+msgstr "单件工费?"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense___last_update
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree___last_update
+msgid "Last Modified on"
+msgstr "最后修改日期"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_write_uid
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_write_uid
+msgid "Last Updated by"
+msgstr "最近更新被"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_write_date
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_write_date
+msgid "Last Updated on"
+msgstr "最近更新在"
+
+#. module: batar_product_expense
+#: model:ir.actions.act_window,name:batar_product_expense.action_mass_expense_tree
+msgid "Mass expense"
+msgstr "批量维护产品"
+
+#. module: batar_product_expense
+#: model:ir.ui.menu,name:batar_product_expense.menu_batar_mass_product_expense
+msgid "Mass update expense"
+msgstr "批量维护产品"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_product_tmpl_id
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_product_attribute_value
+msgid "Product attribute"
+msgstr "产品属性"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_product_sample_location
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_product_sample_location
+msgid "Sample Location"
+msgstr "样品库"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_type
+msgid "Type"
+msgstr "类型"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_weight_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_weight_fee
+msgid "Weight fee"
+msgstr "基础工费"
+
+#. module: batar_product_expense
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_is_weight_fee
+#: model:ir.model.fields,field_description:batar_product_expense.field_batar_product_expense_tree_is_weight_fee
+msgid "Weight fee?"
+msgstr "基础工费?"
+
+#. module: batar_product_expense
+#: model:ir.actions.act_window,name:batar_product_expense.action_batar_mass_product_expense
+msgid "batar.mass.product.expense.action"
+msgstr "批量维护产品"
+
+#. module: batar_product_expense
+#: model:ir.model,name:batar_product_expense.model_batar_product_expense
+msgid "batar.product.expense"
+msgstr "batar.product.expense"
+
+#. module: batar_product_expense
+#: model:ir.model,name:batar_product_expense.model_batar_product_expense_tree
+msgid "batar.product.expense.tree"
+msgstr "batar.product.expense.tree"
+

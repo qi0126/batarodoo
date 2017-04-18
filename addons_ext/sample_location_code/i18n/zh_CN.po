@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sample_location_code
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-07 08:13+0000\n"
+"PO-Revision-Date: 2017-02-07 08:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sample_location_code
+#: model:ir.actions.act_window,name:sample_location_code.action_sample_location_code
+msgid "Action sample code"
+msgstr "柜台货号"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_active
+msgid "Active"
+msgstr "有效"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_name
+#: model:ir.model.fields,field_description:sample_location_code.field_stock_location_code_ids
+msgid "Code"
+msgstr "货号"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_stock_location_code_counts
+msgid "Counts of Code"
+msgstr "已分配"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_stock_location
+msgid "Inventory Locations"
+msgstr "库存位置"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_location_id
+msgid "Location"
+msgstr "库位"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_trans_mobile_lines_code
+msgid "Location Code"
+msgstr "货号"
+
+#. module: sample_location_code
+#: model:ir.model.fields,field_description:sample_location_code.field_sample_location_code_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: sample_location_code
+#: model:ir.actions.act_window,name:sample_location_code.action_location_form_x
+#: model:ir.ui.menu,name:sample_location_code.menu_sample_location_code
+msgid "Sample Location Code"
+msgstr "货号管理"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_batar_sample_trans
+msgid "batar.sample.trans"
+msgstr "batar.sample.trans"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_internal_trans_mobile
+msgid "internal.trans.mobile"
+msgstr "internal.trans.mobile"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_sample_location_code
+msgid "sample.location.code"
+msgstr "sample.location.code"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_trans_mobile_lines
+msgid "trans.mobile.lines"
+msgstr "trans.mobile.lines"
+
+#. module: sample_location_code
+#: model:ir.model,name:sample_location_code.model_zhanting
+msgid "zhanting"
+msgstr "展厅订单"
+
+#. module: sample_location_code
+#: sql_constraint:sample.location.code:0
+msgid "柜台内货号必须小于10000"
+msgstr "柜台内货号必须小于10000"
+

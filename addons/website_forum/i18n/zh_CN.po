@@ -1,0 +1,3431 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_forum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server GreenOdoo-trunk-wms-20140425-"
+"linux-34ff97d-599b23a-16a05eb\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-23 20:13+0800\n"
+"PO-Revision-Date: 2015-11-24 18:27+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. module: website_forum
+#: model:mail.template,body_html:website_forum.validation_email
+msgid ""
+"\n"
+"<p>\n"
+"    Hello ${object.name},\n"
+"</p>\n"
+"<p>\n"
+"    You have been invited to validate your email in order to get access to "
+"\"${object.company_id.name}\" Q/A Forums.\n"
+"</p>\n"
+"<p>\n"
+"    To validate your email, please click on the following link:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${ctx.get('token_url')}\">Validate my account for "
+"\"${object.company_id.name}\" Q/A Forums</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"    Thanks,\n"
+"</p>\n"
+"<pre>\n"
+"--\n"
+"${object.company_id.name or ''}\n"
+"${object.company_id.email or ''}\n"
+"${object.company_id.phone or ''}\n"
+"</pre>"
+msgstr ""
+"\n"
+"<p>\n"
+"     ${object.name}，你好\n"
+"</p>\n"
+"<p>\n"
+"    欢迎访问 \"${object.company_id.name}\" Q/A 论坛！\n"
+"</p>\n"
+"<p>\n"
+"    请点击下述链接来验证你的邮箱:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${ctx.get('token_url')}\">验证 \"${object.company_id."
+"name}\" Q/A论坛账户</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"    谢谢！\n"
+"</p>\n"
+"<pre>\n"
+"--\n"
+"${object.company_id.name or ''}\n"
+"${object.company_id.email or ''}\n"
+"${object.company_id.phone or ''}\n"
+"</pre>"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:23
+#, python-format
+msgid ""
+" karma is required to perform this action. You can earn karma by having your "
+"answers upvoted by the community."
+msgstr " 你需要积分才能完成这个动作。如果社区为你的回答点赞，你将获得积分。 "
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_task_count
+msgid "# Tasks"
+msgstr "#任务"
+
+#. module: website_forum
+#: model:mail.template,subject:website_forum.validation_email
+msgid "${object.company_id.name} Forums validation"
+msgstr "${object.company_id.name} 论坛验证"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "&amp;times;"
+msgstr "&amp;次数;"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "(k:"
+msgstr "(k:"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "(votes - 1) **"
+msgstr "(评价数 - 1) **"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "),"
+msgstr "),"
+
+#. module: website_forum
+#: selection:forum.post.vote,vote:0
+msgid "-1"
+msgstr "-1"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "/ (days + 2) **"
+msgstr "/ (天数 + 2) **"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid "45% of questions shared"
+msgstr "45% of 分享问题"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:30
+#, python-format
+msgid ""
+"65% more chance to get an\n"
+"        answer"
+msgstr "65%的机会可以得到回答！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<b> [Closed]</b>"
+msgstr "<b> [已关闭]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<b> [Deleted]</b>"
+msgstr "[<b> 已删除]</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.users
+msgid "<b> badges:</b>"
+msgstr "<b> 勋章：</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "<b>No badge yet!</b><br/>"
+msgstr "<b>暂无勋章！</b><br/>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_votes
+msgid "<b>No vote given by you yet!</b>"
+msgstr "<b>尚无评价！</b>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid ""
+"<b>Please try to give a substantial answer.</b> If you wanted to comment on "
+"the question or answer, just\n"
+"        <b>use the commenting tool.</b> Please remember that you can always "
+"<b>revise your answers</b>\n"
+"        - no need to answer the same question twice. Also, please <b>don't "
+"forget to vote</b>\n"
+"        - it really helps to select the best questions and answers!"
+msgstr ""
+"<b>请试着提供一个内容充实的答案</b>如果你对问题或答案进行评论， \n"
+"<b>请使用注释工具。</b>请记住，你可以随时<b>修改你的答案。</b>\n"
+"-无需回答同样的问题两次。同时， <b>请不要忘记投票</b>\n"
+" -它确实有助于选择最佳的问题和答案！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "<b>Share</b> Something Awesome."
+msgstr "<b>分享/b> 很棒的东东。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.contact
+msgid ""
+"<b>|</b>\n"
+"                    <span class=\"fa fa-circle badge-gold\"/>"
+msgstr ""
+"<b>|</b>\n"
+"                    <span class=\"fa fa-circle badge-gold\"/>"
+
+#. module: website_forum
+#: model:forum.forum,faq:website_forum.forum_help
+msgid ""
+"<h1>Guidelines</h1>\n"
+"<h2><a class=\"faq-question\">What kinds of questions can I ask here?</a></"
+"h2>\n"
+"<p>\n"
+"    This community is for professional and enthusiast users,\n"
+"    partners and programmers. You can ask questions about:\n"
+"</p>\n"
+"<ul><li>how to install Odoo on a specific infrastructure,</li>\n"
+"    <li>how to configure or customize Odoo to specific business needs,</li>\n"
+"    <li>what's the best way to use Odoo for a specific business need,</li>\n"
+"    <li>how to develop modules for your own need,</li>\n"
+"    <li>specific questions about Odoo service offers, etc.</li>\n"
+"</ul><p>\n"
+"    <b>Before you ask - please make sure to search for a similar question.</"
+"b> You can\n"
+"    search questions by their title or tags.  It’s also OK to\n"
+"    answer your own question.\n"
+"</p><p>\n"
+"    <b>Please avoid asking questions that are too subjective\n"
+"    and argumentative</b> or not relevant to this community.\n"
+"</p>\n"
+"<h2><a class=\"faq-question\">What should I avoid in my questions?</a></h2>\n"
+"<p>\n"
+"    You should only ask practical, answerable questions based\n"
+"    on actual problems that you face. Chatty, open-ended\n"
+"    questions diminish the usefulness of this site and push\n"
+"    other questions off the front page.\n"
+"</p><p>\n"
+"    To prevent your question from being flagged and possibly removed, avoid "
+"asking\n"
+"    subjective questions where …\n"
+"</p>\n"
+"<ul><li>every answer is equally valid: “What’s your favorite ______?”</li>\n"
+"    <li>your answer is provided along with the question, and you expect more "
+"answers: “I use ______ for ______, what do you use?”</li>\n"
+"    <li>there is no actual problem to be solved: “I’m curious if other "
+"people feel like I do.”</li>\n"
+"    <li>we are being asked an open-ended, hypothetical question: “What if "
+"______ happened?”</li>\n"
+"    <li>it is a rant disguised as a question: “______ sucks, am I right?”</"
+"li>\n"
+"</ul><p>\n"
+"    If you fit in one of these example or if your motivation for asking the\n"
+"    question is “I would like to participate in a discussion about ______”, "
+"then\n"
+"    you should not be asking here but on our mailing lists.\n"
+"    However, if your motivation is “I would like others to explain ______ to "
+"me”,\n"
+"    then you are probably OK.\n"
+"</p><p>\n"
+"    (The above section was adapted from Stackoverflow’s FAQ.)\n"
+"</p><p>\n"
+"    More over:\n"
+"</p>\n"
+"<ul><li><b>Answers should not add or expand questions</b>. Instead either "
+"edit the question edit or add a question comment.</li>\n"
+"    <li><b>Answers should not comment other answers</b>. Instead add a "
+"comment on the other answers.</li>\n"
+"    <li><b>Answers shouldn't just point to other Questions</b>. Instead add "
+"a question comment indication \"Possible duplicate of...\". However, it's ok "
+"to include links to other questions or answers providing relevant additional "
+"information.</li>\n"
+"    <li><b>Answers shouldn't just provide a link a solution</b>. Instead "
+"provide the solution description text in your answer, even if it's just a "
+"copy/paste. Links are welcome, but should complementary to answer, referring "
+"sources or additional reading.</li>\n"
+"</ul><h2><a class=\"faq-question\">What should I avoid in my answers?</a></"
+"h2>\n"
+"<p>\n"
+"    <b>Answers should not add or expand questions</b>. Instead\n"
+"    either edit the question or add a comment.\n"
+"</p><p>\n"
+"    <b>Answers should not comment other answers</b>. Instead\n"
+"    add a comment on the other answers.\n"
+"</p><p>\n"
+"    <b>Answers shouldn't just point to other questions</b>.\n"
+"    Instead add a comment indicating <i>\"Possible duplicate\n"
+"    of...\"</i>. However, it's fine to include links to other\n"
+"    questions or answers providing relevant additional\n"
+"    information. </p> <p> <b>Answers shouldn't just provide a\n"
+"    link a solution</b>. Instead provide the solution\n"
+"    description text in your answer, even if it's just a\n"
+"    copy/paste. Links are welcome, but should complementary to\n"
+"    answer, referring sources or additional reading.\n"
+"</p><p>\n"
+"    <b>Answers should not start debates</b>\n"
+"    This community Q&amp;A is not a discussion group. Please avoid holding "
+"debates in\n"
+"    your answers as they tend to dilute the essence of questions and "
+"answers. For\n"
+"    brief discussions please use commenting facility.\n"
+"</p> <p>\n"
+"    When a question or answer is upvoted, the user who posted them will gain "
+"some\n"
+"    points, which are called \"karma points\". These points serve as a "
+"rough\n"
+"    measure of the community trust to him/her. Various moderation tasks are\n"
+"    gradually assigned to the users based on those points.\n"
+"</p> <p>\n"
+"    For example, if you ask an interesting question or give a helpful "
+"answer, your\n"
+"    input will be upvoted. On the other hand if the answer is misleading - "
+"it will\n"
+"    be downvoted. Each vote in favor will generate 10 points, each vote "
+"against\n"
+"    will subtract 10 points. There is a limit of 200 points that can be "
+"accumulated\n"
+"    for a question or answer per day. The table given at the end explains "
+"reputation point\n"
+"    requirements for each type of moderation task.\n"
+"</p>\n"
+"\n"
+"<h2><a class=\"faq-question\">Why can other people edit my questions/answers?"
+"</a></h2>\n"
+"<p>\n"
+"    The goal of this site is create a relevant knowledge base that would "
+"answer\n"
+"    questions related to Odoo.\n"
+"</p><p>\n"
+"    Therefore questions and answers can be edited like wiki pages by "
+"experienced users of\n"
+"    this site in order to improve the overall quality of the knowledge base "
+"content.\n"
+"    Such privileges are granted based on user karma level: you will be able "
+"to do the same\n"
+"    once your karma gets high enough.\n"
+"</p><p>\n"
+"    If this approach is not for you, please respect the community and use "
+"Google+\n"
+"    communities instead.\n"
+"</p>"
+msgstr ""
+"<h1>建议</h1>\n"
+"<h2><a class=\"faq-question\">在这里我可以问那种类型的问题?</a></h2>\n"
+"<p>\n"
+"    这个社区里有热情的用户，合作者以及专业的技术编程人员,\n"
+"   你可以提类似以下的问题:\n"
+"</p>\n"
+"<ul><li>怎样在特定的系统环境下安装Odoo,</li>\n"
+"    <li>怎样为特定的商业需求设定和定制Odoo,</li>\n"
+"    <li>对于特定的商业需求，使用Odoo的最佳方案,</li>\n"
+"    <li>怎样按照自己的需求开发相关模块,</li>\n"
+"    <li>关于Odoo服务提供的特定问题等等。</li>\n"
+"</ul><p>\n"
+"    <b>提问前请先搜索类似的问题。</b> 你可以\n"
+"    按题目或标签搜索问题. 同样可以，\n"
+"    回答你自己提出的问题。\n"
+"</p><p>\n"
+"    <b>请避免提出过于主观的，\n"
+"    有争议性的</b>或不相关的问题。\n"
+"</p>\n"
+"<h2><a class=\"faq-question\">我的提问中应该避免那些情况?</a></h2>\n"
+"<p>\n"
+"   应该尽量提出具体的遇到的问题，\n"
+"   避免无意义的闲聊和灌水\n"
+"   因为这会使\n"
+"   他人的提问不能被及时注意和解决.\n"
+"</p><p>\n"
+"   避免你的提问被标记和删除，请不要提出过于主观性的问题 …\n"
+"</p>\n"
+"<ul><li>每一种答案都是有效的: “你最喜欢的是 ______?”</li>\n"
+"    <li>你已经提供了答案，但是期望更多答案: “我使用 ______ 在 ______, 你们使"
+"用什么呢?”</li>\n"
+"    <li>没有实际需要解决的问题: “我很好奇是否其他人有和我一样的感觉.”</li>\n"
+"    <li>我们会被问到开放性的和假设性的问题: “如果我 ______ 结果会怎么样?”</"
+"li>\n"
+"    <li>粗鲁的不礼貌的问题: “______他妈的, 对吗?”</li>\n"
+"</ul><p>\n"
+"   如果你符合这些例子或者你的动机是问这样的问题\n"
+"    “我想参与一个关于 ______的讨论”, \n"
+"   你应该在我们的邮件列表里提问，而不是这里.\n"
+"   但是，如果你是希望获得别人的对于你问题的解释,\n"
+"   这样的情况是可以的 .\n"
+"</p><p>\n"
+"    (以上部分被 Stackoverflow’s FAQ 采用.)\n"
+"</p><p>\n"
+"    更多的:\n"
+"</p>\n"
+"<ul><li><b>答案中不应添加新的问题或扩展问题。</b>.可以修改问题或添加新的问题"
+"评论.</li>\n"
+"    <li><b>回答不应评论其他人的答案</b>. 而应添加专门的评论。</li>\n"
+"    <li><b>回答不应指向其他问题</b>.可以添加评论该问题可能和以前的问题重复，"
+"并提出问题链接.</li>\n"
+"    <li><b>回答不应只提供就解决链接</b>.适当描述问题的结局方案, 甚至是复制粘"
+"贴. 也可以是连接, 但应该补充回答或提供相关链接.</li>\n"
+"</ul><h2><a class=\"faq-question\">回答是应该避免的情况?</a></h2>\n"
+"<p>\n"
+"    <b>回答不应扩展新的问题</b>. 可以\n"
+"   修改问题或添加评论。\n"
+"</p><p>\n"
+"    <b>回答不应评论其他问题</b>. 可以\n"
+"   添加新的评论或回答。\n"
+"</p><p>\n"
+"    <b>回答不一个指向其他问题</b>.\n"
+"    可以添加新的评论 <i>\"可能和以前的问题重复\n"
+"   ...\"</i></p><p>\n"
+"    <b>回答不应该开启辩论</b>\n"
+"    这个社区 Q&amp;A 不是讨论组.请避免争论\n"
+"    你的回答可能会偏离问题本身。\n"
+"    简短的讨论请使用评论设施.\n"
+"</p> <p>\n"
+"   当问题或答案是上升投票的，发贴的用户将获得一些\n"
+"    积分，这被称为“卡玛积分（karma points）”。这些积分粗略评估\n"
+"    社区信任度。各种适度的任务\n"
+"    逐渐地分配到这些用户.\n"
+"</p> <p>\n"
+"    比如你问了一些有趣的问题或有用的答案, 你的\n"
+"    文字将获得上升投票 另一方面，如果你的回答是误导的 -\n"
+"    将会获得下降投票， 每个投票代表10个积分, 反对票\n"
+"    将减10分. 200分限制每天每个问题. 这个表格在最后给予声望分的解释\n"
+"    需要每种类型的任务.\n"
+"</p>\n"
+"\n"
+"<h2><a class=\"faq-question\">为什么别人可以修改我的问题或答案?</a></h2>\n"
+"<p>\n"
+"    因为网站的目标是建立一个基于odoo的问题知识库。\n"
+"</p><p>\n"
+"    所以问题和答案可以被修改，类似 wiki 页面被有经验的使用者修改。\n"
+"   网站致力于改善问题与答案的整体质量.\n"
+"    这些权限被获取基于卡玛积分: 你也可以同样修改\n"
+"    如果你的卡玛积分足够高.\n"
+"</p><p>\n"
+"    如果这些处理方式不适合你, 请尊重社区的规定 或者使用 Google+\n"
+"   来替代。\n"
+"</p>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge
+msgid "<i class=\"text-muted\"> awarded users</i>"
+msgstr "<i class=\"text-muted\"> 受奖励的用户</i>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "<i class=\"text-muted\">awarded users</i>"
+msgstr "<i class=\"text-muted\">受奖励的用户</i>"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:391
+#, python-format
+msgid ""
+"<p>A new answer for <i>%s</i> has been posted. <a href=\"%s/forum/%s/"
+"question/%s\">Click here to access the post.</a></p>"
+msgstr ""
+"<p>一个新回答 <i>%s</i> 被提交，<a href=\"%s/forum/%s/question/%s\">点击查"
+"看。</a></p>"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:397
+#, python-format
+msgid ""
+"<p>A new question <i>%s</i> has been asked on %s. <a href=\"%s/forum/%s/"
+"question/%s\">Click here to access the question.</a></p>"
+msgstr ""
+"<p>一个新提问 <i>%s</i> 被发布在%s，<a href=\"%s/forum/%s/question/%s\">点击"
+"查看。</a></p>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<small>profile</small>"
+msgstr "<small>模板</small>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid ""
+"<span class=\"caret\"/>\n"
+"                                <span class=\"sr-only\">Select Post</span>"
+msgstr ""
+"<span class=\"caret\"/>\n"
+"                                <span class=\"sr-only\">选择发表</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                        <span class=\"icon-bar\"/>\n"
+"                        <span class=\"icon-bar\"/>"
+msgstr ""
+"<span class=\"sr-only\">切换导航</span>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid ""
+"<span class=\"text-muted\">(only one answer per question is allowed)</span>"
+msgstr "<span class=\"text-muted\">（每题只允许有一个答案）</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<span class=\"text-muted\">bio</span>"
+msgstr "<span class=\"text-muted\">bio</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<span class=\"text-muted\">contributions</span>"
+msgstr "<span class=\"text-muted\">贡献者</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "<span class=\"text-muted\">or</span>"
+msgstr "<span class=\"text-muted\">或</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "<span class=\"text-muted\">stats</span>"
+msgstr "<span class=\"text-muted\">统计</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span> on </span>"
+msgstr "<span> 在 </span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span> • </span>"
+msgstr "<span> • </span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "<span>By </span>"
+msgstr "<span>被</span>"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.tag
+msgid ""
+"A tag is a label that categorizes your question with other,\n"
+"            similar questions. Using the right tags makes it easier for\n"
+"            others to find and answer your question."
+msgstr ""
+"标签是为了对你的问题与其他类似问题进行分类。\n"
+"使用正确的标签可以让别人\n"
+"更容易发现和回答你的问题。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "About This Community"
+msgstr "关于论坛"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:114
+#, python-format
+msgid "Accept Answer"
+msgstr "采纳回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer_accept_own
+msgid "Accept an answer on own questions"
+msgstr "采纳自己所提问题的回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer_accept_all
+msgid "Accept an answer to all questions"
+msgstr "采纳所有提问的回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Accepted Answer"
+msgstr "已采纳回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_accept
+msgid "Accepting an answer"
+msgstr "采纳一个回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "应付科目"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "应收科目"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_active
+msgid "Active"
+msgstr "活跃"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Activity"
+msgstr "活动"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:19
+#, python-format
+msgid "Add Content"
+msgstr "添加内容"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid "Add a Comment"
+msgstr "添加评论"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:25
+#, python-format
+msgid "Add page in menu"
+msgstr "在菜单中添加页面"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_share
+msgid ""
+"After posting the user will be proposed to share its questionor answer on "
+"social networks, enabling social network propagationof the forum content."
+msgstr ""
+"用户在发帖后，系统将建议用户分享问题到社会网络，它将允许社交网络传播论坛的内"
+"容。"
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:187
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#, python-format
+msgid "All"
+msgstr "全部"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_bump
+msgid "Allow Bump"
+msgstr "允许置顶"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:94
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#, python-format
+msgid "Answer"
+msgstr "回答"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:449
+#: model:mail.message.subtype,description:website_forum.mt_answer_edit
+#: model:mail.message.subtype,name:website_forum.mt_answer_edit
+#, python-format
+msgid "Answer Edited"
+msgstr "编辑回答"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:108
+#, python-format
+msgid "Answer Posted"
+msgstr "回答被点赞"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_accepted
+msgid "Answer accepted"
+msgstr "回答被采纳"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_downvote
+msgid "Answer downvoted"
+msgstr "回答被拍砖"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_flagged
+msgid "Answer flagged"
+msgstr "回答被否定"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_answer
+msgid "Answer questions"
+msgstr "回答提问"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_answer_upvote
+msgid "Answer upvoted"
+msgstr "回答被点赞"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Answered"
+msgstr "收到的回答数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Answered Questions"
+msgstr "已回答提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Answered by"
+msgstr "回答提交人"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_child_ids
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Answers"
+msgstr "回答"
+
+#. module: website_forum
+#: selection:forum.post,post_type:0
+msgid "Article"
+msgstr "文章"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Ask Your Question"
+msgstr "我要提问"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:53
+#: model:ir.ui.view,arch_db:website_forum.header
+#, python-format
+msgid "Ask a Question"
+msgstr "我要提问"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_ask
+msgid "Ask questions"
+msgstr "提问"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:56
+#, python-format
+msgid "Ask the question in this forum by clicking on the button."
+msgstr "通过单击按钮在论坛提问。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_create_date
+msgid "Asked on"
+msgstr "提问时间"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Asked:"
+msgstr "问:"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_new
+msgid "Asking a question"
+msgstr "提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Author"
+msgstr "作者"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_1
+msgid "Autobiographer"
+msgstr "自传"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Avoid unnecessary introductions (Hi,... Please... Thanks...),"
+msgstr "简洁明了，不要啰嗦（如：嗨...，请...，谢谢...）"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Back to"
+msgstr "返回"
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:319
+#: code:addons/website_forum/controllers/main.py:382
+#, python-format
+msgid "Bad Request"
+msgstr "错误的请求"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "Badge \""
+msgstr "勋章 \""
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_badge_ids
+#: model:ir.ui.view,arch_db:website_forum.badge
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Badges"
+msgstr "勋章"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "银行"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge
+msgid ""
+"Besides gaining reputation with your questions and answers,\n"
+"            you receive badges for being especially helpful. Badges\n"
+"            appear on your profile page, and your posts."
+msgstr ""
+"通过你的提问和回答，你可以赢得声誉，\n"
+"            另外，如果特别有帮助，你会获得勋章。\n"
+"            勋章会显示在你的个人页面和你发的帖子上。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Biography"
+msgstr "个人简介"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_bronze_badge
+msgid "Bronze badges count"
+msgstr "青铜徽章数量"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_bump_date
+msgid "Bumped on"
+msgstr "置顶在"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid "By sharing you answer, you will get additionnal"
+msgstr "分享回答到社交网络，如果你的回答被采纳，将会获得额外的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_accept
+msgid "Can Accept"
+msgstr "可同意的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_answer
+msgid "Can Answer"
+msgstr "可回答的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_ask
+msgid "Can Ask"
+msgstr "可回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_close
+msgid "Can Close"
+msgstr "可关闭的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_comment
+msgid "Can Comment"
+msgstr "可评论的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_comment_convert
+msgid "Can Convert to Comment"
+msgstr "评价"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_downvote
+msgid "Can Downvote"
+msgstr "不可选择的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_edit
+msgid "Can Edit"
+msgstr "可编辑的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_unlink
+msgid "Can Unlink"
+msgstr "可删除"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_upvote
+msgid "Can Upvote"
+msgstr "可选择的"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_view
+msgid "Can View"
+msgstr "可阅览"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_can_display_biography
+msgid "Can userbiography of the author be viewed"
+msgstr "作者简介可以被查看"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_retag
+msgid "Change question tags"
+msgstr "修改提问标签"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_badges
+msgid "Check available badges"
+msgstr "查看获得的勋章"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_4
+#: model:gamification.challenge,name:website_forum.challenge_chief_commentator
+msgid "Chief Commentator"
+msgstr "首席评论员"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "City"
+msgstr "城市"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:44
+#, python-format
+msgid "Click <em>Continue</em> to create the forum."
+msgstr "点击 <em>继续</em> 创建一个论坛。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:117
+#, python-format
+msgid "Click here to accept this answer."
+msgstr "点击这里采纳回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid ""
+"Click here to send a verification email allowing you to participate to the "
+"forum."
+msgstr "点击这里发送一封验证邮件以便允许你加入论坛。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Click to get bad question samples"
+msgstr "查看一个坏范本"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Click to get good question titles"
+msgstr "查看一个好范本"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:105
+#, python-format
+msgid "Click to post your answer."
+msgstr "我要回答。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:85
+#, python-format
+msgid "Click to post your question."
+msgstr "我要提问。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:46
+#: selection:forum.post,state:0
+#, python-format
+msgid "Close"
+msgstr "关闭"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Close Post"
+msgstr "关闭帖子"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:123
+#, python-format
+msgid "Close Tutorial"
+msgstr "关闭教程"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_all
+msgid "Close all posts"
+msgstr "关闭所有的帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_close_own
+msgid "Close own posts"
+msgstr "关闭自己的帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Close post"
+msgstr "关闭帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_uid
+msgid "Closed by"
+msgstr "关闭人"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_date
+msgid "Closed on"
+msgstr "关闭日期"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_name
+msgid "Closing Reason"
+msgstr "关闭原因"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+#: model:ir.ui.view,arch_db:website_forum.display_post_answer
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Comment"
+msgstr "评论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_all
+msgid "Comment all posts"
+msgstr "评论所有的帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_own
+msgid "Comment own posts"
+msgstr "评论自己的帖子"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_p_2
+#: model:gamification.challenge,name:website_forum.challenge_commentator
+#: model:gamification.goal.definition,name:website_forum.definition_commentator
+msgid "Commentator"
+msgstr "评论员"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post_answer
+msgid "Comments"
+msgstr "评论"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_website_message_ids
+msgid "Comments on forum post"
+msgstr "在论坛上发帖评论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "和业务伙伴相关的公司"
+
+#. module: website_forum
+#: model:gamification.challenge,name:website_forum.challenge_configure_profile
+msgid "Complete own biography"
+msgstr "完成个人简介"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_configure_profile
+msgid "Completed own biography"
+msgstr "完成个人简介"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:120
+#, python-format
+msgid "Congratulations"
+msgstr "祝贺！"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:122
+#, python-format
+msgid ""
+"Congratulations! You just created and post your first question and answer."
+msgstr "祝贺！你刚刚创建并发表了你的第一个提问和回答。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid ""
+"Congratulations! Your email has just been validated. You may now participate "
+"to our forums."
+msgstr "恭喜！你的邮件已经被激活了。现在你已经加入了我们的论坛。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_content
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Content"
+msgstr "内容"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:50
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:91
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:111
+#, python-format
+msgid "Continue"
+msgstr "继续"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "合同"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_convert_all
+msgid "Convert all answers to answers and vice versa"
+msgstr "快速提取所有其他回答作为回复内容"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_accept
+msgid "Convert comment to answer"
+msgstr "转换评论为答案 "
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_convert_own
+msgid "Convert own answers to comments and vice versa"
+msgstr "快速提取所有其他回答作为评论内容"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_is_correct
+msgid "Correct"
+msgstr "被采纳"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_is_correct
+msgid "Correct answer or answer accepted"
+msgstr "正确的回答或回答被采纳。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Country"
+msgstr "国家"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Country..."
+msgstr "国家..."
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_create_date
+msgid "Create Date"
+msgstr "创建日期"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:40
+#, python-format
+msgid "Create Forum"
+msgstr "创建论坛"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:14
+#, python-format
+msgid "Create a Question!"
+msgstr "我要提问"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:11
+#, python-format
+msgid "Create a question"
+msgstr "我要提问"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_create_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_create_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_create_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_create_date
+msgid "Created on"
+msgstr "创建时间"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_4
+#: model:gamification.challenge,name:website_forum.challenge_favorite_question_1
+msgid "Credible Question"
+msgstr "可信的提问"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_5
+#: model:gamification.challenge,name:website_forum.challenge_critic
+#: model:gamification.goal.definition,name:website_forum.definition_critic
+msgid "Critic"
+msgstr "抛砖好手"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_currency_id
+msgid "Currency id"
+msgstr "货币ID"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_payment_term_id
+msgid "Customer Payment Term"
+msgstr "客户支付条款"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_last_post
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr "记录最后一条消息的发布日期。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_default_order
+msgid "Default Order"
+msgstr "默认排序"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_default_post_type
+msgid "Default Post"
+msgstr "默认帖子类型"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_unlink_all
+msgid "Delete all posts"
+msgstr "删除所有的帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_unlink_own
+msgid "Delete own posts"
+msgstr "删除自己的帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_description
+msgid "Description"
+msgstr "描述"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Design Welcome Message"
+msgstr "设计欢迎信息"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_6
+#: model:gamification.challenge,name:website_forum.challenge_disciplined
+#: model:gamification.goal.definition,name:website_forum.definition_disciplined
+msgid "Disciplined"
+msgstr "严守纪律"
+
+#. module: website_forum
+#: selection:forum.forum,default_post_type:0 selection:forum.post,post_type:0
+msgid "Discussion"
+msgstr "讨论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_discussion
+msgid "Discussions"
+msgstr "讨论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_display_name
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_user_bio
+msgid "Display detailed user biography"
+msgstr "显示个人详细简介"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_downvote
+msgid "Downvote"
+msgstr "拍砖"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit"
+msgstr "编辑"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Edit Profile"
+msgstr "编辑个人资料"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Edit Your Bio"
+msgstr "编辑个人资料"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Edit Your Previous Answer"
+msgstr "编辑之前的回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_edit_all
+msgid "Edit all posts"
+msgstr "编辑所有的帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_edit_own
+msgid "Edit own posts"
+msgstr "编辑自己的帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit reply"
+msgstr "编辑回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Edit your Link"
+msgstr "编辑链接"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Edit your Post"
+msgstr "编辑你的提问"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_7
+#: model:gamification.challenge,name:website_forum.challenge_editor
+#: model:gamification.goal.definition,name:website_forum.definition_editor
+msgid "Editor"
+msgstr "编辑器"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_editor
+msgid "Editor Features: image and links"
+msgstr "编辑功能：图片和链接"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Email"
+msgstr "电子邮件"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_5
+#: model:gamification.challenge,name:website_forum.challenge_enlightened
+#: model:gamification.goal.definition,name:website_forum.definition_enlightened
+msgid "Enlightened"
+msgstr "进步人士"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:37
+#, python-format
+msgid "Enter a name for your new forum then click 'Continue'."
+msgstr "为新论坛输入一个名称，然后点击‘继续’。"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_3
+#: model:gamification.challenge,name:website_forum.challenge_famous_question
+msgid "Famous Question"
+msgstr "高级问者"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_favourite_count
+msgid "Favorite Count"
+msgstr "收藏计数"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_5
+#: model:gamification.challenge,name:website_forum.challenge_favorite_question_5
+msgid "Favorite Question"
+msgstr "江湖豪侠"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_favourite_ids
+msgid "Favourite"
+msgstr "收藏"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_favorite_question_1
+msgid "Favourite Question (1)"
+msgstr "收藏的问题（1）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_stellar_question_25
+msgid "Favourite Question (25)"
+msgstr "收藏的问题（25）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_favorite_question_5
+msgid "Favourite Question (5)"
+msgstr "收藏的问题（6）"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Favourite Questions"
+msgstr "收藏的问题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Filter on"
+msgstr "过滤器"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_relevancy_post_vote
+msgid "First Relevance Parameter"
+msgstr "第一个相关的参数"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "财政状况"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_flag
+msgid "Flag a post as offensive"
+msgstr "标记为[问题帖]"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Followed"
+msgstr "有跟帖"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Followed Questions"
+msgstr "关注的问题"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_follower_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_follower_ids
+msgid "Followers"
+msgstr "跟进"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_channel_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "关注者（频道）"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_partner_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "关注者（合作伙伴）"
+
+#. module: website_forum
+#: model:ir.actions.act_url,name:website_forum.action_open_forum
+#: model:ir.model,name:website_forum.model_forum_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_forum_id
+#: model:ir.ui.menu,name:website_forum.menu_website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+#: model:website.menu,name:website_forum.menu_questions
+msgid "Forum"
+msgstr "论坛"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_gamification_badge_level
+#: model:ir.model.fields,field_description:website_forum.field_gamification_badge_user_level
+msgid "Forum Badge Level"
+msgstr "论坛勋章等级"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_users_form_forum
+msgid "Forum Karma"
+msgstr "论坛积分"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:33
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_name
+#, python-format
+msgid "Forum Name"
+msgstr "论坛名称"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Forum Post"
+msgstr "论坛发表"
+
+#. module: website_forum
+#: model:ir.actions.act_window,name:website_forum.action_forum_post
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_list
+msgid "Forum Posts"
+msgstr "论坛帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Forum Settings"
+msgstr "论坛设置"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_tag
+msgid "Forum Tag"
+msgstr "论坛标签"
+
+#. module: website_forum
+#: model:ir.actions.act_window,name:website_forum.action_forum_forum
+#: model:ir.ui.menu,name:website_forum.menu_forum
+#: model:ir.ui.view,arch_db:website_forum.header_footer_custom
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_list
+msgid "Forums"
+msgstr "论坛"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_badge
+msgid "Gamification badge"
+msgstr "游戏化勋章"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_challenge
+msgid "Gamification challenge"
+msgstr "游戏化的挑战"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_gamification_badge_user
+msgid "Gamification user badge"
+msgstr "游戏化勋章"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:74
+#, python-format
+msgid "Give Tag"
+msgstr "贴标签"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:63
+#, python-format
+msgid "Give your question title."
+msgstr "请填写提问内容。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_gold_badge
+msgid "Gold badges count"
+msgstr "黄金勋章数量！"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_3
+#: model:gamification.challenge,name:website_forum.challenge_good_answer
+msgid "Good Answer"
+msgstr "优秀答人"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_good_answer
+msgid "Good Answer (6)"
+msgstr "优秀答人（6）"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_9
+#: model:gamification.challenge,name:website_forum.challenge_good_question
+msgid "Good Question"
+msgstr "优秀问者"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_graph
+msgid "Graph of Posts"
+msgstr "帖子分析图"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_4
+#: model:gamification.challenge,name:website_forum.challenge_great_answer
+msgid "Great Answer"
+msgstr "杰出答人"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_great_answer
+msgid "Great Answer (15)"
+msgstr "杰出答人（15）"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_10
+#: model:gamification.challenge,name:website_forum.challenge_great_question
+msgid "Great Question"
+msgstr "杰出问者"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Group By"
+msgstr "分组"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_faq
+msgid "Guidelines"
+msgstr "方针"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_6
+#: model:gamification.challenge,name:website_forum.challenge_guru
+msgid "Guru"
+msgstr "大师"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_guru
+msgid "Guru (15)"
+msgstr "大师（15）"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_uid_has_answered
+msgid "Has Answered"
+msgstr "已回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "未对账的条目"
+
+#. module: website_forum
+#: model:forum.forum,name:website_forum.forum_help
+msgid "Help"
+msgstr "帮助"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_id
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_needaction
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_unread
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_needaction
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_unread
+msgid "If checked new messages require your attention."
+msgstr "检查需要你关注的新邮件。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_karma_dofollow
+msgid ""
+"If the author has not enough karma, a nofollow attribute is added to links"
+msgstr "如果作者没有足够的积分，链接中将标注不允许被关注。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid ""
+"If you close this post, it will be hidden for most users. Only\n"
+"            users having a high karma can see closed posts to moderate\n"
+"            them."
+msgstr ""
+"如果你关闭这个帖子，普通用户将无法查看。\n"
+"具有较高权限的用户可以在“已关闭问题”中看到。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:78
+#, python-format
+msgid "Insert tags related to your question."
+msgstr "给提问添加相关标签"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "发票"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_user_favourite
+msgid "Is Favourite"
+msgstr "收藏"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_is_follower
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_is_follower
+msgid "Is Follower"
+msgstr "关注者"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_has_validated_answer
+msgid "Is answered"
+msgstr "已回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "It appears your email has not been verified."
+msgstr "貌似你的邮件没有被验证。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_issued_total
+#: model:ir.model.fields,field_description:website_forum.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "日记项目"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_karma
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Karma"
+msgstr "积分"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Karma Gains"
+msgstr "积分规则"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Karma Related Rights"
+msgstr "积分相关权限"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_close
+msgid "Karma to close"
+msgstr "考核终止"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_comment
+msgid "Karma to comment"
+msgstr "考核评价"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_comment_convert
+msgid "Karma to convert comment to answer"
+msgstr "卡玛积分转换评论为回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_edit
+msgid "Karma to edit"
+msgstr "卡玛积分修改"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_karma_unlink
+msgid "Karma to unlink"
+msgstr "无效业绩"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Keep Informed"
+msgstr "随时了解"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_last_post
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_last_post
+msgid "Last Message Date"
+msgstr "最新消息日期"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote___last_update
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Last Updated"
+msgstr "最后跟帖时间"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_write_uid
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_write_uid
+msgid "Last Updated by"
+msgstr "最新跟帖人"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_reason_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_write_date
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_write_date
+msgid "Last Updated on"
+msgstr "最新跟帖时间"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Last activity date"
+msgstr "上次活动日期"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "最后的提醒已经标志为已读"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"该合作伙伴的发票和付款匹配的最后时间。当不存在至少一个未对帐的借方记录和一个"
+"未对账的贷方记录时，或者点击了\"完成\"按钮时设置该时间。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Last updated:"
+msgstr "最后更新："
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "发票和付款最后匹配日期"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:15
+#, python-format
+msgid "Let's go through the first steps to create a new question."
+msgstr "让我们开始新建提问的第一步。"
+
+#. module: website_forum
+#: selection:forum.forum,default_post_type:0
+msgid "Link"
+msgstr "链接"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_link
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Links"
+msgstr "链接"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_ids
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_ids
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_ids
+msgid "Messages and communication history"
+msgstr "信息和通讯记录"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+msgid "Most Voted"
+msgstr "评价人数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Most answered"
+msgstr "回答人数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Most voted"
+msgstr "评价人数"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_user_vote
+msgid "My Vote"
+msgstr "我的评价"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_name
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Name"
+msgstr "名称"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_needaction
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_needaction
+msgid "Need Action"
+msgstr "需要动作"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_needaction_counter
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_needaction_counter
+msgid "Need Action Counter"
+msgstr "需要动作计数"
+
+#. module: website_forum
+#: model:mail.message.subtype,description:website_forum.mt_answer_new
+#: model:mail.message.subtype,name:website_forum.mt_answer_new
+#: model:mail.message.subtype,name:website_forum.mt_forum_answer_new
+msgid "New Answer"
+msgstr "新的回复"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "New Discussion"
+msgstr "发布新讨论"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.editor.js:14
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:26
+#: model:ir.ui.view,arch_db:website_forum.content_new_forum
+#, python-format
+msgid "New Forum"
+msgstr "新论坛"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:47
+#, python-format
+msgid "New Forum Created"
+msgstr "新论坛已创建"
+
+#. module: website_forum
+#: model:mail.message.subtype,description:website_forum.mt_question_new
+#: model:mail.message.subtype,name:website_forum.mt_forum_question_new
+#: model:mail.message.subtype,name:website_forum.mt_question_new
+msgid "New Question"
+msgstr "新提问"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:88
+#, python-format
+msgid "New Question Created"
+msgstr "新提问已创建"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "New Topic"
+msgstr "新讨论主题"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Newest"
+msgstr "发帖时间"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_2
+#: model:gamification.challenge,name:website_forum.challenge_nice_answer
+msgid "Nice Answer"
+msgstr "初级答人"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_nice_answer
+msgid "Nice Answer (4)"
+msgstr "初级答人（4）"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_8
+msgid "Nice Quesiotn"
+msgstr "初级问者"
+
+#. module: website_forum
+#: model:gamification.challenge,name:website_forum.challenge_nice_question
+msgid "Nice Question"
+msgstr "初级问者"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_dofollow
+msgid "Nofollow links"
+msgstr "不允许关注的链接"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:675
+#: code:addons/website_forum/models/forum.py:695
+#, python-format
+msgid "Not allowed to vote for its own post"
+msgstr "不允许给自己帖子评价"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_2
+#: model:gamification.challenge,name:website_forum.challenge_notable_question
+msgid "Notable Question"
+msgstr "小有名气"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_posts_count
+msgid "Number of Posts"
+msgstr "帖子数量"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_views
+msgid "Number of Views"
+msgstr "阅读数量"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_child_count
+msgid "Number of answers"
+msgstr "回答数量"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_needaction_counter
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_needaction_counter
+msgid "Number of needaction messages"
+msgstr "需要动作的信息数量"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_message_unread_counter
+#: model:ir.model.fields,help:website_forum.field_forum_post_message_unread_counter
+msgid "Number of unread messages"
+msgstr "未读信息数量"
+
+#. module: website_forum
+#: selection:forum.post,state:0
+msgid "Offensive"
+msgstr "问题帖"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+msgid "On"
+msgstr "开"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid "On average,"
+msgstr "经计算，"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Options"
+msgstr "选项"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Orders"
+msgstr "排序"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_all
+msgid "Our forums"
+msgstr "我们的论坛"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "应付账款限额"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_23
+#: model:gamification.challenge,name:website_forum.challenge_peer_pressure
+#: model:gamification.goal.definition,name:website_forum.definition_peer_pressure
+msgid "Peer Pressure"
+msgstr "同辈压力"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "People"
+msgstr "论坛成员"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_plain_content
+msgid "Plain Content"
+msgstr "普通内容"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Please enter a descriptive question (should finish by a '?')"
+msgstr "请具体描述你的提问（用“？”来结尾）"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid ""
+"Please enter a valid email address in order to receive notifications from "
+"answers or comments."
+msgstr "请输入正确的邮箱地址，以便接收回答或评论通知。"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_1
+#: model:gamification.challenge,name:website_forum.challenge_popular_question
+msgid "Popular Question"
+msgstr "初入江湖"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_popular_question
+msgid "Popular Question (150)"
+msgstr "初入江湖（150）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_notable_question
+msgid "Popular Question (250)"
+msgstr "初入江湖（250）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_famous_question
+msgid "Popular Question (500)"
+msgstr "初入江湖（500）"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_post_id
+#: model:ir.ui.view,arch_db:website_forum.new_link
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Post"
+msgstr "提交"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:101
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+#, python-format
+msgid "Post Answer"
+msgstr "提交回答"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post_reason
+msgid "Post Closing Reason"
+msgstr "提交关闭帖子原因"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_reply
+msgid "Post Comment"
+msgstr "提交评论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_message_ids
+msgid "Post Messages"
+msgstr "发布信息"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:81
+#, python-format
+msgid "Post Question"
+msgstr "发布提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Post Title"
+msgstr "帖子标题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Post Types"
+msgstr "帖子类型"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Post Your Question"
+msgstr "发布提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "Post Your Topic"
+msgstr "发布讨论"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:142
+#, python-format
+msgid "Post type in \"Default post\" must be activated"
+msgstr "默认的帖子类型必须被激活！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Post:"
+msgstr "帖子："
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:380
+#, python-format
+msgid "Posting answer on a [Deleted] or [Closed] question is not possible"
+msgstr "不允许对一个 [已删除] 或 [已关闭] 的提问进行回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_post_ids
+#: model:ir.ui.menu,name:website_forum.menu_forum_posts
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Posts"
+msgstr "帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_bump
+msgid ""
+"Posts without answers older than 10 days will display a popupwhen displayed "
+"on the website to propose users to share them on social networks, bumping "
+"the question at top of the thread."
+msgstr ""
+"帖子超过10天没有回答，将会弹出对话框建议用户将它分享到社交网络，提高问题曝光"
+"率。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Provide enough details and, if possible, give an example."
+msgstr "提供足够的细节，如果可能的话，请举个例子。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Public profile"
+msgstr "公用模板"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_25
+#: model:gamification.challenge,name:website_forum.challenge_pundit
+#: model:gamification.goal.definition,name:website_forum.definition_pundit
+msgid "Pundit"
+msgstr "权威人士"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:48
+#, python-format
+msgid ""
+"Put this question back in the top list by sharing it on social networks."
+msgstr "通过分享到社交网络可以将这个提问置顶显示。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:98
+#, python-format
+msgid "Put your answer here."
+msgstr "在此提交回答。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:71
+#, python-format
+msgid "Put your question here."
+msgstr "在此进行提问。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header_footer_custom
+msgid "Q&amp;A"
+msgstr "Q&amp;A"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:66
+#: selection:forum.forum,default_post_type:0 selection:forum.post,post_type:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_parent_id
+#, python-format
+msgid "Question"
+msgstr "提问"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:452
+#: model:mail.message.subtype,description:website_forum.mt_question_edit
+#: model:mail.message.subtype,name:website_forum.mt_question_edit
+#, python-format
+msgid "Question Edited"
+msgstr "提问已被编辑"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:59
+#, python-format
+msgid "Question Title"
+msgstr "提问标题"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_downvote
+msgid "Question downvoted"
+msgstr "提问被拍砖"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+msgid "Question has accepted answer"
+msgstr "提问已被回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+msgid "Question not found!"
+msgstr "没有发现提问！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Question tools"
+msgstr "提问工具"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_gen_question_upvote
+msgid "Question upvoted"
+msgstr "提问被点赞"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_question
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Questions"
+msgstr "提问"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:393
+#, python-format
+msgid "Re: %s"
+msgstr "回复: %s"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Read Guidelines"
+msgstr "阅读指南"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Real name"
+msgstr "真实姓名"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_closed_reason_id
+msgid "Reason"
+msgstr "原因"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "Reason:"
+msgstr "原因："
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+msgid "Redirect to external link"
+msgstr "跳转到外部链接"
+
+#. module: website_forum
+#: selection:forum.forum,default_order:0
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_relevancy
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Relevance"
+msgstr "相关性"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+msgid "Relevance Computation"
+msgstr "相关性计算"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answers
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Reply"
+msgstr "回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_self_reply
+msgid "Reply to own question"
+msgstr "回复自己的提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+#: model:ir.ui.view,arch_db:website_forum.private_profile
+msgid "Return to the question list."
+msgstr "返回提问列表。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_product_pricelist
+msgid "Sale Pricelist"
+msgstr "销售价格表"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_team_id
+msgid "Sales Team"
+msgstr "销售团队"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+msgid "Save"
+msgstr "保存"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_26
+#: model:gamification.challenge,name:website_forum.challenge_scholar
+#: model:gamification.goal.definition,name:website_forum.definition_scholar
+msgid "Scholar"
+msgstr "学者"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Search in Post"
+msgstr "搜索帖子"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_relevancy_time_decay
+msgid "Second Relevance Parameter"
+msgstr "第二个相关的参数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Seen:"
+msgstr "阅读:"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:29
+#, python-format
+msgid "Select this menu item to create a new forum."
+msgstr "选中此菜单创建新的论坛。"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_8
+#: model:gamification.challenge,name:website_forum.challenge_self_learner
+#: model:gamification.goal.definition,name:website_forum.definition_self_learner
+msgid "Self-Learner"
+msgstr "自学成才"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_forum_form
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_form
+msgid "Send a message to the group"
+msgstr "发送消息到一个组"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid ""
+"Set a clear, explicit and concise question title\n"
+"                (check"
+msgstr ""
+"设定一个明确、直观且简洁的提问标题\n"
+"                (检查"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "Share"
+msgstr "分享"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid ""
+"Share an awesome link. Your post will appear in the 'Newest' top-menu.\n"
+"            If the community vote on your post, it will get traction by "
+"being promoted\n"
+"            in the homepage."
+msgstr ""
+"分享一个很棒的链接。你的帖子将会出现在顶部菜单“最新帖子”版块。如果在论坛被评"
+"价后，它将有可能被推送到首页。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:39
+#, python-format
+msgid ""
+"Share this content to increase your chances to be featured on the front page "
+"and attract more visitors."
+msgstr "分享内容来增加上头条的机会，将会吸引更多的访客。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_share
+msgid "Sharing Options"
+msgstr "分享选型"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_silver_badge
+msgid "Silver badges count"
+msgstr "白银徽章数量"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:16
+#, python-format
+msgid "Skip It"
+msgstr "跳过"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:62
+#, python-format
+msgid "Sorry you must be logged to vote"
+msgstr "抱歉，请登录后进行评价"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:93
+#, python-format
+msgid "Sorry, anonymous users cannot choose correct answer."
+msgstr "抱歉，访客不可以选择正确回答。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.404
+msgid "Sorry, this question is not available anymore."
+msgstr "抱歉，这个提问不可用。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_forum.js:57
+#, python-format
+msgid "Sorry, you cannot vote for your own posts"
+msgstr "抱歉，不可以评价自己的帖子。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Sort by"
+msgstr "排序方式"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:16
+#, python-format
+msgid "Start Tutorial"
+msgstr "开始教程"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Stats"
+msgstr "统计数据"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_state
+msgid "Status"
+msgstr "状态"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_6
+#: model:gamification.challenge,name:website_forum.challenge_stellar_question_25
+msgid "Stellar Question"
+msgstr "江湖大侠"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_q_7
+#: model:gamification.challenge,name:website_forum.challenge_student
+msgid "Student"
+msgstr "初学者"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "Submit a Link"
+msgstr "发布新链接"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_31
+#: model:gamification.challenge,name:website_forum.challenge_supporter
+#: model:gamification.goal.definition,name:website_forum.definition_supporter
+msgid "Supporter"
+msgstr "点赞能人"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
+msgid "Tag"
+msgstr "标签"
+
+#. module: website_forum
+#: sql_constraint:forum.tag:0
+msgid "Tag name already exists !"
+msgstr "标签名称已经存在了 !"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_tag_ids
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+#: model:ir.ui.view,arch_db:website_forum.header
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+#: model:ir.ui.view,arch_db:website_forum.new_link
+#: model:ir.ui.view,arch_db:website_forum.new_question
+#: model:ir.ui.view,arch_db:website_forum.tag
+msgid "Tags"
+msgstr "分类标签"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_task_ids
+msgid "Tasks"
+msgstr "任务"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_32
+#: model:gamification.challenge,name:website_forum.challenge_taxonomist
+#: model:gamification.goal.definition,name:website_forum.definition_taxonomist
+msgid "Taxonomist"
+msgstr "分类学者"
+
+#. module: website_forum
+#: model:gamification.badge,name:website_forum.badge_a_1
+#: model:gamification.challenge,name:website_forum.challenge_teacher
+#: model:gamification.goal.definition,name:website_forum.definition_teacher
+msgid "Teacher"
+msgstr "师傅"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_bump_date
+msgid ""
+"Technical field allowing to bump a question. Writing on this field will "
+"triggera write on write_date and therefore bump the post. Directly writing "
+"on write_dateis currently not supported and this field is a workaround."
+msgstr ""
+"技术上允许bump提问。勾选此栏位将引发对write_date写操作然后bump帖子。目前不支"
+"持直接对write_dateis写操作，所以此栏位目前是一个权变方案。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:9
+#, python-format
+msgid "Thanks for posting!"
+msgstr "太棒了！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "The"
+msgstr "此"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_position_id
+msgid ""
+"The fiscal position will determine taxes and accounts used for the partner."
+msgstr "财务状况将确定业务伙伴的税和帐目。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr "发票和付款后至少有一个借贷方不匹配．"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "这科目将替换当前业务伙伴的默认支付科目"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "这科目将用于替换当前业务伙伴的默认应收账款科目"
+
+#. module: website_forum
+#: model:forum.forum,description:website_forum.forum_help
+msgid ""
+"This community is for professionals and enthusiasts of our products and "
+"services.Share and discuss the best content and new marketing ideas,build "
+"your professional profile and become a better marketer together."
+msgstr "此处可填写论坛说明......"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_relevancy_post_vote
+msgid ""
+"This formula is used in order to sort by relevance. The variable 'votes' "
+"represents number of votes for a post, and 'days' is number of days since "
+"the post creation"
+msgstr ""
+"这个公式是用来按相关性排序。“评价数”为帖子得到用户的评价总数，“天数”为帖子发"
+"布至今的天数。"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:357
+#, python-format
+msgid "This forum does not allow %s"
+msgstr "此论坛不允许 %s"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:110
+#, python-format
+msgid "This page contain new created question and its answer."
+msgstr "此页面包含新提问及其回答。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:90
+#, python-format
+msgid "This page contain new created question."
+msgstr "此页面包含新提问。"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:49
+#, python-format
+msgid "This page contains all the information related to the new forum."
+msgstr "此页面包含与新论坛相关的所有信息。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr "此条款将用以取代默认的采购单或供应商发票。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sale orders "
+"and customer invoices"
+msgstr "在销售订单和客户发票上，该付款方式将替换默认的付款方式。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr "当前价格表将会被使用,取代默认值,用之出售给当前伙伴."
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.private_profile
+msgid "This profile is private!"
+msgstr "此信息属于个人隐私！"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Threads"
+msgstr "线索"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_name
+msgid "Title"
+msgstr "标题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_post
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Title must not be empty"
+msgstr "标题不能为空"
+
+#. module: website_forum
+#: code:addons/website_forum/controllers/main.py:319
+#: code:addons/website_forum/controllers/main.py:382
+#, python-format
+msgid "Title should not be empty."
+msgstr "标题不应该是空的。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_recipient_id
+msgid "To"
+msgstr "到"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "To improve your chance getting an answer:"
+msgstr "获取得到回答的机会："
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "已开票总额"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_debit
+msgid "Total Payable"
+msgstr "应付账款合计"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_credit
+msgid "Total Receivable"
+msgstr "应收账款合计"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "客户欠款金额合计"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "应付供应商总金额"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "Trending"
+msgstr "热门话题"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_post_type
+msgid "Type"
+msgstr "类型"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_content_link
+msgid "URL"
+msgstr "网址"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_post_content_link
+msgid "URL of Link Articles"
+msgstr "文章链接网址"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "URL to Share"
+msgstr "分享网址"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "Unanswered"
+msgstr "未回答"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_unlink_all
+msgid "Unlink all comments"
+msgstr "删除所有评论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_comment_unlink_own
+msgid "Unlink own comments"
+msgstr "删除自己的评论"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_unread
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_unread
+msgid "Unread Messages"
+msgstr "未读消息"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_message_unread_counter
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "未读消息计数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Update"
+msgstr "更新"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_write_date
+msgid "Update on"
+msgstr "更新时间"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_write_uid
+msgid "Updated by"
+msgstr "更新人"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_upvote
+msgid "Upvote"
+msgstr "点赞"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_student
+msgid "Upvoted question (1)"
+msgstr "提问点赞（1）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_great_question
+msgid "Upvoted question (15)"
+msgstr "提问点赞（15）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_nice_question
+msgid "Upvoted question (4)"
+msgstr "回答点赞（4）"
+
+#. module: website_forum
+#: model:gamification.goal.definition,name:website_forum.definition_good_question
+msgid "Upvoted question (6)"
+msgstr "回答点赞（6）"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/js/website_tour_forum.js:22
+#, python-format
+msgid ""
+"Use this <em>'Content'</em> menu to create a new forum like any other "
+"document (page, menu, products, event, ...)."
+msgstr ""
+"通过 <em>‘内容’</em> 菜单像其他文档（页面、菜单、商品、活动等）一样创建新的论"
+"坛。"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_user_id
+msgid "User"
+msgstr "用户"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_res_users
+msgid "Users"
+msgstr "用户"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_question
+msgid ""
+"Users can answer only once per question. Contributors can edit answers and "
+"mark the right ones."
+msgstr "每个问题用户可以回答一次。原作者可以编辑和标记正确回答。"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "字段被用来表示货币面值的大小"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Term"
+msgstr "供应商的付款条款"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.display_post
+msgid "View"
+msgstr "视图"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "View Your Badges"
+msgstr "查看你的勋章"
+
+#. module: website_forum
+#: model:ir.model,name:website_forum.model_forum_post_vote
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_vote
+msgid "Vote"
+msgstr "评价"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_count
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_ids
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "Votes"
+msgstr "评价"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid ""
+"We keep a high level of quality in showcased posts, around 20% of the "
+"submited\n"
+"            posts will be featured."
+msgstr "我们为保证文章质量，所提交仅大约20%的帖子会被申请加精。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.edit_profile
+msgid "Website"
+msgstr "网站"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_message_ids
+msgid "Website Messages"
+msgstr "网站信息"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_website_message_ids
+msgid "Website communication history"
+msgstr "网站传播史"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_description
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_description
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_description
+msgid "Website meta description"
+msgstr "网站meta描述"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_keywords
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_keywords
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_keywords
+msgid "Website meta keywords"
+msgstr "网站meta关键字"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_title
+#: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_title
+#: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_title
+msgid "Website meta title"
+msgstr "网站标题"
+
+#. module: website_forum
+#: model:ir.model.fields,field_description:website_forum.field_forum_forum_welcome_message
+msgid "Welcome Message"
+msgstr "欢迎信息"
+
+#. module: website_forum
+#: model:ir.model.fields,help:website_forum.field_forum_forum_allow_link
+msgid "When clicking on the post, it redirects to an external link"
+msgstr "当你点击帖子，将会跳转到一个外部链接"
+
+#. module: website_forum
+#: code:addons/website_forum/models/forum.py:136
+#, python-format
+msgid "You cannot choose %s as default post since the forum does not allow it."
+msgstr "你不能选择 %s 为默认帖子类型，因为论坛设置中标示为不可用。"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_answer
+msgid "Your Answer"
+msgstr "你的回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_discussion
+msgid "Your Discussion Title..."
+msgstr "讨论主题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "Your Question Title..."
+msgstr "提问主题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_reply
+msgid "Your Reply"
+msgstr "你的回复"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "accept any answer"
+msgstr "采纳回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "and"
+msgstr "和"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.close_post
+msgid "back to post"
+msgstr "回到帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "bad examples"
+msgstr "坏例子"
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "bronze"
+msgstr "青铜"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "by"
+msgstr "通过"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by activity date"
+msgstr "按活动日期"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by most answered"
+msgstr "按回答人数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by most voted"
+msgstr "按评价人数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by newest"
+msgstr "按发帖时间"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.forum_index
+msgid "by relevance"
+msgstr "按相关性"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "close any posts"
+msgstr "关闭帖子"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_7
+msgid "contains offensive or malicious remarks"
+msgstr "包含攻击或恶意的言论"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete any comment"
+msgstr "删除评论"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete any question or answer"
+msgstr "删除提问或回答"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "delete own comment"
+msgstr "删除自己的评论"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "downvote"
+msgstr "拍砖"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_1
+msgid "duplicate post"
+msgstr "重复的帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_link
+msgid "e.g. https://www.odoo.com"
+msgstr "例如：https://www.odoo.com"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "edit any post, view offensive flags"
+msgstr "编辑并审查帖子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "flag offensive, close own questions"
+msgstr "标记为[问题帖]，关闭提问"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "follower(s)"
+msgstr "支持"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "for reason:"
+msgstr "原由"
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "gold"
+msgstr "黄金"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.new_question
+msgid "good examples"
+msgstr "好例子"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "has been closed"
+msgstr "已被关闭"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:36
+#, python-format
+msgid "here"
+msgstr "在这里"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid ""
+"if your\n"
+"        answer is selected as the right one. See what you can do with karma"
+msgstr ""
+"如果\n"
+"        你的答案被选为正确答案，请查看论坛积分规则"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "insert text link, upload files"
+msgstr "插入文本链接，上传文件"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "karma"
+msgstr "积分"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:34
+#, python-format
+msgid "karma points"
+msgstr "积分点数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "last connection"
+msgstr "最后登录"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "location"
+msgstr "位置"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "member since"
+msgstr "注册时间"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_4
+msgid "not a real post"
+msgstr "不是一个真实的提问"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_6
+msgid "not relevant or out dated"
+msgstr "不相关或过时了"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_2
+msgid "off-topic or not relevant"
+msgstr "偏离主题或不相关"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_comment
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "on"
+msgstr "在"
+
+#. module: website_forum
+#. openerp-web
+#: code:addons/website_forum/static/src/xml/website_forum_share_templates.xml:29
+#, python-format
+msgid ""
+"on social networks get an answer within\n"
+"        5 hours. Questions shared on two social networks have"
+msgstr ""
+"到社交网络上5小时就能收到回答。\n"
+"       在超过一个以上社交网络上分享的问题"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "received this badge:"
+msgstr "收到此勋章："
+
+#. module: website_forum
+#: selection:gamification.badge,level:0
+msgid "silver"
+msgstr "银"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_8
+msgid "spam or advertising"
+msgstr "垃圾邮件或广告"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "time"
+msgstr "次"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.header
+msgid "times"
+msgstr "次"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_9
+msgid "too localized"
+msgstr "太本地化"
+
+#. module: website_forum
+#: model:forum.post.reason,name:website_forum.reason_3
+msgid "too subjective and argumentative"
+msgstr "过于主观和争论"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "upvote, add comments"
+msgstr "点赞并跟帖"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "user"
+msgstr "用户"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.badge_user
+msgid "users"
+msgstr "用户"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.post_description_full
+msgid "views"
+msgstr "浏览次数"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "votes"
+msgstr "评价"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.user_detail_full
+msgid "website"
+msgstr "网站"
+
+#. module: website_forum
+#: model:ir.ui.view,arch_db:website_forum.faq
+msgid "your biography can be seen as tooltip"
+msgstr "你的个人简介在工具条上可见的"
+
+#~ msgid "- it really helps to select the best questions and answers!"
+#~ msgstr "-它确实有助于选择最佳的提问和回答！"
+
+#~ msgid "- no need to answer the same question twice. Also, please"
+#~ msgstr "- 另外没有必要同一个问题回答两次。"
+
+#~ msgid "Comment this post..."
+#~ msgstr "发表你的评论..."
+
+#~ msgid "If you wanted to comment on the question or answer, just"
+#~ msgstr "如果想对这个提问或回答进行评论，请"
+
+#~ msgid "Please remember that you can always"
+#~ msgstr "请记住你可以"
+
+#~ msgid "Please try to give a substantial answer."
+#~ msgstr "请尽量给出一个实质性回答。"
+
+#~ msgid "Q&A"
+#~ msgstr "问与答"
+
+#~ msgid "Search"
+#~ msgstr "搜索"
+
+#~ msgid "Select Post"
+#~ msgstr "选择帖子"
+
+#~ msgid "Toggle navigation"
+#~ msgstr "切换导航"
+
+#~ msgid "awarded users"
+#~ msgstr "授予用户"
+
+#~ msgid "bio"
+#~ msgstr "个人信息"
+
+#~ msgid "contributions"
+#~ msgstr "活动"
+
+#~ msgid "don't forget to vote"
+#~ msgstr "不要忘记“评价”"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "profile"
+#~ msgstr "个人资料"
+
+#~ msgid "revise your answers"
+#~ msgstr "修改你的回答"
+
+#~ msgid "stats"
+#~ msgstr "统计信息"
+
+#~ msgid "use the commenting tool."
+#~ msgstr "使用“评论”。"
+
+#~ msgid ""
+#~ "Holds the Chatter summary (number of messages, ...). This summary is "
+#~ "directly in html format in order to be inserted in kanban views."
+#~ msgstr ""
+#~ "保存聊天汇总（消息的数量，...）。这个汇总为插入看板视图，为直接的html格"
+#~ "式。"
+
+#~ msgid "Summary"
+#~ msgstr "汇总"
+
+#~ msgid ""
+#~ "<p>This community is for professionals and enthusiasts of our products "
+#~ "and services.</p>"
+#~ msgstr "这个社区服务的对象为致力于我们产品和服务的专业人士和业余爱好者。"
+
+#~ msgid "Clickable links (Editor)"
+#~ msgstr "可点击的链接（编辑器）"
+
+#~ msgid "Convert all answers to comments and vice versa"
+#~ msgstr "转换所有的答案为评论，或者相反"
+
+#~ msgid "Edit answer"
+#~ msgstr "编辑回答"
+
+#~ msgid "Edit question"
+#~ msgstr "编辑问题"
+
+#~ msgid "Enter your Question"
+#~ msgstr "输入你的问题标题"
+
+#~ msgid "Has a Validated Answered"
+#~ msgstr "有一个有效的回答"
+
+#~ msgid "Karma Requirements"
+#~ msgstr "Karma要求"
+
+#~ msgid "Karma to answer"
+#~ msgstr "考核反馈"
+
+#~ msgid "Karma to ask"
+#~ msgstr "考核"
+
+#~ msgid "Karma to downvote"
+#~ msgstr "不评价考核"
+
+#~ msgid "Karma to upvote"
+#~ msgstr "评价考核"
+
+#~ msgid "Linking files (Editor)"
+#~ msgstr "链接文件（编辑器）"
+
+#~ msgid "My Favourite"
+#~ msgstr "我的喜好"
+
+#~ msgid "My Profile"
+#~ msgstr "我的个人资料"
+
+#~ msgid "Number of gold badges"
+#~ msgstr "金勋章数量"
+
+#~ msgid "Number of silver badges"
+#~ msgstr "银色勋章数量"
+
+#~ msgid "Please enter a descriptive question (should finish with a '?')"
+#~ msgstr "请输入一个描述性的问题（应该以一个‘？’结束）"
+
+#~ msgid "Question:"
+#~ msgstr "问题:"
+
+#~ msgid "Search a question..."
+#~ msgstr "Search a question..."
+
+#~ msgid "The user receiving the vote"
+#~ msgstr "接受评价的用户"
+
+#~ msgid "Valid Answer"
+#~ msgstr "有效的答案"
+
+#~ msgid "answers"
+#~ msgstr "响应"
+
+#~ msgid "by creation date"
+#~ msgstr "通过创建日期"
+
+#~ msgid "please, try to make your question interesting to others"
+#~ msgstr "请试着让你的问题有趣"
+
+#~ msgid "unknown"
+#~ msgstr "未知"
+
+#~ msgid "vote"
+#~ msgstr "评价"
+
+#~ msgid "with"
+#~ msgstr "一致"
+
+#~ msgid "Karma earned for downvoting a question"
+#~ msgstr "不评价的考核问题"
+
+#~ msgid "Karma earned for downvoting an answer"
+#~ msgstr "不评价的考核结果"
+
+#~ msgid "Karma earned for having an answer accepted"
+#~ msgstr "一致通过考核"
+
+#~ msgid "Karma earned for having an answer flagged"
+#~ msgstr "已完成的考核"
+
+#~ msgid "Karma earned for new questions"
+#~ msgstr "新的考核"
+
+#~ msgid "Karma earned for upvoting a question"
+#~ msgstr "评价的考核问题"
+
+#~ msgid "Karma earned for upvoting an answer"
+#~ msgstr "评价的考核结果"
+
+#~ msgid "Karma to answer a question"
+#~ msgstr "回答一个绩效问题"
+
+#~ msgid "Karma to ask a new question"
+#~ msgstr "提出新的考核问题"
+
+#~ msgid "/forum/1"
+#~ msgstr "/forum/1"
+
+#~ msgid "<p><a href=\"forum/%s/question/%s\">New Answer Posted</a></p>"
+#~ msgstr "<p><a href=\"forum/%s/question/%s\">发布新的答案</a></p>"
+
+#~ msgid ""
+#~ "CKEDITOR.config.toolbar = [['Bold','Italic','Underline','Strike'],"
+#~ "['NumberedList','BulletedList', 'Blockquote']\n"
+#~ "                ,['Outdent','Indent','Link','Unlink','Image'],] ;"
+#~ msgstr ""
+#~ "CKEDITOR.config.toolbar = [['Bold','Italic','Underline','Strike'],"
+#~ "['NumberedList','BulletedList', 'Blockquote']\n"
+#~ "                ,['Outdent','Indent','Link','Unlink','Image'],] ;"
+
+#~ msgid "CKEDITOR.replace(\"content\");"
+#~ msgstr "CKEDITOR.replace(\"content\");"
+
+#~ msgid "Delete"
+#~ msgstr "删除"
+
+#~ msgid "Reopen"
+#~ msgstr "重开"
+
+#~ msgid "Undelete"
+#~ msgstr "取消删除"

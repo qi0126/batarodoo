@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<template xml:space="preserve">
+    <t t-name="ProductAttibutePice">
+        <div id="chart1"></div>
+    </t>
+    <!--<t t-name="Price">-->
+        <!--&lt;!&ndash;<div class="oe_petstore_motd">&ndash;&gt;-->
+            <!--<p class="oe_test_price"></p>-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</t>-->
+</template>

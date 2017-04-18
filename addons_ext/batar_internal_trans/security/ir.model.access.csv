@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sample_trans_user,sample.trans.user,batar_internal_trans.model_batar_sample_trans,base.batar_internal_trans_user,1,1,1,0
+sample_trans_line_user,sample.trans.line.user,batar_internal_trans.model_sample_trans_lines,base.batar_internal_trans_user,1,1,1,0
+sample_trans_manager,sample.trans.manager,batar_internal_trans.model_batar_sample_trans,base.batar_internal_trans_manager,1,1,1,1
+sample_trans_line_manager,sample.trans.line.user,batar_internal_trans.model_sample_trans_lines,base.batar_internal_trans_manager,1,1,1,1

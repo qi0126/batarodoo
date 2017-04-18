@@ -1,0 +1,508 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_quality
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-30 09:07+0000\n"
+"PO-Revision-Date: 2016-12-30 09:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_form_view
+msgid "Check Lines"
+msgstr "质检明细"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_line_form
+msgid "Check Records"
+msgstr "质检记录"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_create_uid
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_create_date
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_display_name
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.delivery_bill_form_view
+msgid "Generate Check Order"
+msgstr "生成质检单"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_form_view
+msgid "Generate picking in order"
+msgstr "生成入库分拣单"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_id
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_id
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order___last_update
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_write_uid
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_write_date
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_quality
+#: model:ir.actions.act_window,name:batar_quality.quality_order_action
+#: model:ir.actions.act_window,name:batar_quality.quality_order_line_action
+#: model:ir.ui.menu,name:batar_quality.menu_quality_order_action
+#: model:ir.ui.menu,name:batar_quality.quality_order_top_menu
+msgid "Quality Check"
+msgstr "质量检测"
+
+#. module: batar_quality
+#: model:ir.ui.menu,name:batar_quality.menu_quality_order_line_action
+msgid "Quality Check Line"
+msgstr "质检明细"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_supplier
+msgid "Supplier"
+msgstr "供应商"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_actual_gross_weight
+msgid "actual gross weight"
+msgstr "实际毛重"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_actual_net_weight
+msgid "actual net weight"
+msgstr "实际净重"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_actual_product_qty
+msgid "actual product quantity"
+msgstr "实际数量"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_form_view
+msgid "check record"
+msgstr "质检记录"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_check_user
+msgid "check user"
+msgstr "check user"
+
+#. module: batar_quality
+#: selection:quality.order.line,state:0
+msgid "checked"
+msgstr "质检完成"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_back_order_form_view
+#: selection:quality.back.order,state:0
+#: selection:quality.order,state:0
+#: selection:quality.order.line,state:0
+msgid "confirm"
+msgstr "确认"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_default_code
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_default_code
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_default_code
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_default_code
+msgid "default code"
+msgstr "内部货号"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_delivery_man
+msgid "delivery charge man"
+msgstr "物流负责人"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_delivery_mobile
+msgid "delivery charge man mobile"
+msgstr "物流负责人电话"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_delivery_method
+msgid "delivery method"
+msgstr "物流方法"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_delivery_bill
+msgid "delivery.bill"
+msgstr "送货单"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_location_dest_id
+msgid "dest location"
+msgstr "目的库位"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_back_order_form_view
+#: selection:quality.back.order,state:0
+#: selection:quality.order,state:0
+#: selection:quality.order.line,state:0
+#: selection:stock.pick.in.order,state:0
+#: selection:stock.pick.in.order.line,state:0
+msgid "done"
+msgstr "完成"
+
+#. module: batar_quality
+#: selection:quality.back.order,state:0
+#: selection:quality.order,state:0
+#: selection:quality.order.line,state:0
+#: selection:quality.plate,state:0
+msgid "draft"
+msgstr "草稿"
+
+#. module: batar_quality
+#: selection:quality.order,state:0
+msgid "gen pick in"
+msgstr "生成入库分拣单"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_gross_weight
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_gross_weight
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_gross_weight
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_gross_weight
+msgid "gross weight"
+msgstr "毛重"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_must_check
+msgid "must check"
+msgstr "必检"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_net_weight
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_net_weight
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_net_weight
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_net_weight
+msgid "net weight"
+msgstr "净重"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_name
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_name
+msgid "package number"
+msgstr "包号"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_partner_id
+msgid "partner"
+msgstr "客户"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_ok
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_ok
+msgid "pass"
+msgstr "通过"
+
+#. module: batar_quality
+#: selection:quality.plate,state:0
+msgid "pick done"
+msgstr "入库完成"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_user_id
+msgid "pick in order weigh user"
+msgstr "分盘称重员"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_name
+msgid "plate name"
+msgstr "盘号"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_product_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_product_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_product_id
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_product_id
+msgid "product"
+msgstr "产品"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_product_qty
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_product_qty
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_product_qty
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_product_qty
+msgid "product quantity"
+msgstr "产品数量"
+
+#. module: batar_quality
+#: model:ir.actions.act_window,name:batar_quality.quality_back_order_action
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_order_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_name
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_quality_id
+#: model:ir.ui.menu,name:batar_quality.menu_quality_back_order_action
+msgid "quality back order"
+msgstr "质检退货单"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_ids
+#: model:ir.ui.view,arch_db:batar_quality.quality_back_order_form_view
+msgid "quality back order line"
+msgstr "质检退货单明细"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_check_user
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_user
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_check_user
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_check_user
+msgid "quality checker"
+msgstr "质检员"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_form_view
+msgid "quality order"
+msgstr "质检单"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_ids
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_check_record
+msgid "quality order check record"
+msgstr "质检记录"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_order_line_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_ids
+#: model:ir.ui.view,arch_db:batar_quality.quality_order_line_form
+msgid "quality order line"
+msgstr "质检明细"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_quality_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_quality_id
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_name
+msgid "quality order name"
+msgstr "质检单号"
+
+#. module: batar_quality
+#: model:ir.actions.act_window,name:batar_quality.quality_plate_action
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_plate_id
+#: model:ir.ui.menu,name:batar_quality.menu_new_quality_plate_action
+msgid "quality plate"
+msgstr "质检分拣盘"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_reason_name
+msgid "quality reason"
+msgstr "原因"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_back_order
+msgid "quality.back.order"
+msgstr "质检退货单"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_back_order_line
+msgid "quality.back.order.line"
+msgstr "质检退货单明细"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_order
+msgid "quality.order"
+msgstr "质检单"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_order_check_record
+msgid "quality.order.check.record"
+msgstr "质检记录"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_order_line
+msgid "quality.order.line"
+msgstr "质检单明细"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_plate
+msgid "quality.plate"
+msgstr "质检分拣盘"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_quality_reason
+msgid "quality.reason"
+msgstr "原因"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_reason
+msgid "reason"
+msgstr "原因"
+
+#. module: batar_quality
+#: selection:quality.back.order,state:0
+msgid "return back"
+msgstr "退货"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.quality_back_order_form_view
+msgid "return to supplier"
+msgstr "退货"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_sequence
+msgid "sequence"
+msgstr "序列号"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_location_src_id
+msgid "source location"
+msgstr "源库位"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_state
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_state
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_state
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_state
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_state
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_state
+msgid "state"
+msgstr "状态"
+
+#. module: batar_quality
+#: model:ir.actions.act_window,name:batar_quality.stock_pick_in_order_action
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_order_id
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_name
+#: model:ir.ui.menu,name:batar_quality.menu_stock_pick_in_order_action
+#: model:ir.ui.view,arch_db:batar_quality.stock_pick_in_order_form_view
+msgid "stock pick in order"
+msgstr "分拣入库单"
+
+#. module: batar_quality
+#: model:ir.actions.act_window,name:batar_quality.stock_pick_in_order_line_action
+#: model:ir.model.fields,field_description:batar_quality.field_quality_plate_line_ids
+#: model:ir.model.fields,field_description:batar_quality.field_stock_pick_in_order_line_ids
+#: model:ir.ui.menu,name:batar_quality.menu_pick_in_order_line_action
+#: model:ir.ui.view,arch_db:batar_quality.quality_plate_form
+msgid "stock pick in order line"
+msgstr "分拣入库单明细"
+
+#. module: batar_quality
+#: model:ir.ui.view,arch_db:batar_quality.stock_pick_in_order_form_view
+msgid "stock pick in order lines"
+msgstr "分拣入库单明细"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_stock_pick_in_order
+msgid "stock.pick.in.order"
+msgstr "分拣入库单"
+
+#. module: batar_quality
+#: model:ir.model,name:batar_quality.model_stock_pick_in_order_line
+msgid "stock.pick.in.order.line"
+msgstr "分拣入库单明细"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_partner_person
+msgid "supplier charge man"
+msgstr "供货方负责人"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_partner_mobile
+msgid "supplier charge man mobile"
+msgstr "供货方电话"
+
+#. module: batar_quality
+#: model:ir.model.fields,field_description:batar_quality.field_quality_back_order_line_supplier_code
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_check_record_supplier_code
+#: model:ir.model.fields,field_description:batar_quality.field_quality_order_line_supplier_code
+msgid "supplier code"
+msgstr "供货方编码"
+
+#. module: batar_quality
+#: selection:quality.order,state:0
+#: selection:quality.order.line,state:0
+msgid "wait check"
+msgstr "等待质检"
+
+#. module: batar_quality
+#: selection:quality.plate,state:0
+#: selection:stock.pick.in.order,state:0
+#: selection:stock.pick.in.order.line,state:0
+msgid "wait_pick_in"
+msgstr "等待入库"
+
+#. module: batar_quality
+#: selection:stock.pick.in.order,state:0
+#: selection:stock.pick.in.order.line,state:0
+msgid "wait_split"
+msgstr "等待分盘"
+

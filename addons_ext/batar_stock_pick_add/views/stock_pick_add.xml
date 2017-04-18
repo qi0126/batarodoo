@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <menuitem id="stock_pick_add" name="Stock Pick Add" sequence='1' parent="stock.menu_stock_root" />
+	    <record id="stock_pick_add_form_view" model="ir.ui.view">
+	        <field name="name">stock pick add</field>
+	        <field name="model">stock.pick.add</field>
+	        <field name="arch" type="xml">
+	            <form  string="stock pick add" >
+	                <header>
+	                    <button name="confirm" type="object" states="draft" string="Confirm" class="oe_highlight" />
+	                    <button name="cancel" type="object" states="confirm" string="Cancel" class="oe_highlight" />
+	                    <button name="return_draft" type="object" states="cancel,confirm" string="Return draft" class="oe_highlight" />
+	                    <button name="generate_pick_pack_out" type="object" states="confirm" string="Generate pick pack out" class="oe_highlight" />
+	                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,cancel,done"/>
+	                </header>
+	                <sheet>
+	                    <div class="oe_button_box" name="button_box" attrs="{'invisible':[('state','!=','done')]}">
+                            <button name="go_stock_picking" type="object"
+                                    class="oe_stat_button" icon="fa-truck">
+                                <field name="delivery_count" widget="statinfo" string="Delivery"/>
+                            </button>
+                        </div>
+	                    <group>
+		                    <group>
+		                        <field name="origin" required='1' attrs="{'readonly':[('state','!=','draft')]}"/>
+		                        <field name="name" placeholder="默认生成，不需要输入" attrs="{'readonly':[('state','!=','draft')]}"/>
+				                <field name="partner_id" attrs="{'readonly':[('state','!=','draft')]}" required='1' options="{'no_create':True,'no_open':True}" domain="[('is_company','=',True),('customer','=',True)]"/>
+				                <field name="priority" attrs="{'readonly':[('state','!=','draft')]}"/>
+		                    </group>
+		                    <group>
+		                        <field name="date_planed" readonly='1' attrs="{'readonly':[('state','!=','draft')]}"/>
+		                        <field name="warehouse_id"  readonly='1' attrs="{'readonly':[('state','!=','draft')]}"  options="{'no_create':True,'no_open':True}"/>
+		                		<field name="location_id"  invisible='1' readonly='1' attrs="{'readonly':[('state','!=','draft')]}" options="{'no_create':True,'no_open':True}"/>
+		                    </group>
+	                    </group>
+	                    <notebook>
+	                        <page string="stock pick add lines">
+	                            <field name="add_lines" attrs="{'readonly':[('state','!=','draft')]}" >
+	                                <tree editable="bottom">
+	                                    <field name="product_id"  required='1' options="{'no_create':True,'no_open':True}"
+											    domain="[('sale_ok','=',True),('has_stock','=',True),('product_sample_location','=',parent.product_sample_location)]"/>
+		                                <field name="product_qty" required='1' />
+		                               
+	                                </tree>
+	                            </field>
+	                        </page>
+	                    </notebook>
+	                </sheet>
+	            </form>
+	        </field>
+	    </record>
+	    <record id="stock_pick_add_tree" model="ir.ui.view">
+	        <field name="name">stock pick add</field>
+	        <field name="model">stock.pick.add</field>
+	        <field name="arch" type="xml">
+	            <tree string="stock pick add" >
+	                <field name="origin" />
+	                <field name="name"/>
+	                <field name="partner_id" />
+	                <field name="warehouse_id"/>
+	                <field name="location_id" invisible='1'/>
+	                <field name="priority"/>
+	                <field name="state"/>
+	            </tree>
+	        </field>
+	    </record>
+	    <record id="stock_pick_add_action" model="ir.actions.act_window">
+	        <field name="name">stock_pick_add</field>
+	        <field name="res_model">stock.pick.add</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	         
+	    </record>
+	    <menuitem name="Stock Pick Add" action="stock_pick_add_action" id="menu_stock_pick_add_action" parent="stock_pick_add" sequence='1' />
+	    
+	    
+		<record id="stock_pick_tree_extend" model="ir.ui.view">
+		    <field name="name">stock pick</field>
+		    <field name="model">stock.picking</field>
+		    <field name="inherit_id" ref="stock.vpicktree"/>
+		    <field name="arch" type="xml">
+		        <data>
+		            <tree position="attributes">
+	                    <attribute name="decoration-info">priority == "3"</attribute>
+	                </tree>
+		            <field name="location_dest_id" position="before">
+		                <field name="location_id"/>
+		            </field>
+		        </data>
+		    </field>
+		</record>
+	</data>
+	<record id="stock_picking_tree_view" model="ir.ui.view">
+	    <field name="name">stock picking</field>
+	    <field name="model">stock.picking</field>
+	    <field name="inherit_id" ref="stock.vpicktree"/>
+	    <field name="arch" type="xml">
+	        <data>
+	            <field name="name" position="after">
+	                <field name="priority"/>
+	            </field>
+	        </data>
+	    </field>
+	</record>
+</openerp>

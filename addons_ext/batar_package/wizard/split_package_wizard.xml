@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Add wizard form -->
+        <record id="split_package_wizard_form" model="ir.ui.view">
+            <field name="name">Split package Wizard form</field>
+            <field name="model">batar.split.package</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="top">
+                        <group name="left">
+                            <field name="weight"/>
+                            <field name="qty"/>
+                        </group>
+                        <group name="right">
+                            <field name="net_weight"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="confirm" type="object" class="btn-primary" string="Split"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- Add action -->
+        <record id="action_split_package" model="ir.actions.act_window">
+            <field name="name">Split package</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">batar.split.package</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</openerp>

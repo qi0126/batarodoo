@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <!-- 修改产品模版的视图，仓库不能创建修改 -->
+	    <record id="modify_view_template_property_form" model="ir.ui.view">
+	    	<field name="name">product template</field>
+	    	<field name="model">product.template</field>
+	    	<field name="inherit_id" ref="stock.view_template_property_form"></field>
+	    	<field name="arch" type="xml">
+	    	    <data>
+	    	        <field name="property_stock_procurement" position="attributes">
+	    	             <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </field>
+	    	        <field name="property_stock_production" position="attributes">
+	    	             <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </field>
+	    	        <field name="property_stock_inventory" position="attributes">
+	    	             <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </field>
+	    	    </data>
+	    	</field>
+	    </record>
+
+	</data>
+</openerp>

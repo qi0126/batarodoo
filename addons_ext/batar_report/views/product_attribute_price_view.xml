@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <!-- 为产品的材质增加GRAPH图表 -->
+        <record id="product_attribute_material_price_graph" model="ir.ui.view">
+            <field name="name">Product Material Price Grash</field>
+            <field name="model">product.attribute.material.price</field>
+            <field name="arch" type="xml">
+                <graph string="Price Analysis" type='line'>
+                    <field name="create_date" interval="day"/>
+                    <field name="attribute_value_id"/>
+
+                    <field name="material_price" type="measure"/>
+
+
+                    <!--
+                    <field name="create_date"  />
+                    -->
+                </graph>
+            </field>
+        </record>
+
+        <record id="product_attribute_material_price_graph_action" model="ir.actions.act_window">
+	        <field name="name">product attribute material price graph</field>
+            <field name="res_model">product.attribute.material.price</field>
+            <field name="view_mode">graph</field>
+            <field name='view_type'>form</field>
+            <field name="domain">[]</field>
+            <field name="view_id" ref="product_attribute_material_price_graph"/>
+	    </record>
+        <menuitem id="product_attribute_material_graph_menu" name="Price chart" parent="account.menu_finance_receivables" action="product_attribute_material_price_graph_action"/>
+
+    </data>
+</openerp>

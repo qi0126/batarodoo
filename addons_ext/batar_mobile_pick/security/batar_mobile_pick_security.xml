@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record id="base.batar_mobile_pick_manager" model="res.groups">
+            <field name="name">Batar Mobile Pick Manager</field>
+            <field name="comment">the user will have access all records in the Mobile Pick </field>
+        </record>
+    </data>
+</openerp>

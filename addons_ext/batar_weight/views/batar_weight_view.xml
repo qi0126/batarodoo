@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+    <data>
+
+        <!-- 定义form，tree视图-->
+        <record id="batar_weight_form_view" model="ir.ui.view">
+            <field name="name">Batar weight form</field>
+            <field name="model">batar.weight</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="top">
+                        <group name="left">
+                            <field name="ref"/>
+                            <field name="product_id"/>
+                        </group>
+                        <group name="right">
+                            <field name="qty"/>
+                            <field name="offset_weight"/>
+                            <field name="net_weight"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="batar_weight_tree_view" model="ir.ui.view">
+            <field name="name">Batar Weight tree</field>
+            <field name="model">batar.weight</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ref"/>
+                    <field name="product_id"/>
+                    <field name="qty"/>
+                    <field name="offset_weight"/>
+                    <field name="net_weight"/>
+                </tree>
+            </field>
+        </record>
+        <!-- 菜单动作-->
+        <act_window id="action_batar_weight" view_mode="tree,form" view_type="form" res_model="batar.weight" name="Offset Weight"/>
+        <!-- 定义一级菜单 -->
+        <menuitem id="menu_root_batar_weight" sequence="10" parent="batar_stock_menu.batar_stock_menu_root" action="action_batar_weight"/>
+    </data>
+</openerp>

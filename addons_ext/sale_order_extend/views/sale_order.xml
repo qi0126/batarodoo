@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	    <record id="sale_order_form_extend" model="ir.ui.view">
+	        <field name="name">sale.order.form.extend</field>
+	        <field name="model">sale.order</field>
+	        <field name="inherit_id" ref="sale.view_order_form"/>
+	        <field name="arch" type="xml">
+		        <data>
+		             <field name="partner_id" position="after">
+		                 <field name="order_type" readonly='1'/>
+		             </field>
+		            <xpath expr="//field[@name='partner_id']" position="attributes">
+		                <attribute name="domain">[('is_company','=',True),('customer','=',True)]</attribute>
+		                <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+		            </xpath>
+		            <xpath expr="//field[@name='partner_id']" position="after">
+		                <field name="order_tax_id" widget="many2many_tags" domain="[('type_tax_use','=','sale')]"  options="{'no_create':True,'no_open':True}"/>
+		            </xpath>
+					<xpath expr="//notebook/page/field[@name='order_line']/tree//field[@name='product_id']" position="attributes">
+						<attribute name="options">{'no_create':True,'no_open':True}</attribute>
+					</xpath>
+	        	   	<xpath expr="//tree/field[@name='name']" position="attributes">
+	        	   	    <attribute name="invisible">1</attribute>
+	        	    </xpath>
+	        	    <xpath expr="//tree/field[@name='price_unit']" position="after">
+	        	        <field name='weight_fee' />
+	        	        <field name="item_fee" />
+	    	            <field name="standard_weight" />
+	        	        <field name="additional_fee" readonly='1'/>
+	        	        <field name='all_weights'  placeholder="input wait for weighing"/>
+	        	    </xpath>
+	        	    <xpath expr="//tree/field[@name='price_unit']" position="attributes">
+	        	       <attribute name="invisible">1</attribute>
+	        	    </xpath>
+	        	    <xpath expr="//tree/field[@name='tax_id']" position="attributes">
+	        	       <attribute name="invisible">1</attribute>
+	        	    </xpath>
+	        	    <xpath expr="//tree/field[@name='qty_invoiced']" position="attributes">
+	        	       <attribute name="invisible">1</attribute>
+	        	    </xpath>
+	        	    <xpath expr="//tree/field[@name='qty_delivered']" position="attributes">
+	        	       <attribute name="invisible">1</attribute>
+	        	    </xpath>
+	        	    <xpath expr="//notebook/page[last()]" position="after">
+	        	        <page string="customer ornament price">
+	        	        	<field name="material_price_line">
+	        	        		<tree string="customer ornament price" editable="bottom">
+	        	        			<field name="attribute_value_id" readonly='1'/>
+	        	        			<field name="price_discount"/>
+	        	        			<field name="price_unit" widget="monetary"/>
+	        	        		</tree>
+	        	        	</field>
+	        	        </page>
+	        	    </xpath>
+	        	    <field name="amount_total" position="after">
+	        	        <field name="total_qty" readonly='1'/>
+	        	        <field name="total_weight" readonly='1'/>
+	        	    </field>
+	        	    <field name="amount_untaxed" position="attributes">
+	        	        <attribute name='invisible'>1</attribute>
+	        	    </field>
+	        	    <field name="amount_tax" position="attributes">
+	        	        <attribute name='invisible'>1</attribute>
+	        	    </field>
+        	    </data>
+	        </field>
+	    </record>
+	    <record model="ir.ui.view" id="sale_order_tree_view">
+	        <field name="name">sale.order.tree.extend</field>
+	        <field name="model">sale.order</field>
+	        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+	        <field name="arch" type="xml">
+	            <field name="name" position="after">
+	                <field name="order_type"/>
+	            </field>
+	        </field>
+	    </record>
+	   
+	</data>
+</openerp>

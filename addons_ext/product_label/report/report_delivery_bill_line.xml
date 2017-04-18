@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <template id="report_product_label_template">
+	        <link rel="stylesheet" href="/product_label/static/src/css/product_label.css"/>
+            <script type="text/javascript" src='/product_label/static/src/js/jquery-barcode.js' />
+            <script type="text/javascript" src='/product_label/static/src/js/product.js' />
+	        <t t-foreach="docs" t-as="doc">
+	            <div class="page">
+	                <div t-if="doc.product_id">
+	                    <p t-field="doc.product_id.name"/>
+	                    <p t-field="doc.product_id.material"/>
+	                    <p ><span t-field="doc.actual_net_weight"></span>g</p>
+	                 	<br/>
+	                    <t t-set="default_code128" t-value="doc.default_code"></t>
+	                    
+	                    <div id="bcTarget" class="barcodeImg"></div>
+	                    <p t-field='doc.default_code' class='default-code'/>
+	                    <t t-if='doc.default_code'>
+	                        <p><t t-esc='doc.default_code'/></p>
+	                    </t>
+	                    
+	                </div>
+	            </div>
+	            
+		        
+	        </t>
+	        
+	    </template>
+	    <template id="report_product_variants_label_template">
+	        <t t-foreach="docs" t-as="doc">
+	            <div class="page">
+	                <div t-if="doc.product_id">
+	                    <p t-field="doc.product_id.name"/>
+	                    <p t-field="doc.product_id.material"/>
+	                    <p ><span t-field="doc.weight"></span>g</p>
+	                 	<br/>
+	                    <t t-set="default_code128" t-value="doc.product_id.default_code"></t>
+	                    <div id='code128' class="barcode2" ></div>
+	                    <img class="barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=1' % ('Code128', default_code128, 150, 25)"/>
+	                </div>
+	            </div>
+	            
+	        </t>
+	    </template>
+	   
+	   
+	 
+	    
+	</data>
+</openerp>

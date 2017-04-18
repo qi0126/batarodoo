@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_internal_trans_to_quality_internal_trans_to_quality,internal_trans_to_quality.internal_trans_to_quality,model_internal_trans_to_quality_internal_trans_to_quality,,1,0,0,0

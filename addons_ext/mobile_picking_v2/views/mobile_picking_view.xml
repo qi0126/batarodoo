@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Add package page-->
+        <record id="mobile_picking_v2_form" model="ir.ui.view">
+            <field name="name">Batar mobile picking form extend</field>
+            <field name="model">batar.mobile.picking</field>
+            <field name="inherit_id" ref="batar_mobile_picking.batar_mobile_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='lines']" position="before">
+                    <page name="packages" string="Package info" attrs="{'invisible': [('state', '=', 'draft')]}">
+                        <field name="package_ids">
+                            <tree name="package_line" editable="True" create="false">
+                                <field name="partner_id" invisible="1"/>
+                                <field name="name" readonly="1"/>
+                                <field name="product_code"/>
+                                <field name="qty"/>
+                                <field name="ref"/>
+                                <field name="weight"/>
+                                <button name="%(batar_package.action_split_package)d" type="action" string="Split Package" icon="terp-gtk-jump-to-ltr"
+                                attrs="{'invisible': [('qty', '=', 1)]}"/>
+                                <field name="net_weight"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="/form/header/field[@name='state']" position="before">
+                    <button name="package_print" type="object" string="Print Package" states="process,done"/>
+                    <button type="object" name="test_confirm" string="Confirm" invisible="0"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

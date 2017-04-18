@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_batar_order_method_batar_order_method,batar_order_method.batar_order_method,model_batar_order_method_batar_order_method,,1,0,0,0

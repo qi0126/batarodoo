@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template xml:space="preserve">
+    <t t-name="QutQualityTemplate">
+        <div>
+            <div id="page-body">
+                <div id="main-page-left">
+                    <t t-call="QutQualityLeftMenuInfo"/>
+                </div>
+                <div id="main-page-right">
+                    <nav class="navbar navbar-static-top " id="main-page-right-top"/>
+                    <div id="main-info">
+
+                    </div>
+                    <div id="main-info-action" class="text-center">
+
+                    </div>
+                    <div id="waring-info" class="text-center">
+
+                    </div>
+                </div>
+      		</div>
+        </div>
+    </t>
+    <t t-name="QutQualityLeftMenuInfo">
+        <div class="showking-logo">
+    		<img src="/out_picking_quality/static/src/img/showkinglogo.png"  width="70%"/>
+    	</div>
+        <div>
+            <ul class="list-group text-center">
+                <li class="list-group-item" id="search-wait-check-order">所有待验货单</li>
+                <li class="list-group-item" id="current-customer-wait-check-order">当前客户待验货单</li>
+                 <li class="list-group-item" id="current-customer-order-line">当前验货单明细</li>
+
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-center">当前客户</h3>
+            <ul class="list-group text-center">
+                <li class="list-group-item" id="current-check-customer">
+                    <t t-if="currentCustomer">
+                     <button class="currentCustomer-check order-check" t-att-id="currentCustomer.id">
+                    名称:<t t-esc="currentCustomer.name"/>
+                    <br/>
+                    电话:<t t-esc="currentCustomer.phone"/>
+                     </button>
+                    </t>
+                </li>
+            </ul>
+            <h3 class="text-center">当前订单</h3>
+            <t t-if="currentOrder">
+                <button class='text-center current-order' t-att-id="currentOrder.id"><t t-esc="currentOrder.name"/></button>
+            </t>
+            <h3 class="text-center">最近验货客户</h3>
+            <ul class="list-group text-center">
+                 <t t-if="lastCustomerList">
+                     <t t-foreach="lastCustomerList" t-as="lastCustomer">
+                         <li class="list-group-item"  >
+                            <button class="lastCustomer order-check" t-att-id="lastCustomer.id">
+                                名称:<t t-esc="lastCustomer.name"/>
+                                <br/>
+                                电话:<t t-esc="lastCustomer.phone"/>
+                            </button>
+                          </li>
+                    </t>
+                </t>
+            </ul>
+        </div>
+    </t>
+
+</template>

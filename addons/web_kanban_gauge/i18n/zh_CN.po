@@ -1,0 +1,39 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_kanban_gauge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-24 18:44+0800\n"
+"PO-Revision-Date: 2015-11-24 18:44+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:157
+#, python-format
+msgid "Click to change value"
+msgstr "点击来改变数值"
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:119
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "仅整数值有效"
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:119
+#, python-format
+msgid "Wrong value entered!"
+msgstr "输入值错误！"

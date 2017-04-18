@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<menuitem id="mobile_pick_root" name="Mobile Picking" sequence='1' parent="stock.menu_stock_root" />-->
+        <record id="batar_mobile_picking_form" model="ir.ui.view">
+            <field name="name">Mobile picking form</field>
+            <field name="model">batar.mobile.picking</field>
+            <field name="arch" type="xml">
+                <form name="mobile_pick_form">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group name="top">
+                            <group name="left">
+                                <field name="name"/>
+                                <field name="partner_id" domain="[('is_company','=',True),('customer','=',True)]" options="{'no_create':True,'no_open':True}"/>
+                            </group>
+                            <group name="right">
+                                <field name="user_id" options="{'no_create':True,'no_open':True}"  />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="lines" string="Lines">
+                                <field name="line_ids">
+                                    <tree create="false" edit="false">
+                                        <field name="default_code"/>
+                                        <field name="qty"/>
+                                        <field name="src_location"/>
+                                        <field name="des_location"/>
+                                        <field name="sequence"/>
+                                        <field name="is_return"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="pick_lines" string="Pick Lines">
+                                <field name="pick_ids" widget="one2many_list">
+                                    <tree create="false" edit="false">
+                                        <field name="name"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="batar_mobile_picking_tree" model="ir.ui.view">
+            <field name="name">batar mobile picking tree</field>
+            <field name="model">batar.mobile.picking</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="user_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id="action_batar_mobile_picking" name="Batar Mobile Pick" view_type="form" view_mode="tree,form" res_model="batar.mobile.picking"/>
+        <menuitem id="menu_batar_mobile_picking" action="action_batar_mobile_picking" parent="batar_stock_menu.batar_stock_menu_root" sequence="5"/>
+        <!-- PICKING 单据中添加 分拣员 项-->
+        <record id="mobile_picking_form_extend" model="ir.ui.view">
+            <field name="name">mobile pick form extend</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="mobile_user"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

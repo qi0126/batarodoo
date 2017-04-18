@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record id="batar_input_mobile_form_view" model="ir.ui.view">
+            <field name="name">Batar Input mobile form</field>
+            <field name="model">batar.input.mobile</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group name="top">
+                            <group name="left">
+                                <field name="name" readonly="1"/>
+                                <field name="assign_to"/>
+                                <field name="plate_id"/>
+                            </group>
+                            <group name="right">
+                                <field name="user_id"/>
+                                <!--<field name="partner_id"/>-->
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="lines" string="Lines">
+                                <field name="line_ids" >
+                                    <tree>
+                                        <field name="package"/>
+                                        <field name="product_id"/>
+                                        <field name="qty"/>
+                                        <field name="uom_id"/>
+                                        <field name="net_weight"/>
+                                        <!--<field name="gross_weight"/>-->
+                                        <field name="src_location"/>
+                                        <field name="location_id"/>
+                                        <field name="sequence"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page name="move_lines" string="Move Lines">
+                                <field name="move_ids">
+                                    <tree>
+                                        <field name="product_id"/>
+                                        <field name="product_uom_qty"/>
+                                        <field name="net_weight"/>
+                                        <field name="location_dest_id"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="batar_input_mobile_tree" model="ir.ui.view">
+            <field name="name">Batar Input Mobile Tree</field>
+            <field name="model">batar.input.mobile</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="assign_to"/>
+                    <!--<field name="partner_id"/>-->
+                    <field name="state"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id="action_input_mobile" res_model="batar.input.mobile" view_mode="tree,form" view_type="form" name="Input Mobile"/>
+        <menuitem id="menu_input_mobile" action="action_input_mobile" parent="batar_stock_menu.batar_stock_menu_root" sequence="1"/>
+
+        <!-- stock move add net_weight-->
+        <record id="batar_input_mobile_move_tree" model="ir.ui.view">
+            <field name="name">batar input mobile move tree</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_picking_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_uom_qty']" position="after">
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_input_mobile_move_from" model="ir.ui.view">
+            <field name="name">batar input mobile move form</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_id']" position="after">
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+        <!-- stock quant add net_weight -->
+        <record id="batar_input_mobile_quant_form" model="ir.ui.view">
+            <field name="name">batar input mobile quant form</field>
+            <field name="model">stock.quant</field>
+            <field name="inherit_id" ref="stock.view_stock_quant_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='qty']" position="after">
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_input_mobile_quant_tree" model="ir.ui.view">
+            <field name="name">batar input mobile quant tree</field>
+            <field name="model">stock.quant</field>
+            <field name="inherit_id" ref="stock.view_stock_quant_tree"/>
+            <field name="arch" type="xml">
+                <xpath  expr="//field[@name='qty']" position="after">
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

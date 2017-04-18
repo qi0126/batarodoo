@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Sequences for package order -->
+        <record id="seq_batar_package_order" model="ir.sequence">
+            <field name="name">Batar Package</field>
+            <field name="code">batar_package</field>
+            <field name="prefix">PACK%(year)s%(month)s-</field>
+            <field name="padding">0</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</openerp>

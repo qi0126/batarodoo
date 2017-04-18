@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Sequences for sample trans order -->
+        <record id="seq_sample_trans_order" model="ir.sequence">
+            <field name="name">Sample Trans</field>
+            <field name="code">sample_trans</field>
+            <field name="prefix">SampleT%(year)s%(month)s-</field>
+            <field name="padding">0</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</openerp>

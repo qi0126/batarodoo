@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record id="batar_sale_state_order_tree" model="ir.ui.view">
+            <field name="name">batar.sale.state.tree extend</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_status']" position="after">
+                    <field name="picking_state"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_sale_state_pick_form" model="ir.ui.view">
+            <field name="name">Batar sale state pick form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='do_unreserve']" position="after">
+                    <!--<button name="action_delivery_done" string="Delivery" type="object" states="done" attrs="{'invisible': [('is_delivery', '=', True)]}"/>-->
+                    <button name="action_delivery_done" string="Delivery" type="object" attrs="{'invisible': ['|', ('is_delivery', '=', True), ('state', '!=', 'done')]}"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_sale_state_pick_tree" model="ir.ui.view">
+            <field name="name">batar.sale.state.pick.tree extend</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.vpicktree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="decoration-success"> is_delivery==True</attribute>
+                </xpath>
+                <xpath expr="//tree" position="inside">
+                    <field name="is_delivery" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

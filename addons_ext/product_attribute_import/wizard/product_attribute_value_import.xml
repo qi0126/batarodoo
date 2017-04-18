@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id='product_attribute_value_import_form' model='ir.ui.view'>
+			<field name='name'>product attribute value import</field>
+			<field name='model'>product.attribute.value.import</field>
+			<field name='arch' type='xml'>
+				<form  string="product attribute value import">
+	    	        <group>
+	    	        	<group>
+	    	        		<field name="file" required="1"  save_as="yes" clear_btn="yes" select_file="yes"></field>
+	    	        		<field name="attribute_id" required="1" options="{'no_create':True,'no_open':True}"></field>
+	    	        		 
+	    	        	</group>
+	    	        	<group></group>
+	    	        </group>
+	    	        <footer>
+                        <button name="apply" string="Confirm Import" type="object" class="oe_highlight"/> 
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+	    	    </form>
+			</field>
+		</record>
+		<act_window 
+		    id="product_attribute_value_import_action"
+		    multi="True"
+		    key2="client_action_multi"
+		    name="product attribute value import"
+		    res_model="product.attribute.value.import"
+		    src_model="product.attribute.value"
+		    view_mode="form"
+		    target="new"
+		    view_type="form"/>
+		<menuitem id='product_attribute_value_import' sequence='9' name='product attribute value import' parent='product_menu.left_prod_config_main' action='product_attribute_value_import_action'/>
+		
+	</data>
+</openerp>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--paper-->
+        <record id="tag_paperformat" model="report.paperformat">
+            <field name="name">Product Tag</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="margin_top">1</field>
+            <field name="margin_bottom">1</field>
+            <field name="margin_left">1</field>
+            <field name="margin_right">1</field>
+            <field name="page_height">25</field>
+            <field name="page_width">28</field>
+            <field name="orientation">Portrait</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">80</field>
+        </record>
+        <!--report-->
+        <report
+            id="line_producttag"
+            string="Product Tag"
+            model="trans.mobile.lines"
+            report_type="qweb-pdf"
+            name="internal_trans_mobile.line_product_tag"
+            paperformat="internal_trans_mobile.tag_paperformat"
+        />
+    </data>
+</openerp>

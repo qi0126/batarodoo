@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_out_picking_quality_out_picking_quality,out_picking_quality.out_picking_quality,model_out_picking_quality,stock.group_stock_user,1,1,1,0
+access_last_check_customer,out_picking_quality.last_check_customer,model_last_check_customer,stock.group_stock_user,1,1,1,0

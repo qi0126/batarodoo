@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+product_template_batar_product_manager,product.template.batar.product.manager,product.model_product_template,base.batar_product_manager,1,1,1,0
+product_attribute_batar_product_manager,product.attribute manager,product.model_product_attribute,base.batar_product_manager,1,1,1,0
+product_product_batar_product_manager,product.product manager,product.model_product_product,base.batar_product_manager,1,1,1,0
+product_attribute_value_batar_product_manager,product.attribute.batar.product.manager value,product.model_product_attribute_value,base.batar_product_manager,1,1,1,0
+product_attribute_price_batar_product_manager,product.attribute.batar.product.manager price,product.model_product_attribute_price,base.batar_product_manager,1,1,1,0
+product_attribute_line_batar_product_manager,product.attribute.batar.product.manager line,product.model_product_attribute_line,base.batar_product_manager,1,1,1,0
+product_price_history_salemanager,prices.historybatar.product.manager,product.model_product_price_history,base.batar_product_manager,1,1,1,0
+stock_move_batar_product_manager,stock.movebatar.product.manager,stock.model_stock_move,base.batar_product_manager,1,1,1,0
+stock_inventory_batar_product_manager,stock.inventorybatar.product.manager,stock.model_stock_inventory,base.batar_product_manager,1,1,1,0
+stock_picking_batar_product_manager,stock.pickingbatar.product.manager,stock.model_stock_picking,base.batar_product_manager,1,1,1,1
+stock_warehouse_orderpoint_batar_product_manager,stock.warehouse.orderpointbatar.product.manager,stock.model_stock_warehouse_orderpoint,base.batar_product_manager,1,1,1,0

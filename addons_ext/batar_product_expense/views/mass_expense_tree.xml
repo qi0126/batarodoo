@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record id="mass_expense_tree_wizard_form" model="ir.ui.view">
+            <field name="name">mass.expense.tree.wizard.form</field>
+            <field name="model">batar.product.expense.tree</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="top">
+                        <group>
+                            <label for="is_item_fee"/>
+                            <div>
+                                <field name="is_item_fee"/>
+                                <field name="item_fee" attrs="{'invisible': [('is_item_fee', '=', False)]}"/>
+                            </div>
+                            <label for="is_weight_fee"/>
+                            <div>
+                                <field name="is_weight_fee"/>
+                                <field name="weight_fee" attrs="{'invisible': [('is_weight_fee', '=', False)]}"/>
+                            </div>
+                            <label for="is_additional_fee"/>
+                            <div>
+                                <field name="is_additional_fee"/>
+                                <field name="additional_fee" attrs="{'invisible': [('is_additional_fee', '=', False)]}"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="product_sample_location" domain="[('is_sample', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="is_active"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="confirm" type="object" string="Confirm" class="oe_highlight"/>
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_mass_expense_tree" model="ir.actions.act_window">
+            <field name="name">Mass expense</field>
+            <field name="res_model">batar.product.expense.tree</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="src_model">product.product</field>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+        <record model="ir.values" id="product_product_mass_expense">
+            <field name="model_id" ref="product.model_product_product" />
+            <field name="name">Mass expense</field>
+            <field name="key2">client_action_multi</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('action_mass_expense_tree'))" />
+            <field name="key">action</field>
+            <field name="model">product.product</field>
+        </record>
+    </data>
+</openerp>

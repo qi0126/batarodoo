@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_city_tree" model="ir.ui.view">
+            <field name="name">res.country.state.city.tree</field>
+            <field name='model'>res.country.state.city</field>
+            <field name='arch' type='xml'>
+                <tree string='city infos tree view'>
+                    <field name="country_id"/>
+                    <field name='province_id'/>
+                    <field name='name'/>
+                </tree>
+            </field>
+        </record>
+        <record id='view_city_form' model='ir.ui.view'>
+            <field name="name">res.country.state.city.tree</field>
+            <field name='model'>res.country.state.city</field>
+            <field name='arch' type='xml'>
+                <form string='city infos form view'>
+	                <group>
+	                    <field name="country_id"/>
+		                <field name='province_id'/>
+	                    <field name='name'/>
+	                </group>
+                </form>
+            </field>
+        </record>
+        <record id="action_city" model="ir.actions.act_window" >
+            <field name="name">city</field>
+            <field name="res_model">res.country.state.city</field>
+            <field name="view_mode">tree,form</field>
+            <field name='view_type'>form</field>
+            <field name="domain">[]</field>
+            <field name='help'>This is whole country city name</field>
+        </record>
+        <record id="action_city_view_tree" model="ir.actions.act_window.view">
+            <field name='view_mode'>tree</field>
+            <field name="sequence">1</field>
+            <field name="view_id" ref="view_city_tree"/>
+            <field name="act_window_id" ref="action_city"/>
+        </record>
+        <record id="action_city_view_form" model="ir.actions.act_window.view">
+            <field name='view_mode'>form</field>
+            <field name="sequence">1</field>
+            <field name="view_id" ref="view_city_form"/>
+            <field name="act_window_id" ref="action_city"/>
+        </record>
+        <menuitem 
+            id="menu_city" 
+            name="city" 
+            parent='base.menu_country_state_partner' 
+            web_icon="china_address,static/description/icon.png"
+            action='action_city'/>
+        
+        <record id="view_district_tree" model="ir.ui.view">
+            <field name="name">res.country.state.city.district.tree</field>
+            <field name='model'>res.country.state.city.district</field>
+            <field name='arch' type='xml'>
+                <tree string='district infos tree view'>
+                	<field name="country_id"/>
+		            <field name='province_id'/>
+                    <field name='city_id'/> 
+                    <field name='name'/>
+                </tree>
+            </field>
+        </record>
+        <record id='view_district_form' model='ir.ui.view'>
+            <field name="name">res.country.state.city.district.form</field>
+            <field name='model'>res.country.state.city.district</field>
+            <field name='arch' type='xml'>
+                <form string='district infos form view'>
+                	<group>
+                		<field name="country_id"/>
+		                <field name='province_id'/>
+	                    <field name='city_id'/> 
+	                    <field name='name'/>
+                    </group>
+                </form>
+            </field>
+        </record>
+         <record id="action_district" model="ir.actions.act_window" >
+            <field name="name">district</field>
+            <field name="res_model">res.country.state.city.district</field>
+            <field name="view_mode">tree,form</field>
+            <field name='view_type'>form</field>
+            <field name="domain">[]</field>
+            <field name='help'>This is whole country district name</field>
+        </record>
+        <record id="action_district_view_tree" model="ir.actions.act_window.view">
+            <field name='view_mode'>tree</field>
+            <field name="sequence">1</field>
+            <field name="view_id" ref="view_district_tree"/>
+            <field name="act_window_id" ref="action_district"/>
+        </record>
+        <record id="action_district_view_form" model="ir.actions.act_window.view">
+            <field name='view_mode'>form</field>
+            <field name="sequence">1</field>
+            <field name="view_id" ref="view_district_form"/>
+            <field name="act_window_id" ref="action_district"/>
+        </record>
+        <menuitem id="menu_district" name="district" parent="base.menu_country_state_partner" action='action_district'/>
+    </data>
+</openerp>

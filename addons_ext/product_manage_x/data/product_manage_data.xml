@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Sequences for product manage order -->
+        <record id="seq_product_manage_order" model="ir.sequence">
+            <field name="name">Product manage</field>
+            <field name="code">product_manage</field>
+            <field name="prefix">PM%(year)s%(month)s-</field>
+            <field name="padding">0</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</openerp>

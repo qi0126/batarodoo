@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mobile_pick_batar_mobile_manager,mobile.pick.batar.mobile.pick.manager,batar_mobile_pick.model_batar_mobile_pick,base.batar_mobile_pick_manager,1,1,1,0
+mobile_pick_line_batar_mobile_manager,mobile.pick.line.batar.mobile.pick.manager,batar_mobile_pick.model_mobile_pick_line,base.batar_mobile_pick_manager,1,1,1,0

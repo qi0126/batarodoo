@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_product_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-14 05:46+0000\n"
+"PO-Revision-Date: 2016-11-14 05:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_product_category
+#: model:ir.ui.view,arch_db:batar_product_category.batar_product_category_import_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_product_category
+#: model:ir.ui.view,arch_db:batar_product_category.batar_product_category_import_view
+msgid "Confirm Import"
+msgstr "确定导入"
+
+#. module: batar_product_category
+#: selection:batar.product.category.import,action:0
+msgid "Create"
+msgstr "创建"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_create_uid
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_create_date
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_display_name
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_file
+msgid "Excel File"
+msgstr "Excel文件"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_id
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category___last_update
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_write_uid
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_write_date
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_product_category
+#: model:ir.model,name:batar_product_category.model_product_template
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: batar_product_category
+#: selection:batar.product.category.import,action:0
+msgid "Update or Create"
+msgstr "更新或者创建"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_name
+#: model:ir.model.fields,field_description:batar_product_category.field_product_template_batar_cate_id
+msgid "batar category name"
+msgstr "饰品分类"
+
+#. module: batar_product_category
+#: model:ir.ui.menu,name:batar_product_category.menu_batar_product_category
+msgid "batar product category"
+msgstr "饰品分类"
+
+#. module: batar_product_category
+#: model:ir.actions.act_window,name:batar_product_category.action_batar_product_category_import
+#: model:ir.ui.menu,name:batar_product_category.menu_batar_product_category_import
+#: model:ir.ui.view,arch_db:batar_product_category.batar_product_category_import_view
+msgid "batar product category import"
+msgstr "饰品分类导入"
+
+#. module: batar_product_category
+#: model:ir.actions.act_window,name:batar_product_category.batar_product_category_action
+#: model:ir.model,name:batar_product_category.model_batar_product_category
+#: model:ir.ui.view,arch_db:batar_product_category.batar_product_category_form_view
+msgid "batar.product.category"
+msgstr "饰品分类"
+
+#. module: batar_product_category
+#: model:ir.model,name:batar_product_category.model_batar_product_category_import
+msgid "batar.product.category.import"
+msgstr "饰品分类导入"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_child_id
+msgid "child category name"
+msgstr "子类"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_full_path
+msgid "full path"
+msgstr "全路径"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_import_action
+msgid "import data action"
+msgstr "导入操作"
+
+#. module: batar_product_category
+#: model:ir.model.fields,field_description:batar_product_category.field_batar_product_category_parent_id
+msgid "parent category name"
+msgstr "父类"
+

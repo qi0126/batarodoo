@@ -1,0 +1,291 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_manage_x
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-26 06:55+0000\n"
+"PO-Revision-Date: 2016-12-26 06:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_manage_x
+#: model:ir.model.fields,help:product_manage_x.field_product_manage_wizard_type
+msgid "\n"
+"                            * 月份（Month）: 30天内，\n"
+"                            * 季度（Quarter）: 当前季度，如果本月是当前季度的第一个月份，则计算上个季度，\n"
+"                            * 年度（Year）: 本年度，如果本月是本年度的第一个月份，则计算上年度，\n"
+"                            * 自定义（Customer）: 自定义时间段，\n"
+"                            "
+msgstr "\n"
+"                            * 月份（Month）: 30天内，\n"
+"                            * 季度（Quarter）: 当前季度，如果本月是当前季度的第一个月份，则计算上个季度，\n"
+"                            * 年度（Year）: 本年度，如果本月是本年度的第一个月份，则计算上年度，\n"
+"                            * 自定义（Customer）: 自定义时间段，\n"
+"                            "
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_wizard_form
+msgid "0.01-100"
+msgstr "0.01-100"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_view_form
+msgid "Active False"
+msgstr "下架"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_wizard_form
+msgid "Auto data"
+msgstr "添加产品"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_wizard_form
+msgid "Confirm"
+msgstr "确认"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_create_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_create_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_create_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_create_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_create_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_create_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: product_manage_x
+#: selection:product.manage.wizard,type:0
+msgid "Customer"
+msgstr "自定义"
+
+#. module: product_manage_x
+#: model:ir.model.fields,help:product_manage_x.field_product_manage_line_uom_id
+#: model:ir.model.fields,help:product_manage_x.field_product_manage_wizard_line_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "所有库存操作的默认计量单位"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_display_name
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_display_name
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_display_name
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: product_manage_x
+#: selection:product.manage,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: product_manage_x
+#: selection:product.manage,state:0
+msgid "Draft"
+msgstr "新建"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_end_date
+msgid "End Date"
+msgstr "结束日期"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_search_view
+msgid "Filter Draft"
+msgstr "新建"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_id
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_id
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_id
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage___last_update
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line___last_update
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard___last_update
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_write_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_write_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_write_uid
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_write_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_write_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_write_date
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: product_manage_x
+#: model:ir.module.category,name:product_manage_x.module_category_product_manage
+msgid "Logistics"
+msgstr "物流组"
+
+#. module: product_manage_x
+#: model:ir.module.category,description:product_manage_x.module_category_product_manage
+msgid "Logistics department"
+msgstr "物流部权限"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_user_id
+msgid "Manage User"
+msgstr "制单人"
+
+#. module: product_manage_x
+#: selection:product.manage.wizard,type:0
+msgid "Month"
+msgstr "按月份"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_name
+msgid "Name"
+msgstr "名称"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_order_id
+msgid "Order"
+msgstr "订单"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_product_percent
+msgid "Per Percent"
+msgstr "销售量"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_percent
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_percent
+msgid "Percent"
+msgstr "销售量"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_wizard_form
+msgid "Percent(%)"
+msgstr "销售量(%)"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_wizard_form
+msgid "Persent(%)"
+msgstr "销售量(%)"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_view_form
+msgid "Prepare Product"
+msgstr "筛选产品"
+
+#. module: product_manage_x
+#: selection:product.manage,state:0
+msgid "Process"
+msgstr "处理"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_product_id
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_ids
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_view_form
+msgid "Product Lines"
+msgstr "产品明细"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_order_id
+#: model:ir.ui.menu,name:product_manage_x.root_product_manage
+msgid "Product Manage"
+msgstr "商品维护"
+
+#. module: product_manage_x
+#: model:ir.actions.act_window,name:product_manage_x.action_product_manage
+#: model:ir.ui.menu,name:product_manage_x.menu_product_manage
+msgid "Product active"
+msgstr "商品下架"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_ids
+msgid "Product line"
+msgstr "产品明细"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_qty
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: product_manage_x
+#: selection:product.manage.wizard,type:0
+msgid "Quarter"
+msgstr "按季度"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_start_date
+msgid "Start Date"
+msgstr "开始日期"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_state
+msgid "State"
+msgstr "状态"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_type
+msgid "Type"
+msgstr "筛选方式"
+
+#. module: product_manage_x
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_line_uom_id
+#: model:ir.model.fields,field_description:product_manage_x.field_product_manage_wizard_line_uom_id
+msgid "Uom"
+msgstr "单位"
+
+#. module: product_manage_x
+#: model:ir.ui.view,arch_db:product_manage_x.product_manage_search_view
+msgid "User"
+msgstr "制单人"
+
+#. module: product_manage_x
+#: selection:product.manage.wizard,type:0
+msgid "Year"
+msgstr "按年度"
+
+#. module: product_manage_x
+#: model:ir.model,name:product_manage_x.model_product_manage
+msgid "product.manage"
+msgstr "product.manage"
+
+#. module: product_manage_x
+#: model:ir.model,name:product_manage_x.model_product_manage_line
+msgid "product.manage.line"
+msgstr "product.manage.line"
+
+#. module: product_manage_x
+#: model:ir.model,name:product_manage_x.model_product_manage_wizard
+msgid "product.manage.wizard"
+msgstr "product.manage.wizard"
+
+#. module: product_manage_x
+#: model:ir.model,name:product_manage_x.model_product_manage_wizard_line
+msgid "product.manage.wizard.line"
+msgstr "product.manage.wizard.line"
+

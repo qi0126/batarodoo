@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="product_label_tree" model="ir.ui.view">
+	    	<field name="name">product label</field>
+	    	<field name="model">product.label</field>
+	    	<field name="arch" type="xml">
+	    	    <tree string="product label" editable="top">
+	    	        <field name="product_id" options="{'no_create':True,'no_open': True}"/>
+	    	        <field name="weight"/>
+	    	    </tree>
+	    	</field>
+	    </record>
+	    <record id="product_label_action" model="ir.actions.act_window">
+		    <field name="name">product label</field>
+		    <field name="res_model">product.label</field>
+		    <field name="view_model">tree</field>
+		    <field name="view_type">form</field>
+	    </record>
+	    <menuitem id="product_label_menu" action="product_label_action" parent="product_menu.left_menu_product_products" sequence="9" name="Print Product Label"/>
+	</data>
+</openerp>

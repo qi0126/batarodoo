@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="product_template_attribute_import_view" model="ir.ui.view">
+            <field name="name">product template attribute import</field>
+            <field name="model">product.template.attribute.import</field>
+            <field name="arch" type="xml">
+                <form string="product template attribute import">
+                    <group>
+                        <group>
+                            <field name="file" required="1"/>
+                        </group>
+                        <group/>
+                         <group>
+                             <field name="attribute_id" required="1" options="{'no_create': True, 'no_open': True}" />
+                         </group>
+                    </group>
+                    <footer>
+                        <button name="apply" string="Confirm Import" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window
+			id="action_product_template_attribute_import"
+			multi="False"
+			key2="client_action_relate"
+			name="product template attribute import"
+			res_model="product.template.attribute.import"
+			view_mode="form"
+			target="new"
+			context="{'default_action':'create'}"
+			view_type="form"/>
+        <menuitem id="menu_product_template_attribute_import" sequence='9' name="product template attribute import" parent="product_menu.left_menu_product_templates" action="action_product_template_attribute_import" />
+    </data>
+</openerp>

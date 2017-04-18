@@ -1,0 +1,486 @@
+# Chinese (Simplified) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-14 23:10+0800\n"
+"PO-Revision-Date: 2015-11-19 20:05+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:58+0000\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: project_timesheet
+#: code:addons/project_timesheet/project_timesheet.py:27
+#, python-format
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Record your timesheets for the project "
+"'%s'.</p>"
+msgstr "<p class=\"oe_view_nocontent_create\">记录你为项目所做的计工单 '%s'.</p>"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_config_settings_group_tasks_work_on_tasks
+msgid "Activity Log"
+msgstr "活动日志"
+
+#. module: project_timesheet
+#: model:ir.model.fields,help:project_timesheet.field_project_config_settings_group_tasks_work_on_tasks
+msgid "Allows you to compute work on tasks."
+msgstr "允许你计算花在任务上的劳动。"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_analytic_account_id
+msgid "Analytic Account"
+msgstr "辅助核算项"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_account_analytic_line_form_inherit_account_id
+msgid "Analytic Account/Project"
+msgstr "辅助核算项/项目"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "辅助核算明细"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_account_analytic_line_search_account_inherit
+#: model:ir.ui.view,arch_db:project_timesheet.view_account_analytic_line_tree_inherit_account_id
+msgid "Analytic account/project"
+msgstr "辅助核算项目"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_hours_delay
+msgid "Avg. Plan.-Eff."
+msgstr "计划实际平均偏差"
+
+#. module: project_timesheet
+#: model:ir.model.fields,help:project_timesheet.field_project_task_delay_hours
+msgid ""
+"Computed as difference between planned hours by the project manager and the "
+"total hours of the task."
+msgstr "计算项目经理估算的时间和实际花费的时间的差"
+
+#. module: project_timesheet
+#: model:ir.model.fields,help:project_timesheet.field_project_task_total_hours
+msgid "Computed as: Time Spent + Remaining Time."
+msgstr "计算:已花费的时间 + 剩余的时间"
+
+#. module: project_timesheet
+#: model:ir.model.fields,help:project_timesheet.field_project_task_effective_hours
+msgid "Computed using the sum of the task work done."
+msgstr "计算已经完成任务的总和"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_delay_hours
+msgid "Delay Hours"
+msgstr "延迟的小时数"
+
+#. module: project_timesheet
+#: selection:project.config.settings,group_tasks_work_on_tasks:0
+msgid "Do not log work activities on task"
+msgstr "不记录在任务上的工作活动"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_form2_inherited
+msgid "Duration"
+msgstr "用时"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_hours_effective
+msgid "Effective Hours"
+msgstr "有效时间"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_effective_hours
+msgid "Hours Spent"
+msgstr "花费时间"
+
+#. module: project_timesheet
+#: model:ir.model.fields,help:project_timesheet.field_project_task_progress
+msgid ""
+"If the task has a progress of 99.99% you should close the task if it's finished "
+"or reevaluate the time"
+msgstr "如果该任务已完成了99.99%，那么你可以结束该任务或重新评估时间。"
+
+#. module: project_timesheet
+#: selection:project.config.settings,group_tasks_work_on_tasks:0
+msgid "Log work activities on tasks"
+msgstr "记录在任务上的工作活动"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_res_partner
+msgid "Partner"
+msgstr "业务伙伴"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_hours_planned
+msgid "Planned Hours"
+msgstr "计划的小时数"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_progress
+msgid "Progress"
+msgstr "进度"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_project_project
+msgid "Project"
+msgstr "项目"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_remaining_hours
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_tree2_inherited
+msgid "Remaining Hours"
+msgstr "剩余时数"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_tree2_inherited
+msgid "Spent Hours"
+msgstr "花费时间"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_project_task
+#: model:ir.model.fields,field_description:project_timesheet.field_account_analytic_line_task_id
+msgid "Task"
+msgstr "任务"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_project_user_graph_inherited
+msgid "Tasks Analysis"
+msgstr "任务分析"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_report_project_task_user
+msgid "Tasks by user and project"
+msgstr "用户和项目的任务"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_form2_inherited
+msgid "Timesheet Activities"
+msgstr "计工单活动"
+
+#. module: project_timesheet
+#: code:addons/project_timesheet/project_timesheet.py:32
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_timesheet_ids
+#: model:ir.ui.view,arch_db:project_timesheet.project_invoice_form
+#: model:ir.ui.view,arch_db:project_timesheet.view_project_kanban_inherited
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_form2_inherited
+#, python-format
+msgid "Timesheets"
+msgstr "计工单"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_total_hours
+msgid "Total"
+msgstr "总计"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_report_project_task_user_total_hours
+msgid "Total Hours"
+msgstr "总工时"
+
+#. module: project_timesheet
+#: model:ir.ui.view,arch_db:project_timesheet.view_task_form2_inherited
+msgid "Total time"
+msgstr "总时间"
+
+#. module: project_timesheet
+#: model:ir.model.fields,field_description:project_timesheet.field_project_task_progress
+msgid "Working Time Progress (%)"
+msgstr "工作时间进度（％）"
+
+#. module: project_timesheet
+#: code:addons/project_timesheet/project_timesheet.py:133
+#, python-format
+msgid ""
+"You cannot delete a partner which is assigned to project, but you can uncheck "
+"the active box."
+msgstr "你不能删除已被指派给项目的业务伙伴，但你可以不选中“可用”框。"
+
+#. module: project_timesheet
+#: model:ir.model,name:project_timesheet.model_project_config_settings
+msgid "project.config.settings"
+msgstr "project.config.settings"
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to add a customer contract.\n"
+#~ "              </p><p>\n"
+#~ "                You will find here the contracts related to your customer\n"
+#~ "                projects in order to track the invoicing progress.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "               单击添加 客户合同 联系人。\n"
+#~ "              </p><p>\n"
+#~ "                为了跟踪开票进程，你将在这里找到跟客户项目相关的合同.\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "                You will find here timesheets and purchases you did for "
+#~ "contracts that can be reinvoiced to the customer.\n"
+#~ "                If you want to record new jobs to invoice, you should use the "
+#~ "timesheet menu instead.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p>\n"
+#~ "                你可以在这里找到与合同相关的计工单和采购，它们可以重新开发票给"
+#~ "客户。\n"
+#~ "        如果你要记录需要开票的新工作，你应该使用计工单菜单。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid ""
+#~ "<p>Timesheets on this project may be invoiced to %s, according to the terms "
+#~ "defined in the contract.</p>"
+#~ msgstr "<p>根据合同的条款约定，项目的计工单可开票给 %s </p>"
+
+#~ msgid "Billable"
+#~ msgstr "应记账"
+
+#~ msgid "Cancelled"
+#~ msgstr "已被取消"
+
+#~ msgid "Closed"
+#~ msgstr "已关闭"
+
+#~ msgid "Contract Status"
+#~ msgstr "合同状态"
+
+#~ msgid "Customer Projects"
+#~ msgstr "客户项目"
+
+#~ msgid "Hours"
+#~ msgstr "小时"
+
+#~ msgid "In Progress"
+#~ msgstr "进行中"
+
+#~ msgid "Invoice Tasks"
+#~ msgstr "按任务开票"
+
+#~ msgid "New"
+#~ msgstr "新建"
+
+#~ msgid "Percent of tasks closed according to the total of tasks todo."
+#~ msgstr "已结束的任务占全部要做任务的百分比"
+
+#~ msgid "Planned Time"
+#~ msgstr "计划的时间"
+
+#~ msgid ""
+#~ "Sum of planned hours of all tasks related to this project and its child "
+#~ "projects."
+#~ msgstr "此项目及其子项目的所有相关任务的计划工时的总和"
+
+#~ msgid ""
+#~ "Sum of spent hours of all tasks related to this project and its child "
+#~ "projects."
+#~ msgstr "此项目及其子项目的所有相关任务的花费的工时总和"
+
+#~ msgid ""
+#~ "Sum of total hours of all tasks related to this project and its child "
+#~ "projects."
+#~ msgstr "此项目及其子项目的所有相关任务的工时总和"
+
+#~ msgid "Template"
+#~ msgstr "模板"
+
+#~ msgid "Time Spent"
+#~ msgstr "花费的时间"
+
+#~ msgid "To Renew"
+#~ msgstr "续签"
+
+#~ msgid ""
+#~ "To invoice or setup invoicing and renewal options, go to the related contract:"
+#~ msgstr "为了开票或设置开票和变更选项，你可以跳转到相关合同："
+
+#~ msgid "Total Time"
+#~ msgstr "总时间"
+
+#~ msgid "Total cost"
+#~ msgstr "总成本"
+
+#~ msgid "onchange_project(project_id)"
+#~ msgstr "项目的变化（项目_id）"
+
+#~ msgid "Invoicing"
+#~ msgstr "开票"
+
+#~ msgid "Please define employee for user \"%s\". You must create one."
+#~ msgstr "请为用户 \"%s\"定义员工。你必须创建一个。"
+
+#~ msgid ""
+#~ "Please define journal on the related employee.\n"
+#~ "Fill in the HR Settings tab of the employee form."
+#~ msgstr ""
+#~ "请在相关的员工上定义分录,\n"
+#~ "填在员工表单的计工单标签。"
+
+#~ msgid ""
+#~ "Please define product and product category property account on the related "
+#~ "employee.\n"
+#~ "Fill in the HR Settings of the employee form."
+#~ msgstr ""
+#~ "请在相关的员工上面定义产品和产品分类的会计科目属性，\n"
+#~ "填在员工窗体的人力资源设置里。"
+
+#~ msgid ""
+#~ "Please define product and product category property account on the related "
+#~ "employee.\n"
+#~ "Fill in the HR Settings tab of the employee form."
+#~ msgstr ""
+#~ "请在相关的员工上面定义产品和产品分类属性科目。\n"
+#~ "填在员工表单的人力资源标签。"
+
+#~ msgid "Project Task Work"
+#~ msgstr "任务进度"
+
+#~ msgid "Related Timeline Id"
+#~ msgstr "有关的时间ID"
+
+#~ msgid "Sign in / Sign out by Project"
+#~ msgstr "项目用时记录"
+
+#~ msgid ""
+#~ "You cannot select a Analytic Account which is in Close or Cancelled state."
+#~ msgstr "你不能选择关闭或者取消状态的辅助核算项"
+
+#~ msgid "April"
+#~ msgstr "四月"
+
+#~ msgid "August"
+#~ msgstr "八月"
+
+#~ msgid "Bad Configuration!"
+#~ msgstr "设置错误!"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "December"
+#~ msgstr "十二月"
+
+#~ msgid "February"
+#~ msgstr "二月"
+
+#~ msgid "Group By"
+#~ msgstr "分组按"
+
+#~ msgid "Group by month of date"
+#~ msgstr "按月分组"
+
+#~ msgid "Group by year of date"
+#~ msgstr "按年分组"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Invalid Action!"
+#~ msgstr "非法的动作"
+
+#~ msgid "Invalid Analytic Account!"
+#~ msgstr "无效的辅助核算项1"
+
+#~ msgid "January"
+#~ msgstr "一月"
+
+#~ msgid "July"
+#~ msgstr "七月"
+
+#~ msgid "June"
+#~ msgstr "六月"
+
+#~ msgid "March"
+#~ msgstr "三月"
+
+#~ msgid "May"
+#~ msgstr "五月"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "November"
+#~ msgstr "十一月"
+
+#~ msgid "October"
+#~ msgstr "十月"
+
+#~ msgid ""
+#~ "Please define product and product category property account on the related "
+#~ "employee.\n"
+#~ "Fill in the timesheet tab of the employee form."
+#~ msgstr ""
+#~ "请在相关的员工上面定义产品和产品分类属性科目。\n"
+#~ "填在员工表单的计工单标签。"
+
+#~ msgid "September"
+#~ msgstr "九月"
+
+#~ msgid "Task Hours Per Month"
+#~ msgstr "每月的任务工时"
+
+#~ msgid "Timesheet Hours"
+#~ msgstr "计工单工时"
+
+#~ msgid "User"
+#~ msgstr "用户"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Task invoice"
+#~ msgstr "任务结算"
+
+#~ msgid "Task Work"
+#~ msgstr "任务进展"
+
+#~ msgid "Billable Project"
+#~ msgstr "应记账的项目"
+
+#~ msgid "Complete Your Timesheet."
+#~ msgstr "完成任务"
+
+#~ msgid "Task encoding"
+#~ msgstr "输入任务"
+
+#~ msgid "Task summary is comes into the timesheet line"
+#~ msgstr "任务工时合计已进入计工单"
+
+#~ msgid "Trigger Invoice"
+#~ msgstr "触发发票"
+
+#~ msgid "report.timesheet.task.user"
+#~ msgstr "report.timesheet.task.user"
+
+#~ msgid "Encode how much time u spent on your task"
+#~ msgstr "输入你在此任务上花费的工时"
+
+#~ msgid "Timesheet/Task hours Report Per Month"
+#~ msgstr "按月输出计工单和任务工时"
+
+#~ msgid "Trigger invoices from sales order lines"
+#~ msgstr "从销售订单行触发开票"
+
+#~ msgid "Work on task"
+#~ msgstr "任务进展"
+
+#~ msgid "After task is completed, Create its invoice."
+#~ msgstr "当任务完成时创建相关发票"
+
+#~ msgid "Fill Timesheet"
+#~ msgstr "输入计工单"

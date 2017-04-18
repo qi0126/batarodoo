@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="batar_stock_return_tree" model="ir.ui.view">
+            <field name="name">batar stock return tree</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='pack_operation_product_ids']/tree//field[@name='qty_done']" position="after">
+                    <field name="qty_return"/>
+                </xpath>
+                <xpath expr="//field[@name='pack_operation_product_ids']/tree" position="attributes">
+                    <attribute name="decoration-danger">qty_done&lt;1</attribute>
+                    <attribute name="decoration-primary">qty_done&gt;product_qty</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_stock_return_form" model="ir.ui.view">
+            <field name="name">Batar stock return form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='do_unreserve']" position="after">
+                    <button name="%(action_batar_return_wizard)d" string="Return" type="action" states="done,cancel"/>
+                </xpath>
+                <xpath expr="//page[@name='extra']" position="before">
+                    <page string="Return Info" name="return">
+                        <field name="adjustment_id">
+                            <tree name="return order">
+                                <field name="name"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//button[@name='%(stock.act_stock_return_picking)d']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='do_new_transfer']" position="attributes">
+                    <attribute name="confirm">是否确认所有操作明细正确输入了完成数？</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_return_adjustment_form" model="ir.ui.view">
+            <field name="name">batar return adjustment form extend</field>
+            <field name="model">batar.location.adjustment</field>
+            <field name="inherit_id" ref="batar_adjustment.batar_location_adjustment_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="reverse_id" string="Ref"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_location_adjustment_tree" model="ir.ui.view">
+            <field name="name">batar location adjustment tree</field>
+            <field name="model">batar.location.adjustment</field>
+            <field name="inherit_id" ref="batar_adjustment.batar_location_adjustment_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='location_id']" position="after">
+                    <field name="reverse_id" string="Ref"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_return_sale_order_form" model="ir.ui.view">
+            <field name="name">batar return sale order form extend</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="decoration-danger">picking_state=='another'</attribute>
+                </xpath>
+                <xpath expr="//tree" position="inside">
+                    <field name="picking_state" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	   <record id="customer_import_view" model="ir.ui.view">
+	   	<field name="name">customer.import.form.view</field>
+	   	<field name="model">customer.import</field>
+	   	<field name="arch" type="xml">
+	   	   <form  string="Customer Import">
+                    <group>
+                        <group>
+                            <field name="file" required="1"></field>
+                            <field name="action" required="1" readonly="1"></field>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="apply" string="Confirm Import" type="object" class="oe_highlight"/> 
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+	   	</field>
+	   </record>
+	   <act_window
+	       id='action_customer_import'
+	       multi="False"
+	       key2="client_action_relate"
+	       name='Customer Import'
+	       res_model='customer.import'
+	       view_mode='form'
+	       target='new'
+	       context="{'default_action':'create'}"
+	       view_type='form'/>
+	   <menuitem id='menu_customer_import' sequence='9' name='Customer Import' parent='base.menu_sales' action='action_customer_import'/>
+	   
+	</data>
+</openerp>

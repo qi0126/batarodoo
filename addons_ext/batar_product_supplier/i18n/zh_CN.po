@@ -1,0 +1,178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_product_supplier
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-07 02:02+0000\n"
+"PO-Revision-Date: 2017-01-07 02:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_product_supplier
+#: model:ir.ui.view,arch_db:batar_product_supplier.product_supplier_import_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_product_supplier
+#: model:ir.ui.view,arch_db:batar_product_supplier.product_supplier_import_view
+msgid "Confirm Import"
+msgstr "确认导入"
+
+#. module: batar_product_supplier
+#: selection:product.supplier.import,action:0
+msgid "Create"
+msgstr "创建"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_create_uid
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_create_date
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_currency_id
+msgid "Currency"
+msgstr "币别"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,help:batar_product_supplier.field_product_supplier_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "所有库存操作的默认计量单位"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_delay
+msgid "Delivery Lead Time"
+msgstr "收货提前期"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_display_name
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_file
+msgid "Excel File"
+msgstr "Excel文件"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_id
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier___last_update
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_write_uid
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_write_date
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_price
+msgid "Price"
+msgstr "价格"
+
+#. module: batar_product_supplier
+#: model:ir.model,name:batar_product_supplier.model_product_product
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,help:batar_product_supplier.field_product_supplier_price
+msgid "The price to purchase a product"
+msgstr "购买一个产品的价格"
+
+#. module: batar_product_supplier
+#: selection:product.supplier.import,action:0
+msgid "Update or Create"
+msgstr "更新/创建"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_import_action
+msgid "import data action"
+msgstr "导入数据"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_min_qty
+msgid "min order quantity"
+msgstr "最小数量"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_product_id
+msgid "product"
+msgstr "产品"
+
+#. module: batar_product_supplier
+#: model:ir.actions.act_window,name:batar_product_supplier.action_product_supplier_import
+#: model:ir.ui.menu,name:batar_product_supplier.menu_product_supplier_import
+#: model:ir.ui.view,arch_db:batar_product_supplier.product_supplier_import_view
+msgid "product supplier import"
+msgstr "供应商导入"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_uom_id
+msgid "product uom"
+msgstr "单位"
+
+#. module: batar_product_supplier
+#: model:ir.model,name:batar_product_supplier.model_product_supplier
+msgid "product.supplier"
+msgstr "product.supplier"
+
+#. module: batar_product_supplier
+#: model:ir.model,name:batar_product_supplier.model_product_supplier_import
+msgid "product.supplier.import"
+msgstr "product.supplier.import"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_name
+msgid "supplier"
+msgstr "供应商"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_product_supplier_info
+#: model:ir.ui.view,arch_db:batar_product_supplier.batar_product_supplier_form_view
+#: model:ir.ui.view,arch_db:batar_product_supplier.product_supplier_form_view
+msgid "supplier info"
+msgstr "供应商"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_supplier_product_code
+msgid "supplier product code"
+msgstr "供应商产品编码"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_supplier_product_name
+msgid "supplier product name"
+msgstr "供应商产品名称"
+
+#. module: batar_product_supplier
+#: model:ir.model.fields,field_description:batar_product_supplier.field_product_supplier_sequence
+msgid "supplier sequence"
+msgstr "优先级"
+

@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-07 21:51+0800\n"
+"PO-Revision-Date: 2016-01-07 21:51+0800\n"
+"Last-Translator: 保定-粉刷匠 <openerp@126.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "辅助核算明细"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_hr_employee
+msgid "Employee"
+msgstr "员工"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_product_template
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_sale_order
+msgid "Sales Order"
+msgstr "销售订单"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "销售订单明细"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.project_time_mode_id_duplicate_xmlid
+msgid ""
+"This will set the unit of measure used in projects and tasks.\n"
+"If you use the timesheet linked to projects (project_timesheet module), "
+"don't forget to setup the right unit of measure in your employees."
+msgstr ""
+"此操作用于设置项目和任务的所采用的计量单位。\n"
+"如果你安装了project_timesheet模块，工作时间表会与项目连接，请记得在员工设"
+"置中选择正确的计量单位。"
+
+#. module: sale_timesheet
+#: model:ir.ui.view,arch_db:sale_timesheet.view_order_form_inherit_sale_timesheet
+msgid "Timesheet"
+msgstr "计工单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_hr_employee_timesheet_cost
+msgid "Timesheet Cost"
+msgstr "工时费用"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.project_time_mode_id_duplicate_xmlid
+msgid "Timesheet UoM"
+msgstr "计工单单位"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_timesheet_count
+msgid "Timesheet activities"
+msgstr "活动的计工单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_timesheet_ids
+msgid "Timesheet activities associated to this sale"
+msgstr "与此订单相关正在进行的的计工单"
+
+#. module: sale_timesheet
+#: model:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_employee_extd_form
+msgid "Timesheets"
+msgstr "计工单"
+
+#. module: sale_timesheet
+#: code:addons/sale_timesheet/models/sale_timesheet.py:115
+#, python-format
+msgid ""
+"You can use only one product on timesheet within the same sale order. You "
+"should split your order to include only one contract based on time and "
+"material."
+msgstr ""
+"在同一个销售订单的计工单中你只能分配一个产品。你应该根据时间和材料（只包括"
+"一个合同）拆分你的订单。"

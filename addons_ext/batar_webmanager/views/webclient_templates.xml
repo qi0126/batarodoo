@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <template id="batar_webmanager.login_out" inherit_id="web.login_layout">
+            <xpath expr="//a[@href='/web/database/manager']" position="replace">
+                <a href="http://www.batar.cn" target="_blank">关于Batar</a>
+            </xpath>
+        </template>
+    </data>
+</openerp>

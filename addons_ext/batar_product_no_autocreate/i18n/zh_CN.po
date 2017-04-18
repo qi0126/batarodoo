@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_product_no_autocreate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160321\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-15 00:54+0000\n"
+"PO-Revision-Date: 2016-06-15 00:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model.fields,field_description:batar_product_no_autocreate.field_product_product_variants_create_auto
+#: model:ir.model.fields,field_description:batar_product_no_autocreate.field_product_template_variants_create_auto
+#: selection:product.template,variants_create_auto:0
+msgid "Create Auto"
+msgstr "自动创建"
+
+#. module: batar_product_no_autocreate
+#: selection:product.template,variants_create_auto:0
+msgid "Don't create Auto"
+msgstr "取消自动创建"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model.fields,field_description:batar_product_no_autocreate.field_product_category_no_create_variants
+msgid "Don't create variants automatically"
+msgstr "不自动创建明细产品"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model,name:batar_product_no_autocreate.model_product_product
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model,name:batar_product_no_autocreate.model_product_category
+msgid "Product Category"
+msgstr "产品分类"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model,name:batar_product_no_autocreate.model_product_template
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: batar_product_no_autocreate
+#: model:ir.model.fields,help:batar_product_no_autocreate.field_product_category_no_create_variants
+msgid "This check disables the automatic creation of product variants for all the products of this category."
+msgstr "勾选取消该类产品根据属性自动创建明细产品的功能."
+
+#. module: batar_product_no_autocreate
+#: selection:product.template,variants_create_auto:0
+msgid "background auto create"
+msgstr "后台自动创建"
+
+#. module: batar_product_no_autocreate
+#: selection:product.template,variants_create_auto:0
+msgid "use the category value"
+msgstr "基于产品分类的勾选"
+

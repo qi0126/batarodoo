@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <menuitem  id="menu_batar" sequence="15" name="Batar payment"/>
+        <menuitem id="menu_batar_lailiao" sequence="1" name="Lailiao" parent="menu_batar"/>
+
+        <record id="view_batar_lailiao_form" model="ir.ui.view">
+            <field name="name">Batar Lailiao Form</field>
+            <field name="model">batar.lailiao</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="do_done" type="object" string="Confirm" class="oe_highlight" states="draft"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="partner_id"/>
+                                <label for="weight"/>
+                                <div>
+                                    <field name="weight" class="oe_inline"/> g
+                                </div>
+                                <field name="assay"/>
+                            </group>
+                            <group>
+                                <label for="debit"/>
+                                <div>
+                                    <field name="debit" class="oe_inline"/> g
+                                </div>
+                                <label for="credit"/>
+                                <div>
+                                    <field name="credit" class="oe_inline"/> g
+                                </div>
+                                <field name="sale_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description" holdplace="e.g.……"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_batar_lailiao_tree" model="ir.ui.view">
+            <field name="name">Batar Lailiao Tree</field>
+            <field name="model">batar.lailiao</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="description"/>
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="debit"/>
+                    <field name="credit"/>
+                    <field name="state"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_batar_lailiao_search" model="ir.ui.view">
+            <field name="name">Batar Lailiao Search</field>
+            <field name="model">batar.lailiao</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="partner_id"/>
+                    <field name="name"/>
+                    <group string="Groupby">
+                        <filter string="Customer" domain="[]" context="{'group_by': 'partner_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_batar_lailiao" model="ir.actions.act_window">
+            <field name="name">Lailiao Order</field>
+            <field name="res_model">batar.lailiao</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!--
+        <act_window id="action_batar_lailiao" res_model="batar.lailiao" view_type="form" view_mode="tree,form"/>
+-->
+        <menuitem id="menu_lailiao" action="action_batar_lailiao" sequence="1" parent="menu_batar_lailiao"/>
+
+    </data>
+</openerp>

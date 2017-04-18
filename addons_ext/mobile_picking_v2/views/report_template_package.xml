@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <template id="report_package">
+          <script type="text/javascript"  src="/mobile_picking_v2/static/src/js/jquery-1.4.4.min.js"/>
+          <script type="text/javascript"  src="/mobile_picking_v2/static/src/js/LodopFuncs.js"/>
+          <script type="text/javascript"  src="/mobile_picking_v2/static/src/js/jquery-barcode.js"/>
+          <t t-foreach="docs" t-as="doc">
+            <t t-call="mobile_picking_v2.report_package_doc" t-lang="doc.partner_id.lang"/>
+          </t>
+        </template>
+        <template id="report_package_doc">
+          <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})"/>
+          <div class="page" >
+              <div class="oe_structure" />
+              <div style="width:210px;font-family:'Microsoft Yahei';height:143px;margin-bottom:2px;">
+                <div style="font-size:12px;text-align:center;"><span t-if="doc.partner_id" t-field="doc.partner_id"/></div>
+                <div>
+                  <table style="font-size:9px;line-height:15px;text-weight:bold;" cellspacing="0" cellpadding="0">
+                    <tr>
+                       <td rowspan="2" style="font-size:12px;">
+                        <div style="padding-right:5px;">
+                          净重：<span t-if="doc.net_weight" t-field="doc.net_weight"/>g<br/>
+                          件数：<span t-if="doc.qty" t-field="doc.qty"/><br/>
+                        </div>
+                      </td>
+                      <td>材质：<span t-if="doc.product_id" t-field="doc.product_id.material"/></td>
+                    </tr>
+                    <tr>
+                      <td>备注：</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" ><strong>产品编号：<span t-if="doc.product_id" t-field="doc.product_id.default_code"/></strong></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="height:32px;"><strong>产品名称：<span t-if="doc.product_id" t-field="doc.product_id"/></strong></td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="bcTarget" class="barcodeImg" style="width:auto;zoom:1;margin:0 auto;"><span t-if="doc.name" t-field="doc.name"/></div>
+                <div style="font-size:10px;text-align:center;font-family:'Microsoft Yahei';"><span t-if="doc.name" t-field="doc.name"/></div>
+              </div>
+          </div>
+        </template>
+
+    </data>
+</openerp>

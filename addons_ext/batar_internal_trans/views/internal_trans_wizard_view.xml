@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="internal_trans_wizard_form_view" model="ir.ui.view">
+            <field name="name">Internal trans wizard</field>
+            <field name="model">sample.trans.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div class="oe_title col-xs-6">
+                        <h1><field name="product_code" placeholder="Please Input Product number" attrs="{'invisible': [('process_type', '!=', 'product')]}"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="process_type" widget="radio"/>
+                        </group>
+                        <group>
+                            <field name="product_id" options="{'no_create': True,'no_open':True}" attrs="{'invisible': [('process_type', '!=', 'template')]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="attribute_line_ids" widget="one2many_list" attrs="{'invisible': [('process_type', '!=', 'template')]}" nolabel="1">
+                            <tree editable="buttom" create="1" class="trans_attribute">
+                                <field name="attribute_id" options="{'no_create': True}"/>
+                                <field name="value_ids" widget="many2many_tags" options="{'no_create': True}" domain="[('attribute_id', '=', attribute_id)]" context="{'default_attribute_id': attribute_id}" />
+                            </tree>
+                        </field>
+                    </group>
+                    <group></group>
+                    <div class="oe_left">
+                        <button name="confirm_auto" string="Auto" type="object" class="oe_highlight" attrs="{'invisible': [('process_type', '!=', 'auto')]}"/>
+                    </div>
+                    <div class="oe_right">
+                        <button name="confirm_attributes" string="Add" type="object" class="oe_highlight" attrs="{'invisible': [('process_type', '!=', 'template')]}"/>
+                    </div>
+                    <group>
+                        <field name="line_ids" widget="one2many_list">
+                            <tree create="false">
+                                <field name="product_id"/>
+                                <field name="qty"/>
+                                <field name="src_location"/>
+                                <field name="dest_location"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button name="confirm" string="Confirm" type="object" class="oe_highlight"/>
+                        <button special="cancel" string="取消"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

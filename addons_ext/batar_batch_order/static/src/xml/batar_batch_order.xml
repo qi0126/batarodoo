@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template xml:space="preserve">
+    <t t-name="BatarBatchOrderTemplate">
+        <div>
+        	  <div id="batch-order-page-body">
+                <div id="batch-order-page-left">
+                    <t t-call="pageBatchOrderLeftMenuInfo"/>
+                </div>
+
+                <div id="batch-order-page-right">
+	                 <div>
+	                	  	<input type="button" value ="生成"  onclick="createBarcode('div128','2016-06-06','B');"/>
+     						<div class="barcode2" id="div128"></div>
+							<a href="javascript:PrintOneURL('T2');">预览打印</a>
+							<a href="javascript:PrintOneURL1('T2');">直接打印</a>  
+	                </div>
+                	<div id="customer-div">提示：用户为空，请在菜单“切换用户”区添加用户！</div>
+                	<div id="left-menu" style="display:none;">
+	                    <nav class="navbar navbar-static-top " id="batch_order-right-top"/>
+	                    <div id="main-info-body" class="righttab"></div>
+                    </div>
+                    <div id="add-model" class="righttab">
+                    </div>
+                    <div id="edit-model" class="righttab" style="display:none;">
+                    </div>
+                </div>
+      		</div>
+        </div>
+        <div id="datalist-div"></div>
+    </t>
+    <t t-name="pageBatchOrderLeftMenuInfo">
+         <div class="showking-logo" style="height:90px;">
+          	<img src="/batar_zhanting_extend/static/src/img/showkinglogo.png"  width="70%"></img>
+        </div>
+    
+        <div>
+            <button id="change-customer-btn"  class="btn btn-lg btn-block left_add_model_button">切换客户</button>
+        </div>
+        <div class="customer-title">
+            <p class="left-info-label">当前客户</p>
+        </div>
+        <div class="current-customer">
+            <t t-if="currentCustomer">
+
+                <button class="currentCustomer" t-att-id="currentCustomer.id">
+                    名称:<t t-esc="currentCustomer.name"/>
+                    <br/>
+                    编号:<t t-esc="currentCustomer.code"/>
+                    <br/>
+                    电话:<t t-esc="currentCustomer.phone"/>
+                </button>
+            </t>
+        </div>
+        <div style="margin-top:20px;">
+            <button id="add-model-btn"  class="btn btn-lg btn-block  left_add_model_button">添加款式</button>
+        </div>
+        <div>
+            <p class="left-info-label">已下款式</p>
+            <div id="already-model">
+            	
+            </div>
+        </div>
+        <div>
+            <ul class="list-group text-center">
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </t>
+
+</template>

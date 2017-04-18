@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates t-name="Batarusermenu">
+    <t t-extend="UserMenu">
+        <t t-jquery="ul" t-operation="replace">
+            <ul class="dropdown-menu">
+                <!--<t t-set="uid" t-value="uid"/>-->
+                <!--<t t-if="uid">-->
+                    <!--<li><a href="#" data-menu="documentation">Documentation</a></li>-->
+                    <!--<li><a href="#" data-menu="support">Support</a></li>-->
+                    <!--<li><a href="#" data-menu="about">About</a></li>-->
+                    <!--<li><a href="#" data-menu="account">My Odoo.com account</a></li>-->
+                <!--<li class="divider"/>-->
+                <!--</t>-->
+                <li><a href="#" data-menu="settings">Preferences</a></li>
+                <li class="divider"/>
+                <li><a href="#" data-menu="logout">Log out</a></li>
+            </ul>
+        </t>
+    </t>
+</templates>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="seq_stock_pick_in_order" model="ir.sequence">
+            <field name="name">stock pick in order</field>
+            <field name="code">stock.pick.in.order</field>
+            <field name="prefix">PI</field>
+            <field name="padding">5</field>
+        </record>
+
+        <record id="stock_pick_in_order_form_view" model="ir.ui.view">
+            <field name="name">stock pick in order</field>
+            <field name="model">stock.pick.in.order</field>
+            <field name="arch" type="xml">
+                <form string="stock pick in order"  >
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="wait_split,wait_pick_in,done"></field>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+	                    </div>
+                         <group>
+                        <group>
+                            <field name="check_user" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+
+
+                    </group>
+                        <notebook>
+	                    	<page string="stock pick in order lines">
+	                    	    <field name="line_ids">
+	                    	        <tree string="stock pick in order lines" editable='bottom' >
+										<field name="name" />
+	                    	            <field name="product_id" />
+	                    	            <field name="product_qty" />
+	                    	            <field name="net_weight"/>
+	                    	            <field name="gross_weight"/>
+                                        <field name="actual_product_qty"/>
+                                        <field name="actual_net_weight"/>
+                                        <field name="actual_gross_weight"/>
+                                        <field name="state"/>
+	                    	        </tree>
+	                    	    </field>
+	                    	</page>
+	                    </notebook>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+        <record id="stock_pick_in_order_tree_view" model="ir.ui.view">
+            <field name="name">stock pick in order</field>
+            <field name="model">stock.pick.in.order</field>
+            <field name="arch" type="xml">
+                <tree >
+                    <field name="name"/>
+                    <field name="check_user"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="stock_pick_in_order_action" model="ir.actions.act_window">
+	        <field name="name">stock pick in order</field>
+	        <field name="res_model">stock.pick.in.order</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+	    <menuitem name="stock pick in order" action="stock_pick_in_order_action" id="menu_stock_pick_in_order_action" parent="quality_order_top_menu" sequence='4' />
+        <record id="stock_pick_in_order_line_tree" model="ir.ui.view">
+            <field name="name">stock pick in order line</field>
+            <field name="model">stock.pick.in.order.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="order_id"/>
+                    <field name="default_code"/>
+                    <field name="product_id"/>
+                    <field name="product_qty"/>
+                    <field name="net_weight"/>
+                    <field name="gross_weight"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+
+        </record>
+        <record id="stock_pick_in_order_line_action" model="ir.actions.act_window">
+	        <field name="name">stock pick in order line</field>
+	        <field name="res_model">stock.pick.in.order.line</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree</field>
+	    </record>
+	    <menuitem name="stock pick in order line" action="stock_pick_in_order_line_action" id="menu_pick_in_order_line_action" parent="quality_order_top_menu" sequence='5' />
+    </data>
+</openerp>

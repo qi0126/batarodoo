@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+
+        <template id="asset_backend" name="Out Quality" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/out_picking_quality/static/src/css/out_picking_quality.css"/>
+                <script type="text/javascript" src="out_picking_quality/static/src/js/out_picking_quality.js"/>
+
+            </xpath>
+        </template>
+        <record id="action_out_quality" model="ir.actions.client">
+            <field name="name">Out Quality</field>
+            <field name="tag">Out_Quality</field>
+        </record>
+        <menuitem id="out_quality_menu" name="Out Quality" sequence="16" action="action_out_quality"/>
+    </data>
+</openerp>

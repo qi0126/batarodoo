@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    <record id="product_product_tree_view" model="ir.ui.view">
+	    	<field name="name">product</field>
+	    	<field name="model">product.product</field>
+	    	<field name="inherit_id" ref="product.product_product_tree_view"/>
+	    	<field name="arch" type="xml">
+	    		<data>
+	    		    <!-- <tree position="attributes">
+	    		    	<attribute name="create">false</attribute>
+	    		    </tree> -->
+	    		    <field name="attribute_value_ids" position="replace">
+	    		        <field name="string_attribute"/>
+	    		    </field>
+	    		    <field name="lst_price" position="replace">
+	    		        <field name="sale_price" widget="monetary"></field>
+	    		        <field name="item_fee"></field>
+	    		        <field name="weight_fee"></field>
+	    		        <field name="additional_fee"></field>
+	    		        <field name='standard_weight'/>
+	    		    </field>
+	    		</data>
+	    	</field>
+	    </record>
+	    <record id="product_product_extend_form" model="ir.ui.view">
+	    	<field name="name">product.product.extend.form</field>
+	    	<field name="model">product.product</field>
+	    	<field name="inherit_id" ref="product.product_normal_form_view"/>
+	    	<field name="arch" type="xml">
+	    	  
+	    	    <field name="attribute_value_ids" position="attributes">
+	    	        <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        <attribute name="attrs">{'required':True}</attribute>
+	    	    </field>
+
+				<!--
+				<form  position="attributes">
+					<attribute name="create">false</attribute>
+				</form>
+    	       -->
+    	        <xpath expr="//field[@name='default_code']" position="attributes">
+    	            <attribute name="readonly">1</attribute>
+    	        </xpath>
+    	       
+    	        <xpath expr="//field[@name='lst_price']" position="before">
+    	            
+    	            <field name="real_time_price_unit" widget="monetary" readonly="1" attrs="{'invisible':[('ponderable','=',False)]}"/> 
+    	            <field name="item_fee" widget="monetary" attrs="{'invisible':[('ponderable','=',False)]}"/>
+    		        <field name="weight_fee" widget="monetary" attrs="{'invisible':[('ponderable','=',False)]}"/>
+    		        <field name="additional_fee" widget="monetary" attrs="{'invisible':[('ponderable','=',False)]}"/>
+    		        <label for="standard_weight" attrs="{'invisible':[('ponderable','=',False)]}"/>
+                    <div name="standard_weight" attrs="{'invisible':[('ponderable','=',False)]}">
+                        <field name="standard_weight" class="oe_inline"/> g
+                    </div>
+    	        </xpath>
+    	        <xpath expr="//field[@name='lst_price']" position="attributes">
+    	            <attribute name="attrs">{'invisible':[('ponderable','=',True)]}</attribute>
+    	        </xpath> 
+
+	    	</field>
+	    </record>
+	</data>
+</openerp>

@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_adjustment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-05 07:45+0000\n"
+"PO-Revision-Date: 2016-07-05 07:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_adjustment
+#: model:ir.ui.view,arch_db:batar_adjustment.batar_adjustment_view_form
+msgid "Adjustment Location"
+msgstr "库位调整"
+
+#. module: batar_adjustment
+#: model:ir.actions.act_window,name:batar_adjustment.action_batar_location_adjustment
+#: model:ir.ui.menu,name:batar_adjustment.menu_batar_location_adjustment
+msgid "Batar location Adjustment"
+msgstr "库位调整"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_adjustment
+#: selection:batar.location.adjustment,state:0
+#: model:ir.ui.view,arch_db:batar_adjustment.batar_location_adjustment_form
+msgid "Done"
+msgstr "审核通过"
+
+#. module: batar_adjustment
+#: selection:batar.location.adjustment,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_id
+msgid "ID"
+msgstr "标识"
+
+#. module: batar_adjustment
+#: model:ir.model,name:batar_adjustment.model_stock_inventory
+msgid "Inventory"
+msgstr "仓库"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment___last_update
+msgid "Last Modified on"
+msgstr "最后修改日期"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_write_uid
+msgid "Last Updated by"
+msgstr "最近更新被"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_write_date
+msgid "Last Updated on"
+msgstr "最近更新在"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_location_id
+msgid "Location"
+msgstr "库位"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_stock_move_adjustment_ids
+msgid "Location Adjustment"
+msgstr "库位调整"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_date
+msgid "Location Adjustment Date"
+msgstr "调库日期"
+
+#. module: batar_adjustment
+#: model:ir.ui.view,arch_db:batar_adjustment.batar_location_adjustment_form
+msgid "Location Details"
+msgstr "调库明细"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_move_ids
+msgid "Move lines"
+msgstr "库存移动"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_adjustment
+#: model:ir.ui.view,arch_db:batar_adjustment.batar_location_adjustment_form
+msgid "Prepare Location"
+msgstr "准备调库"
+
+#. module: batar_adjustment
+#: selection:batar.location.adjustment,state:0
+msgid "Process"
+msgstr "待审批"
+
+#. module: batar_adjustment
+#: model:ir.model.fields,field_description:batar_adjustment.field_batar_location_adjustment_state
+msgid "State"
+msgstr "状态"
+
+#. module: batar_adjustment
+#: model:ir.model,name:batar_adjustment.model_stock_move
+msgid "Stock Move"
+msgstr "库存调拨"
+
+#. module: batar_adjustment
+#: model:ir.model,name:batar_adjustment.model_batar_location_adjustment
+msgid "batar.location.adjustment"
+msgstr "batar.location.adjustment"
+
+#. module: batar_adjustment
+#: model:ir.ui.view,arch_db:batar_adjustment.batar_location_adjustment_form
+msgid "e.g. Annual inventory"
+msgstr "例如：年度库存"
+

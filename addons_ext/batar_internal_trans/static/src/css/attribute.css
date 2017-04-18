@@ -1,0 +1,27 @@
+.trans_attribute th[data-id='attribute_id'] {
+  width: 20%;
+}
+th[data-id="name" ]{
+  min-width:56px;
+}
+th[data-id="partner_id" ]{
+  min-width:56px;
+}
+th[data-id="product_id" ]{
+  min-width:56px;
+}
+th[data-id="qty" ]{
+  min-width:56px;
+}
+th[data-id="weight" ]{
+  min-width:56px;
+}
+
+
+th[data-id="product_code"] {
+  min-width:80px;
+}
+th[data-id="state"] {
+  min-width:80px;
+}
+

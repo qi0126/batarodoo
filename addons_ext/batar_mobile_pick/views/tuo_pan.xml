@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="tuo_pan_type_form" model="ir.ui.view">
+            <field name="name">tuo pan type</field>
+            <field name="model">tuo.pan.type</field>
+            <field name="arch" type="xml">
+                <form string="tuo pan type">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box"  >
+                            <button name="get_used" type="object"
+                                    string="used"
+                                    class="oe_stat_button" icon="fa-list">
+                            </button>
+                            <button name="get_no_use" type="object"
+                                    string="no use"
+                                    class="oe_stat_button" icon="fa-list">
+                            </button>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name" required="1"/>
+                                <field name="code" required="1"/>
+                                <field name="volume"/>
+                            </group>
+                            <group>
+                                <field name="grid_number" required="1"/>
+                                <field name="per_volume" required="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="tuo_pan_type_tree" model="ir.ui.view">
+            <field name="name">tuo pan type</field>
+            <field name="model">tuo.pan.type</field>
+            <field name="arch" type="xml">
+                <tree string="tuo pan type">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="volume"/>
+                    <field name="grid_number"/>
+                    <field name="per_volume"/>
+                </tree>
+            </field>
+        </record>
+        <record id="tuo_pan_type_action" model="ir.actions.act_window">
+            <field name="name">tuo pan type</field>
+            <field name="res_model">tuo.pan.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="tuo pan type" id="menu_tuo_pan_type" action="tuo_pan_type_action" parent="mobile_picking_root"/>
+
+        <record id="batar_pick_tuopan_form" model="ir.ui.view">
+            <field name="name">batar pick tuopan</field>
+            <field name="model">batar.pick.tuopan</field>
+            <field name="arch" type="xml">
+                <form string="batar pick tuopan">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="type_id" required="1" options="{'no_create':True,'no_open':True}"/>
+                            </group>
+                            <group>
+                                <field name="code" required="1"/>
+                                <field name="used" readonly="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="batar_pick_tuopan_tree" model="ir.ui.view">
+            <field name="name">batar pick tuopan</field>
+            <field name="model">batar.pick.tuopan</field>
+            <field name="arch" type="xml">
+                <tree string="batar pick tuopan">
+                    <field name="type_id"  />
+                    <field name="code"  />
+                    <field name="used"  />
+                </tree>
+            </field>
+        </record>
+        <record id="batar_pick_tuopan_action" model="ir.actions.act_window">
+            <field name="name">batar pick tuopan</field>
+            <field name="res_model">batar.pick.tuopan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="batar pick tuopan" id="menu_batar_pick_tuopan" action="batar_pick_tuopan_action" parent="mobile_picking_root"/>
+    </data>
+</openerp>

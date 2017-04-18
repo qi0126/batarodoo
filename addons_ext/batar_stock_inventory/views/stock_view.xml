@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="view_batar_inventory_form" model="ir.ui.view">
+            <field name="name">Batar inventory form extend</field>
+            <field name="model">stock.inventory</field>
+            <field name="inherit_id" ref="stock.view_inventory_form"/>
+            <field name="arch" type="xml">
+                <!--<xpath expr="//field[@name='line_ids']/tree" position="attributes">-->
+                    <!--<attribute name="delete">false</attribute>-->
+                    <!--&lt;!&ndash;<attribute name="decoration-primary">inv_adjustment == True</attribute>&ndash;&gt;-->
+                <!--</xpath>-->
+                <xpath expr="//field[@name='line_ids']/tree//field[@name='theoretical_qty']" position="after">
+                    <field name="theoretical_secondqty" sum="Total Theoretical Secondqty"/>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']/tree//field[@name='product_qty']" position="after">
+                    <field name="second_uom" sum=" Total Real Second uom"/>
+                </xpath>
+                <xpath expr="//field[@name='move_ids']/tree//field[@name='product_uom_qty']" position="after">
+                    <field name="second_uom" string="Real Second uom" />
+                </xpath>
+                <xpath expr="//field[@name='line_ids']/tree//field[@name='theoretical_qty']" position="attributes">
+                    <attribute name="sum">Total Theoretical qty</attribute>
+                </xpath>
+                <xpath expr="//field[@name='line_ids']/tree//field[@name='product_qty']" position="attributes">
+                    <attribute name="sum">Total Qty</attribute>
+                </xpath>
+                <xpath expr="//button[@name='reset_real_qty']" position="replace">
+                    <div>
+                        <button name="reset_real_total" states="confirm" string="⇒ Set Total" type="object" class="oe_link oe_right oe_inline">
+                        </button>
+                        <field name="set_total" class="oe_inline oe_right"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="write_date" string="盘点结束日期" attrs="{'invisible': [('state', '!=', 'done')]}"/>
+                </xpath>
+                <xpath expr="//field[@name='date']" position="attributes">
+                    <attribute name="string">盘点开始日期</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_inventory_adjustment_product" model="ir.ui.view">
+            <field name="name">Batar inventory adjustment product</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                    <field name="inv_adjustment"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

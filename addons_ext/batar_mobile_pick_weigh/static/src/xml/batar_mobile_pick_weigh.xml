@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template xml:space="preserve">
+    <t t-name="BatarPickStockWeighTemplate">
+        <div>
+            <div id="weigh-page-body">
+                <div id="weigh-page-left">
+                    <t t-call="pageLeftMenuInfo"/>
+                </div>
+                <div id="weigh-page-right">
+                    <nav class="navbar navbar-static-top " id="weigh-page-right-top"></nav>
+                    <div id="weigh-info">
+
+                    </div>
+                    <div id="weigh-info-action">
+
+                    </div>
+                    <div id="waring-info" class="text-center">
+
+                    </div>
+                </div>
+      		</div>
+        </div>
+    </t>
+    <t t-name="pageLeftMenuInfo">
+        <div class="showking-logo">
+    		<img src="/batar_mobile_pick_weigh/static/src/img/showkinglogo.png"  width="70%"></img>
+    	</div>
+        <div>
+            <ul class="list-group text-center">
+              <li class="list-group-item" id="pick-check-weigh">入库拆包称重</li>
+            </ul>
+        </div>
+    </t>
+
+</template>

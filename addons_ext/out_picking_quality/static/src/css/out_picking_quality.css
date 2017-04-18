@@ -1,0 +1,30 @@
+#weigh-page-left {
+	width:11%;
+	z-index:1005;
+	height:auto !important;
+	overflow:auto;
+	position:fixed;
+	height:100% !important;
+    border-right:solid 1px #444;
+
+}
+.order-check{
+    border: 0 none;
+    font-size: 1vw;
+    text-align: left;
+    width: 100%
+    }
+#weigh-page-right {
+	width:89%;
+	margin-left:11%;
+    float: right;
+}
+
+.list-group {
+    margin-bottom: 0px;
+}
+
+.current-order{
+    width:100%;
+    padding:5px 5px;
+}

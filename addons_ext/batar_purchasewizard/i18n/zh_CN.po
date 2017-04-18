@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_purchasewizard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160321\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-16 02:19+0000\n"
+"PO-Revision-Date: 2016-06-16 02:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_purchasewizard
+#: model:ir.ui.view,arch_db:batar_purchasewizard.batar_purchase_wizard
+msgid "Add"
+msgstr "增加"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_purchase_line
+msgid "Added Product"
+msgstr "已添加产品"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_attribute_id
+msgid "Attribute"
+msgstr "属性"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_attribute_value_ids
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_value_ids
+msgid "Attribute value"
+msgstr "属性值"
+
+#. module: batar_purchasewizard
+#: model:ir.actions.act_window,name:batar_purchasewizard.action_batar_purchase_wizard
+msgid "Batar purchase Wizard"
+msgstr "批量增加产品"
+
+#. module: batar_purchasewizard
+#: model:ir.ui.view,arch_db:batar_purchasewizard.batar_purchase_wizard
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_purchasewizard
+#: model:ir.ui.view,arch_db:batar_purchasewizard.batar_purchase_wizard
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_create_uid
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_create_uid
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_create_date
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_create_date
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_display_name
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_display_name
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_id
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_id
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard___last_update
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line___last_update
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_write_uid
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_write_uid
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_line_write_date
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_write_date
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_purchasewizard
+#: model:ir.ui.view,arch_db:batar_purchasewizard.batar_wizard_purchase_order_form
+msgid "Multi Product"
+msgstr "批量添加产品"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_attribute_line_ids
+msgid "Product Attribute"
+msgstr "产品属性"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_purchase_wizard_product_id
+msgid "Product template"
+msgstr "产品模板"
+
+#. module: batar_purchasewizard
+#: model:ir.model,name:batar_purchasewizard.model_purchase_order
+msgid "Purchase Order"
+msgstr "采购单"
+
+#. module: batar_purchasewizard
+#: model:ir.model,name:batar_purchasewizard.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "采购单明细"
+
+#. module: batar_purchasewizard
+#: model:ir.model.fields,field_description:batar_purchasewizard.field_batar_wizard_purchase_line_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: batar_purchasewizard
+#: model:ir.model,name:batar_purchasewizard.model_batar_purchase_wizard
+msgid "batar.purchase.wizard"
+msgstr "batar.purchase.wizard"
+
+#. module: batar_purchasewizard
+#: model:ir.model,name:batar_purchasewizard.model_batar_purchase_wizard_line
+msgid "batar.purchase.wizard.line"
+msgstr "batar.purchase.wizard.line"
+
+#. module: batar_purchasewizard
+#: model:ir.model,name:batar_purchasewizard.model_batar_wizard_purchase_line
+msgid "batar.wizard.purchase.line"
+msgstr "batar.wizard.purchase.line"
+

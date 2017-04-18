@@ -1,0 +1,370 @@
+#main-info-body{
+
+}
+#batch-order-page-left {
+	display: block;
+	float: left;
+	position: relative;
+	width: 12%;
+	z-index: 16;
+	background-color:#af2326;
+	position: fixed;
+	height: 100% !important;
+	overflow:auto;
+}
+#batch-order-page-right {
+	width:88%;
+	margin-left:11%;
+    float: right;
+}
+#current-customer {
+	text-align:center;
+	overflow :auto;
+}
+.currentCustomer {
+	text-align:left;
+	width:100%;
+	background-color:#292218;
+	color:#FFF;
+	border:0px;
+	font-size:1vw;
+}
+#change-customer-btn {
+	width:100%;
+	background-color:#af2226;
+	border:0;
+	border-top:#7d1114 1px solid;
+	color:white;
+	font-size:1vw;
+}
+.search-query {
+	height:40px;
+	font-size:20px;
+	color:gray;
+	border-radius:2px;
+
+}
+#batch-order-customer-search{
+	width:400px;
+}
+.left-info-label {
+	height:30px;
+	line-height:30px;
+	font-size:1vw;
+	color:white;
+	text-align:center;
+	background-color:#551618;
+	border-top:#7d1114 1px solid;
+}
+.showking-logo{
+	height:80px;
+}
+
+
+
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	padding:0;
+	margin:0;
+	font-family:'Microsoft Yahei';
+	font-size:16px;
+	background-color: #f9ebec;
+}
+
+.input200{
+	width:150px;
+}
+
+.input250{
+	width:250px;
+	text-align:center;
+}
+.input70{
+	width:70px;
+	text-align:center;
+}
+.input100{
+	width:100px;
+	text-align:center;
+}
+.input130{
+	width:130px;
+	text-align:center;
+}
+.input300{
+	width:300px;
+}
+.input500{
+	width:500px;
+}
+.input800{
+	width:820px;
+	height:46px;
+}
+.sidebar{
+	display: block;
+	float: left;
+	position: relative;
+	width: 11%;
+	z-index: 16;
+	background-color:#af2326;
+	position: fixed;
+	height: 100% !important;
+}
+.panel-body{
+	padding:10px;
+	text-align:center;
+	line-height:10px;
+}
+.showking-logo{
+	background-image: -webkit-linear-gradient(top,#a71c20,#731214);
+	background-image: -moz-linear-gradient(top,#a71c20,#731214);
+	background-image: linear-gradient(top,#a71c20,#731214);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a71c20',endColorstr='#731214');
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.rightcc{
+	float:right;
+	width:89%;
+	min-height:500px;
+	margin: 0 auto;
+}
+.righttab{
+	width: 1200px;
+	margin: 20px auto;
+	min-height: 500px;
+	padding: 10px;
+	background-color: #FFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px solid #bbb;
+	-webkit-box-shadow: 5px 5px 7px #999;
+	box-shadow: 2px 2px 8px #d8d8d8;
+	font-size:16px;
+	line-height:30px;
+}
+.righttab div{
+	vertical-align:middle;
+}
+.right_inputname{
+	width: 1200px;
+	margin: 20px auto;
+	height: 150px;
+	padding: 10px;
+	background-color: #FFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	border: 2px solid #bbb;
+	-webkit-box-shadow: 5px 5px 7px #999;
+	box-shadow: 2px 2px 8px #d8d8d8;
+	font-size:16px;
+	line-height:93px;
+	text-align: center;
+}
+.right_inputname input{
+	height:40px;
+	width:400px;
+	font-size:24px;
+
+}
+.right-input-name{
+	width: 1200px;
+	margin: 10px auto;
+	height: 60px;
+	padding: 10px;
+	background-color:#8e191c;
+	color:#fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 5px 5px 7px #999;
+	box-shadow: 2px 2px 8px #d8d8d8;
+	font-size:1.2vw;
+	line-height:30px;
+}
+.edit-model-btn{
+    text-align: left;
+    width: 100%;
+    background-color: #8e191c;
+    color: #fff;
+    border: 0px;
+    border-bottom: 1px #FFF solid;
+    font-size: 0.9vw;
+    padding: 10px 0 10px 10px;
+}
+.right-factory{
+	float:right;
+	width:150px;
+	font-size:16px;
+}
+.bangle01_tab{
+	width:96%;
+	margin:0 auto;
+
+}
+.bangle01_tab tr td{
+	border:1px solid #eee;
+	padding:10px;
+	line-height:25px;
+}
+
+.bangle01_tab tr th{
+	padding:10px;
+	background-color:#CCC;
+	border:1px solid #fff;
+}
+.bangle01_tab div{
+	margin-bottom:10px;
+}
+.operateBtn{
+	width:100px;
+}
+.attrib_left{
+	float:left;
+	width:68px;
+}
+.attrib_right{
+	float:left;
+	width:85%;
+}
+.product_num{
+	width:50px;
+	text-align:center;
+}
+.select_multi{
+	width:70%;
+	height:50px;
+}
+.top20{
+	margin-top: 20px;
+}
+#page-title{
+	height: 50px;
+	line-height: 50px;
+	font-size: 1vw;
+	color: white;
+	text-align: center;
+	background-color: #551618;
+	border-top: #7d1114 1px solid;
+}
+.customer_information{
+	text-align: left;
+	width: 100%;
+	background-color: #292218;
+	color: #FFF;
+	border: 0px;
+	font-size: 0.9vw;
+}
+.currentCustomer{
+	text-align: left;
+	width: 100%;
+	background-color: #8e191c;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px #FFF solid;
+	font-size: 0.9vw;
+}
+.model-name-list{
+	text-align: left;
+	width: 100%;
+	background-color: #8e191c;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px #FFF solid;
+	font-size: 0.9vw;
+	padding: 10px 0 10px 10px;
+}
+.left_add_model_button{
+	background-color:#3f0709;
+	border:0;
+	margin: 0;
+	color:#fff;
+	border-radius: 0;
+}
+.left_add_model_button:hover{
+	color:#fff;
+}
+.left_add_model_button:visited{
+	color:#fff;
+}
+.model_list_table{
+	width:100%;
+	margin-top:20px;
+}
+.model_list_table tr th{
+	text-align: center;
+	padding:5px;
+}
+.model_list_table tr td{
+	text-align: center;
+	padding:5px;
+}
+.model_list_table input{
+	text-align: center;
+	vertical-align:middle;
+}
+.title_txt{
+		height: 50px;
+	line-height: 50px;
+	font-size: 1vw;
+	color: white;
+	text-align: center;
+	background-color: #551618;
+	border-top: #7d1114 1px solid;
+}
+#input_name{
+	max-width:1200px;
+	width:95%;
+	margin:10px auto;
+	padding:10px;
+}
+
+#customer-div{
+	width: 1200px;
+	margin: 10px auto;
+	height: 60px;
+	padding: 10px;
+	background-color: #8e191c;
+	text-algin:center;
+	color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 5px 5px 7px #999;
+	box-shadow: 2px 2px 8px #d8d8d8;
+	font-size: 1.2vw;
+	line-height: 30px;
+}
+#model-list td{
+	vertical-align: middle;
+}
+.btnclass{
+	height:46px;
+	font-size:0.85vw;
+	padding-left:20px;
+	padding-right:20px;
+}
+.example{
+	margin-top:19px;
+}
+.btn-temp{
+	min-width: 36px;
+	min-height: 36px;
+}
+.barcodeImg{
+	margin:10px 0px; 
+	height:50px
+	}

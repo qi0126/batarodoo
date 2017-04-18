@@ -1,0 +1,333 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_delivery_bill
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-12 08:08+0000\n"
+"PO-Revision-Date: 2016-12-12 08:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_form_view
+msgid "Confirm Order"
+msgstr "确认订单"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_create_uid
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_create_uid
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_create_date
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_create_date
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.menu,name:batar_delivery_bill.menu_delivery_bill_action
+msgid "Delivery Bill"
+msgstr "送货单"
+
+#. module: batar_delivery_bill
+#: model:ir.actions.act_window,name:batar_delivery_bill.action_delivery_bill_import
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_import_form
+msgid "Delivery Bill Import"
+msgstr "送货单导入"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.menu,name:batar_delivery_bill.menu_delivery_bill_line
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_form_view
+msgid "Delivery Bill Line"
+msgstr "送货单明细"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.menu,name:batar_delivery_bill.delivery_bill_top_menu
+msgid "Delivery Bills"
+msgstr "送货单"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_display_name
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_display_name
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_charge_man
+msgid "ERP charge man"
+msgstr "操作员"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_id
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_id
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_id_4749
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill___last_update
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import___last_update
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_write_uid
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_write_uid
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_write_date
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_write_date
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_search_view
+msgid "Need Gen Check"
+msgstr "需要生成质检"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+msgid "Not Confirm"
+msgstr "没有确认"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_sheet
+msgid "Sheet"
+msgstr "工作簿"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_import_form
+msgid "cancel"
+msgstr "取消"
+
+#. module: batar_delivery_bill
+#: selection:delivery.bill,state:0
+#: selection:delivery.bill.line,state:0
+msgid "confirm"
+msgstr "确认"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_import_form
+msgid "confirm import"
+msgstr "确定导入"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_default_code
+msgid "default code"
+msgstr "内部货号"
+
+#. module: batar_delivery_bill
+#: model:ir.actions.act_window,name:batar_delivery_bill.delivery_bill_action
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_delivery_id
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_form_view
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_search_view
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_tree_view
+msgid "delivery bill"
+msgstr "送货单"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.menu,name:batar_delivery_bill.menu_delivery_bill_import
+msgid "delivery bill import"
+msgstr "送货单导入"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_file
+msgid "delivery bill import file"
+msgstr "送货单导入文件"
+
+#. module: batar_delivery_bill
+#: model:ir.actions.act_window,name:batar_delivery_bill.delivery_bill_line_action
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_id
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_form
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_tree
+msgid "delivery bill line"
+msgstr "送货单明细"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_name
+msgid "delivery bill name"
+msgstr "送货单名称"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_delivery_man
+msgid "delivery charge man"
+msgstr "物流负责人"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_delivery_mobile
+msgid "delivery charge man mobile"
+msgstr "物流负责人电话"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_delivery_method
+msgid "delivery method"
+msgstr "物流方法"
+
+#. module: batar_delivery_bill
+#: model:ir.model,name:batar_delivery_bill.model_delivery_bill
+msgid "delivery.bill"
+msgstr "送货单"
+
+#. module: batar_delivery_bill
+#: model:ir.model,name:batar_delivery_bill.model_delivery_bill_import
+msgid "delivery.bill.import"
+msgstr "送货单导入"
+
+#. module: batar_delivery_bill
+#: model:ir.model,name:batar_delivery_bill.model_delivery_bill_line
+msgid "delivery.bill.line"
+msgstr "送货单明细"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_location_dest_id
+msgid "dest location"
+msgstr "目的库位"
+
+#. module: batar_delivery_bill
+#: selection:delivery.bill,state:0
+#: selection:delivery.bill.line,state:0
+msgid "draft"
+msgstr "草稿"
+
+#. module: batar_delivery_bill
+#: selection:delivery.bill,state:0
+#: selection:delivery.bill.line,state:0
+msgid "generate check order"
+msgstr "生成质检单"
+
+#. module: batar_delivery_bill
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_form_view
+msgid "generate quality order"
+msgstr "生成质检单"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_gross_weight
+msgid "gross weight"
+msgstr "毛重"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_import_line
+msgid "line start"
+msgstr "起始行"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_must_check
+msgid "must check"
+msgstr "必检"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_name
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_search_view
+msgid "name"
+msgstr "适用范围"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_net_weight
+msgid "net weight"
+msgstr "净重"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_note
+msgid "note"
+msgstr "备注"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_pkg_number
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+msgid "package number"
+msgstr "包号"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_packing_code
+msgid "packing code"
+msgstr "随机码"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_parent_pkg_number
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+msgid "parent package number"
+msgstr "父包号"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_partner_id
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_partner_id
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_search_view
+msgid "partner"
+msgstr "客户"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_product_id
+msgid "product"
+msgstr "产品"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_product_qty
+msgid "product quantity"
+msgstr "产品数量"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_purchase_number
+#: model:ir.ui.view,arch_db:batar_delivery_bill.delivery_bill_line_search_view
+msgid "purchase order"
+msgstr "采购单号"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_location_src_id
+msgid "source location"
+msgstr "源库位"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_state
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_state
+msgid "state"
+msgstr "状态"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_partner_person
+msgid "supplier charge man"
+msgstr "供货方负责人"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_partner_mobile
+msgid "supplier charge man mobile"
+msgstr "供货方电话"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_line_supplier_code
+msgid "supplier code"
+msgstr "供货方编码"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_total_gross_weight
+msgid "total gross weight"
+msgstr "毛重小计(g)"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_total_net_weight
+msgid "total net weight"
+msgstr "净重小计(g)"
+
+#. module: batar_delivery_bill
+#: model:ir.model.fields,field_description:batar_delivery_bill.field_delivery_bill_total_qty
+msgid "total quantity"
+msgstr "数量小计"
+

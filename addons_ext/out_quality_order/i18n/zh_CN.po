@@ -1,0 +1,259 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* out_quality_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-13 06:16+0000\n"
+"PO-Revision-Date: 2017-03-13 06:16+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_check_weight
+msgid "Check Weight"
+msgstr "质检重量"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_create_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_create_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_create_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_create_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_create_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_create_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: out_quality_order
+#: model:ir.ui.menu,name:out_quality_order.out_quality_order_menu
+msgid "Customer Quality Check"
+msgstr "客户质检"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_display_name
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_display_name
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_display_name
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order___last_update
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line___last_update
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back___last_update
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_write_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_write_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_write_uid
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_write_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_write_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_write_date
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_name
+msgid "Name"
+msgstr "名称"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_net_weight
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_net_weight
+msgid "Net Weight"
+msgstr "净重"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_partner_id
+msgid "Partner"
+msgstr "业务伙伴"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_product_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_product_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_product_code
+msgid "Product Code"
+msgstr "产品编码"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_qty_5717
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_qty_5729
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_ref
+msgid "Ref Panwei"
+msgstr "盘位"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_weight
+msgid "Weight"
+msgstr "重量"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_qty
+msgid "back qty"
+msgstr "回退数量"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_weight
+msgid "back weight"
+msgstr "回退重量"
+
+#. module: out_quality_order
+#: selection:out.quality.order,state:0
+#: selection:out.quality.order.line,state:0
+msgid "check done"
+msgstr "质检完成"
+
+#. module: out_quality_order
+#: selection:out.quality.order,state:0
+#: selection:out.quality.order.line,state:0
+msgid "check ok"
+msgstr "质检通过"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_state
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_state
+msgid "check state"
+msgstr "质检状态"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_check_user_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_check_user_id
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_check_user_id
+msgid "check user who check product with customer"
+msgstr "客户质检员"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_partner_id
+msgid "customer"
+msgstr "客户"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_qty
+msgid "exchange qty"
+msgstr "换货数量"
+
+#. module: out_quality_order
+#: model:ir.actions.act_window,name:out_quality_order.out_quality_order_action
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_quality_order_id
+#: model:ir.ui.menu,name:out_quality_order.menu_out_quality_order_action
+#: model:ir.ui.view,arch_db:out_quality_order.out_quality_order_form_view
+#: model:ir.ui.view,arch_db:out_quality_order.out_quality_order_tree_view
+msgid "out quality order"
+msgstr "出库客户质检"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_back_lines
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_lines
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_lines
+#: model:ir.ui.view,arch_db:out_quality_order.out_quality_order_form_view
+msgid "out quality order back line"
+msgstr "质检回退明细"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_exchange_lines
+#: model:ir.ui.view,arch_db:out_quality_order.out_quality_order_form_view
+msgid "out quality order exchange line"
+msgstr "质检换货明细"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_back_order_line
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_exchange_order_line
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_line_ids
+#: model:ir.ui.view,arch_db:out_quality_order.out_quality_order_form_view
+msgid "out quality order line"
+msgstr "出库客户质检明细"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_name
+msgid "out quliaty order name"
+msgstr "出库客户质检单号"
+
+#. module: out_quality_order
+#: model:ir.model,name:out_quality_order.model_out_quality_order
+msgid "out.quality.order"
+msgstr "出库客户质检单"
+
+#. module: out_quality_order
+#: model:ir.model,name:out_quality_order.model_out_quality_order_line
+msgid "out.quality.order.line"
+msgstr "出库客户质检明细"
+
+#. module: out_quality_order
+#: model:ir.model,name:out_quality_order.model_out_quality_order_line_back
+msgid "out.quality.order.line.back"
+msgstr "质检回退明细"
+
+#. module: out_quality_order
+#: model:ir.model,name:out_quality_order.model_out_quality_order_line_exchange
+msgid "out.quality.order.line.exchange"
+msgstr "质检换货明细"
+
+#. module: out_quality_order
+#: model:ir.model.fields,field_description:out_quality_order.field_out_quality_order_pick_user
+msgid "picking man"
+msgstr "分拣员"
+
+#. module: out_quality_order
+#: selection:out.quality.order,state:0
+#: selection:out.quality.order.line,state:0
+msgid "some product need back or exchange"
+msgstr "存在退换货"
+
+#. module: out_quality_order
+#: model:ir.model,name:out_quality_order.model_stock_weigh
+msgid "stock.weigh"
+msgstr "称重质检"
+
+#. module: out_quality_order
+#: selection:out.quality.order,state:0
+#: selection:out.quality.order.line,state:0
+msgid "wait confirm check"
+msgstr "等待确认"
+
+#. module: out_quality_order
+#: selection:out.quality.order,state:0
+#: selection:out.quality.order.line,state:0
+msgid "wait customer check"
+msgstr "质检中"
+

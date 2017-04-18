@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <!-- Add local css & js -->
+        <template id="asset_backend" name="Batar Batch Order" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+
+                <link rel="stylesheet" href="/batar_batch_order/static/src/css/batar_batch_order.css"/>
+                <!--<link rel="stylesheet" href="/batar_batch_order/static/src/css/code128.css"/> -->
+                <script type="text/javascript" src="/batar_batch_order/static/src/js/batar_batch_order.js"/>
+                <script type="text/javascript" src="/batar_batch_order/static/src/js/LodopFuncs.js"/>
+                <!--<script type="text/javascript" src="/batar_batch_order/static/src/js/code128.js"/> -->
+            </xpath>
+        </template>
+        <!-- Add menu & action for product attribute value-->
+        <record id="action_batar_batch_order" model="ir.actions.client">
+            <field name="name">Batar Batch Order</field>
+            <field name="tag">batar_batch_order</field>
+        </record>
+        <menuitem id="batar_batch_order" name="销售批量下单" sequence="15" action="action_batar_batch_order"/>
+    </data>
+</openerp>

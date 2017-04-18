@@ -1,0 +1,146 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_package
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-04 08:45+0000\n"
+"PO-Revision-Date: 2017-01-04 08:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_package
+#: selection:batar.package,state:0
+#: model:ir.ui.view,arch_db:batar_package.split_package_wizard_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_create_uid
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_create_date
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_display_name
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_package
+#: selection:batar.package,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: batar_package
+#: selection:batar.package,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_id
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package___last_update
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package___last_update
+msgid "Last Modified on"
+msgstr "最后修改在"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_write_uid
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_write_date
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_net_weight
+msgid "Net Weight"
+msgstr "净重"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_net_weight
+msgid "Net weight"
+msgstr "净重"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_partner_id
+msgid "Partner"
+msgstr "业务伙伴"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_product_code
+msgid "Product Code"
+msgstr "产品编码"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: batar_package
+#: model:ir.ui.view,arch_db:batar_package.split_package_wizard_form
+msgid "Split"
+msgstr "拆分"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_qty
+msgid "Split Qty"
+msgstr "拆分数量"
+
+#. module: batar_package
+#: model:ir.actions.act_window,name:batar_package.action_split_package
+msgid "Split package"
+msgstr "拆包"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_state
+msgid "State"
+msgstr "状态"
+
+#. module: batar_package
+#: model:ir.model.fields,field_description:batar_package.field_batar_package_weight
+#: model:ir.model.fields,field_description:batar_package.field_batar_split_package_weight
+msgid "Weight"
+msgstr "重量"
+
+#. module: batar_package
+#: model:ir.model,name:batar_package.model_batar_package
+msgid "batar.package"
+msgstr "batar.package"
+
+#. module: batar_package
+#: model:ir.model,name:batar_package.model_batar_split_package
+msgid "batar.split.package"
+msgstr "batar.split.package"
+

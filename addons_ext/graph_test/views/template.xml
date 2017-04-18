@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <template id="asset_backend" name="test" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/graph_test/static/src/css/test.css"/>
+                <script type="text/javascript" src="/graph_test/static/src/js/xiaotest.js"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

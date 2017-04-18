@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	    
+	    <menuitem id="delivery_bill_top_menu" name="Delivery Bills" sequence='1'
+            parent="stock.menu_stock_root" />
+	    <record id="delivery_bill_form_view" model="ir.ui.view">
+	    	<field name="name">delivery bill</field>
+	    	<field name="model">delivery.bill</field>
+	    	<field name="arch" type="xml">
+	    	    <form string="delivery bill">
+	    	        <header>
+	    	            <button name="confirm" type="object" states="draft" string="Confirm Order" class="oe_highlight" />
+	    	            <field name="state" widget="statusbar" statusbar_visible="draft,confirm,check"></field>
+	    	        </header>
+	    	        <sheet>
+	    	            <div class="oe_title">
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+	                    </div>
+	                    <group>
+	                    	<group>
+	                    	    <field name="charge_man" required='1' options="{'no_create': True, 'no_open': True}" readonly='1'/>
+	                    	    <field name="location_src_id" required='1'  readonly='1' options="{'no_create': True, 'no_open': True}"/>
+	                    	    <field name="location_dest_id" required='1' options="{'no_create': True, 'no_open': True}" 
+	                    	        attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	</group>
+	                    	<group>
+	                    	    <field name="partner_id" required='1' options="{'no_create': True, 'no_open': True}" 
+	                    	        domain="[('is_company','=',True),('supplier','=',True)]" attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	    <field name="partner_person" required='1' attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	    <field name="partner_mobile" required='1' attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	</group>
+	                    	<group>
+	                    	    <field name="delivery_method" attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	    <field name="delivery_man" attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	    <field name="delivery_mobile" attrs="{'readonly':[('state','!=','draft')]}"/>
+	                    	</group>
+	                    	<group>
+	                    	    <field name='total_qty' readonly='1'/>
+	                    	    <field name="total_net_weight" readonly='1'/>
+	    	        			<field name="total_gross_weight" readonly='1'/>
+	                    	</group>
+	                    </group>
+	                    <notebook>
+	                    	<page string="Delivery Bill Line">
+	                    	    <field name="line_id">
+	                    	        <tree string="Delivery Bill Line" editable='bottom' edit='0' delete='0' create='0'>
+										<field name="pkg_number" required='1'/>
+										<field name="parent_pkg_number"/>
+	                    	            <field name="default_code" required='1'/>
+	                    	            <field name="supplier_code"  />
+	                    	            <field name="product_id" required='1' options="{'no_create': True, 'no_open': True}"/>
+	                    	            <field name="product_qty" required='1'/>
+	                    	            <field name="net_weight"></field>
+	                    	            <field name="gross_weight"></field>
+	                    	            <field name="note"></field>
+	                    	            <field name="state"/>
+	                    	        </tree>
+	                    	    </field>
+	                    	</page>
+	                    </notebook>
+	    	        </sheet>
+	    	    </form>
+	    	</field>
+	    </record>
+	   
+	    <record id="delivery_bill_tree_view" model="ir.ui.view">
+	    	<field name="name">delivery bill</field>
+	    	<field name="model">delivery.bill</field>
+	    	<field name="arch" type="xml">
+	    	    <tree string="delivery bill" >
+	    	        <field name="name"></field>       
+	    	        <field name="partner_id"></field>
+	    	        <field name='total_qty'/>
+	    	        <field name="total_net_weight"/>
+	    	        <field name="total_gross_weight"/>
+	    	        <field name="partner_person"></field>
+	    	        <field name="partner_mobile"></field>
+	    	        <field name="delivery_method"></field>
+	    	        <field name="delivery_man"></field>
+	    	        <field name="delivery_mobile"></field>
+	    	        <field name="location_src_id"></field>
+	    	        <field name="location_dest_id"></field>
+	    	        <field name="create_date"/>
+	    	        <field name="state"></field>
+	    	    </tree>
+	    	</field>
+	    </record>
+	    <record id="delivery_bill_search_view" model="ir.ui.view">
+            <field name="name">delivery bill</field>
+            <field name="model">delivery.bill</field>
+            <field name="arch" type="xml">
+                <search string="delivery bill">
+                    <field name="name" string="name" filter_domain="[('name','ilike',self)]"/>
+                    <field name="partner_id" string="partner" filter_domain="[('partner_id','=',self)]"/>
+                    <filter string="Need Gen Check" name='filter_need_gen_check' domain="[('state','!=','check')]"/>
+                </search>
+            </field>
+        </record> 
+	    <record id="delivery_bill_action" model="ir.actions.act_window">
+	        <field name="name">delivery bill</field>
+	        <field name="res_model">delivery.bill</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="context">{"search_default_filter_need_gen_check":1}</field>
+	    </record>
+	    
+	    <menuitem name="Delivery Bill" action="delivery_bill_action" id="menu_delivery_bill_action" parent="delivery_bill_top_menu" sequence='2' />
+	    <record id="delivery_bill_line_tree" model="ir.ui.view">
+	    	<field name="name">delivery bill line</field>
+	    	<field name="model">delivery.bill.line</field>
+	    	<field name="arch" type="xml">
+	    	    <tree string="delivery bill line" >
+	    	        <field name="partner_id"/>
+	    	        <field name="delivery_id"/>
+	    	        <field name="purchase_number"/>
+	    	        <field name="parent_pkg_number"/>
+	    	        <field name="pkg_number"/>
+	    	        <field name="supplier_code"/>
+	    	        <field name="default_code"/>
+	    	        <field name="product_id"/>
+	    	        <field name="product_qty"/>
+	    	        <field name="net_weight"/>
+	    	        <field name="gross_weight"/>
+	    	        <field name="create_date"/>
+	    	        <field name='state'/>
+	    	    </tree>
+	    	</field>
+	    </record>
+	    <record id="delivery_bill_line_form" model="ir.ui.view">
+	    	<field name="name">delivery bill line</field>
+	    	<field name="model">delivery.bill.line</field>
+	    	<field name="arch" type="xml">
+	    	    <form string="delivery bill line"  edit='0'>
+	    	         <header>
+
+
+	    	            <field name="state" widget="statusbar" statusbar_visible="draft,waiting,confirm,refuse"/>
+	    	        </header>
+	    	        <sheet>
+		    	        <group>
+		    	        	<group>
+				    	        <field name="partner_id"/>
+				    	        <field name="delivery_id"/>
+				    	        <field name="parent_pkg_number"/>
+				    	        <field name="pkg_number"/>
+				    	        <field name="purchase_number"/>
+		    	        	</group>
+		    	        	<group>
+		    	        	    <field name="supplier_code"/>
+				    	        <field name="default_code"/>
+				    	        <field name="product_id"/>
+				    	        <field name="product_qty"/>
+				    	        <field name="net_weight"/>
+				    	        <field name="gross_weight"/>
+		    	        	</group>
+
+		    	        </group>
+	    	        </sheet>
+	    	    </form>
+	    	</field>
+	    </record>
+	    <record id="delivery_bill_line_search_view" model="ir.ui.view">
+            <field name="name">delivery bill line</field>
+            <field name="model">delivery.bill.line</field>
+            <field name="arch" type="xml">
+                <search string="delivery bill line">
+                    <field name="name" string="name" filter_domain="[('name','ilike',self)]"/>
+                    <field name="partner_id" string="partner" filter_domain="[('partner_id','=',self)]"/>
+                    <field name="pkg_number" string="package number" filter_domain="[('pkg_number','ilike',self)]"/>
+                    <field name="parent_pkg_number" string="parent package number" filter_domain="[('parent_pkg_number','ilike',self)]"/>
+                    <field name="purchase_number" string="purchase order" filter_domain="[('purchase_number','ilike',self)]"/>
+                    <filter string="Need Gen Check" name='filter_need_gen_check' domain="[('state','!=','check')]"/>
+                </search>
+            </field>
+        </record> 
+	    <record id="delivery_bill_line_action" model="ir.actions.act_window">
+	        <field name="name">delivery bill line</field>
+	        <field name="res_model">delivery.bill.line</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="context">{"search_default_filter_need_gen_check":1}</field>
+	    </record>
+	    
+	    <menuitem name="Delivery Bill Line" action="delivery_bill_line_action" id="menu_delivery_bill_line" parent="delivery_bill_top_menu" sequence='3' />
+	</data>
+</openerp>

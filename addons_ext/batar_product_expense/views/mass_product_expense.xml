@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="batar_mass_product_expense_wizard_form" model="ir.ui.view">
+        <field name="name">batar.mass.product.expense.wizard</field>
+        <field name="model">batar.product.expense</field>
+        <field name="arch" type="xml">
+            <form name="mass_product_expense">
+                <group name="top">
+                    <group name="left">
+                        <field name="product_tmpl_id" options="{'no_create': True}"/>
+                    </group>
+                    <group name="right">
+                        <field name="type" widget="radio"/>
+                    </group>
+                </group>
+                <group name="m">
+                    <field name="product_attribute_value" widget="many2many_tags" attrs="{'invisible': [('type', '!=', 'attribute')]}"/>
+                </group>
+                <group name="buttom">
+                    <group name="buttom_left">
+                        <label for="is_item_fee"/>
+                        <div>
+                            <field name="is_item_fee"/>
+                            <field name="item_fee" attrs="{'invisible': [('is_item_fee', '=', False)]}"/>
+                        </div>
+                        <!--<field name="is_item_fee"/>-->
+                        <label for="is_weight_fee"/>
+                        <div>
+                            <field name="is_weight_fee"/>
+                            <field name="weight_fee" attrs="{'invisible': [('is_weight_fee', '=', False)]}"/>
+                        </div>
+                        <!--<field name="is_weight_fee"/>-->
+                        <label for="is_additional_fee"/>
+                        <div>
+                            <field name="is_additional_fee"/>
+                            <field name="additional_fee" attrs="{'invisible': [('is_additional_fee', '=', False)]}"/>
+                        </div>
+                        <!--<field name="is_additional_fee"/>-->
+                    </group>
+                    <group name="buttom_right">
+                        <field name="product_sample_location" domain="[('is_sample', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+                    </group>
+                    <!--<group name="buttom_right">-->
+                        <!---->
+                        <!--<div>-->
+                            <!--<field name="item_fee" attrs="{'invisible': [('is_item_fee', '=', False)]}"/>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<field name="weight_fee" attrs="{'invisible': [('is_weight_fee', '=', False)]}"/>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<field name="additional_fee" attrs="{'invisible': [('is_additional_fee', '=', False)]}"/>-->
+                        <!--</div>-->
+                        <!---->
+                    <!--</group>-->
+                </group>
+                <footer>
+                    <button name="confirm" string="Confirm" type='object' class="oe_highlight"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_batar_mass_product_expense" model="ir.actions.act_window">
+        <field name="name">batar.mass.product.expense.action</field>
+        <field name="res_model">batar.product.expense</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="batar_mass_product_expense_wizard_form" />
+        <field name="target">new</field>
+    </record>
+    <!--record#action_batar_mass_product_expense[model=ir.actions.act_window].test>field[name=name]{batar.mass.product.expense.action}+field[name=res_model]{vatar.wer}-->
+
+    <menuitem id="menu_batar_mass_product_expense" name="Mass update expense" action="action_batar_mass_product_expense" sequence="10" parent="product_menu.left_menu_product_products"/>
+
+</odoo>

@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_stock_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-13 07:34+0000\n"
+"PO-Revision-Date: 2016-07-13 07:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_stock_inventory
+#: model:ir.model.fields,field_description:batar_stock_inventory.field_stock_inventory_date_end
+msgid "End date"
+msgstr "盘点结束"
+
+#. module: batar_stock_inventory
+#: code:addons/batar_stock_inventory/models/stock.py:159
+#, python-format
+msgid "INV:"
+msgstr "INV:"
+
+#. module: batar_stock_inventory
+#: model:ir.model,name:batar_stock_inventory.model_stock_inventory
+msgid "Inventory"
+msgstr "库存"
+
+#. module: batar_stock_inventory
+#: model:ir.model,name:batar_stock_inventory.model_stock_inventory_line
+msgid "Inventory Line"
+msgstr "盘存明细"
+
+#. module: batar_stock_inventory
+#: model:ir.model.fields,field_description:batar_stock_inventory.field_product_product_inv_adjustment
+msgid "Inventory adjustment"
+msgstr "调库产品"
+
+#. module: batar_stock_inventory
+#: model:ir.model,name:batar_stock_inventory.model_product_product
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_stock_inventory
+#: model:ir.model,name:batar_stock_inventory.model_stock_quant
+msgid "Quants"
+msgstr "份"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "Real Second uom"
+msgstr "实际重量"
+
+#. module: batar_stock_inventory
+#: model:ir.model.fields,field_description:batar_stock_inventory.field_stock_inventory_line_second_uom
+msgid "Second uom"
+msgstr "第二单位"
+
+#. module: batar_stock_inventory
+#: model:ir.model.fields,field_description:batar_stock_inventory.field_stock_inventory_line_theoretical_secondqty
+msgid "Theoretical Secondqty"
+msgstr "理论重量"
+
+#. module: batar_stock_inventory
+#: model:ir.model.fields,field_description:batar_stock_inventory.field_stock_inventory_set_total
+msgid "Total"
+msgstr "总计"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "Total Qty"
+msgstr "数量合计"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "Total Real Second uom"
+msgstr "重量合计"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "Total Theoretical Secondqty"
+msgstr "理论重量合计"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "Total Theoretical qty"
+msgstr "理论数量合计"
+
+#. module: batar_stock_inventory
+#: model:ir.ui.view,arch_db:batar_stock_inventory.view_batar_inventory_form
+msgid "⇒ Set Total"
+msgstr "⇒ 设置统计"
+

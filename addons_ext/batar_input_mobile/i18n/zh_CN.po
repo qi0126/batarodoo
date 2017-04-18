@@ -1,0 +1,258 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_input_mobile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-16 03:27+0000\n"
+"PO-Revision-Date: 2016-12-16 03:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_input_mobile
+#: selection:batar.input.mobile,state:0
+msgid "Assigned"
+msgstr "已指派"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_create_uid
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_create_date
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,help:batar_input_mobile.field_batar_input_line_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "所有库存操作的默认计量单位"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_display_name
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+#: selection:batar.input.mobile,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_product_product_double_uom
+msgid "Double Uom"
+msgstr "双单位"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+#: selection:batar.input.mobile,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_gross_weight
+msgid "Gross Weight"
+msgstr "毛重"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_id
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_input_mobile
+#: model:ir.actions.act_window,name:batar_input_mobile.action_input_mobile
+#: model:ir.ui.menu,name:batar_input_mobile.menu_input_mobile
+msgid "Input Mobile"
+msgstr "手机入库"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_input_id
+msgid "Input Task"
+msgstr "入库任务"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line___last_update
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_write_uid
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_write_date
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_line_ids
+#: model:ir.ui.view,arch_db:batar_input_mobile.batar_input_mobile_form_view
+msgid "Lines"
+msgstr "明细"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_location_id
+msgid "Location"
+msgstr "库位"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_stock_move_input_id
+msgid "Mobile Input"
+msgstr "手机入库"
+
+#. module: batar_input_mobile
+#: model:ir.ui.view,arch_db:batar_input_mobile.batar_input_mobile_form_view
+msgid "Move Lines"
+msgstr "库存移动明细"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_net_weight
+msgid "Net Weight"
+msgstr "净重"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_package
+msgid "Package Ref"
+msgstr "引用包名"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_src_location
+msgid "Pan Wei"
+msgstr "盘位"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_assign_to
+msgid "Picker"
+msgstr "分拣员"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+#: selection:batar.input.mobile,state:0
+msgid "Process"
+msgstr "处理"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_product_product
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+msgid "Putaway"
+msgstr "上架"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_user_id
+msgid "QC"
+msgstr "质检员"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_stock_quant
+msgid "Quants"
+msgstr "份"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_stock_move_net_weight
+#: model:ir.model.fields,field_description:batar_input_mobile.field_stock_quant_net_weight
+msgid "Second Qty"
+msgstr "辅助单位数量"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_product_product_sec_uom
+msgid "Second Uom"
+msgstr "辅助单位"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_sequence
+msgid "Sequence"
+msgstr "序列号"
+
+#. module: batar_input_mobile
+#: selection:batar.input.line,state:0
+msgid "Split"
+msgstr "拆分"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_split_sequence
+msgid "Split Sequence"
+msgstr "拆分序列"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_state
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_state
+msgid "State"
+msgstr "状态"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_stock_move
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_move_ids
+msgid "Stock Move"
+msgstr "库存调拨"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_mobile_plate_id
+msgid "Tuo Pan"
+msgstr "托盘号"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_uom_id
+msgid "Uom"
+msgstr "单位"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_product_product_batar_cate_id
+msgid "batar category name"
+msgstr "饰品分类"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_batar_input_line
+msgid "batar.input.line"
+msgstr "batar.input.line"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_batar_input_mobile
+msgid "batar.input.mobile"
+msgstr "batar.input.mobile"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_product_product_import_code
+msgid "import code"
+msgstr "导入编码"
+
+#. module: batar_input_mobile
+#: model:ir.model.fields,field_description:batar_input_mobile.field_batar_input_line_qty
+msgid "qty"
+msgstr "数量"
+
+#. module: batar_input_mobile
+#: model:ir.model,name:batar_input_mobile.model_stock_weigh
+msgid "stock.weigh"
+msgstr "称重质检"
+

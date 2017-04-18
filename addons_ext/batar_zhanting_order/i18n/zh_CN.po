@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_zhanting_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 09:12+0000\n"
+"PO-Revision-Date: 2016-08-29 09:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_change_qty
+msgid "Change Qty"
+msgstr "改变数量"
+
+#. module: batar_zhanting_order
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_create_uid
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_create_uid
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_create_date
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_create_date
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_partner_id
+msgid "Customer"
+msgstr "客户"
+
+#. module: batar_zhanting_order
+#: selection:customer.sale.line,state:0
+msgid "Delivery"
+msgstr "待发货"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_display_name
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_display_name
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_zhanting_order
+#: selection:batar.customer.sale,state:0
+#: selection:customer.sale.line,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: batar_zhanting_order
+#: selection:batar.customer.sale,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_id
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_id
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_item_fee
+msgid "Item Fee"
+msgstr "单件附加费"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale___last_update
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line___last_update
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_write_uid
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_write_uid
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_write_date
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_write_date
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_line_ids
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "Lines"
+msgstr "明细"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_line_id
+msgid "Order"
+msgstr "订单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_order_qty
+msgid "Order qty"
+msgstr "订单数量"
+
+#. module: batar_zhanting_order
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "Out"
+msgstr "出库单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_out_ids
+msgid "Out Order"
+msgstr "出库单"
+
+#. module: batar_zhanting_order
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "Pack"
+msgstr "包装单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_pack_ids
+msgid "Pack Order"
+msgstr "待验单"
+
+#. module: batar_zhanting_order
+#: selection:customer.sale.line,state:0
+msgid "Packing"
+msgstr "待验"
+
+#. module: batar_zhanting_order
+#: selection:customer.sale.line,state:0
+msgid "Pay"
+msgstr "待付款"
+
+#. module: batar_zhanting_order
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "Pick"
+msgstr "分拣单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_pick_ids
+msgid "Pick Order"
+msgstr "分拣单"
+
+#. module: batar_zhanting_order
+#: selection:customer.sale.line,state:0
+msgid "Picking"
+msgstr "分拣中"
+
+#. module: batar_zhanting_order
+#: selection:batar.customer.sale,state:0
+msgid "Process"
+msgstr "处理中"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_standard_weight
+msgid "Standard Weight"
+msgstr "标准重量"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_state
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_state
+msgid "State"
+msgstr "省份"
+
+#. module: batar_zhanting_order
+#: model:ir.model,name:batar_zhanting_order.model_stock_picking
+msgid "Transfer"
+msgstr "调拨"
+
+#. module: batar_zhanting_order
+#: model:ir.actions.act_window,name:batar_zhanting_order.action_zhanting_order
+#: model:ir.ui.menu,name:batar_zhanting_order.menu_zhanting_order
+msgid "Zhanting Order"
+msgstr "展厅订单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_additional_fee
+msgid "additional fee"
+msgstr "附加工费"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_all_weights
+msgid "all line weight"
+msgstr "重量小计"
+
+#. module: batar_zhanting_order
+#: model:ir.model,name:batar_zhanting_order.model_batar_customer_sale
+msgid "batar.customer.sale"
+msgstr "客户销售订单"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_change_state
+msgid "change state"
+msgstr "是否有改变"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_material_price_line
+msgid "customer material price"
+msgstr "客户材质价格"
+
+#. module: batar_zhanting_order
+#: model:ir.ui.view,arch_db:batar_zhanting_order.zhanting_order_form_view
+msgid "customer ornament price"
+msgstr "客户饰品价格"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_order_id
+msgid "customer sale order"
+msgstr "客户订单"
+
+#. module: batar_zhanting_order
+#: model:ir.model,name:batar_zhanting_order.model_customer_sale_line
+msgid "customer.sale.line"
+msgstr "客户销售订单明细"
+
+#. module: batar_zhanting_order
+#: sql_constraint:zhanting.material.price:0
+msgid "one order attribute value must unique!"
+msgstr "材质必须唯一!"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_price_discount
+msgid "price discount"
+msgstr "价格优惠"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_attribute_id
+msgid "product attribute"
+msgstr "产品属性"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_attribute_value_id
+msgid "product attribute value"
+msgstr "产品属性值"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_exchange_qty
+msgid "product exchange qty"
+msgstr "换货数量"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_zhanting_material_price_price_unit
+msgid "real time material price"
+msgstr "实时价格"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_real_time_price_unit
+msgid "real time price unit"
+msgstr "实时单价(/g)"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_total_money
+msgid "total money"
+msgstr "预估总金额"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_batar_customer_sale_total_weight
+msgid "total weight"
+msgstr "重量小计(g)"
+
+#. module: batar_zhanting_order
+#: selection:batar.customer.sale,state:0
+msgid "warning"
+msgstr "订单异常"
+
+#. module: batar_zhanting_order
+#: model:ir.model.fields,field_description:batar_zhanting_order.field_customer_sale_line_weight_fee
+msgid "weight fee"
+msgstr "基础工费"
+
+#. module: batar_zhanting_order
+#: model:ir.model,name:batar_zhanting_order.model_zhanting_material_price
+msgid "zhanting.material.price"
+msgstr "客户材质价格"
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="batar_product_product_cart_form" model="ir.ui.view">
+            <field name="name">batar.product.product.cart.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <!--<xpath expr="//div[@name='button_box']" position="inside">-->
+                    <!--<button name="add_batar_cart" type="object" class="oe_stat_button" icon="fa-cart-plus">-->
+                        <!--&lt;!&ndash;<field name="add_cart" string="Add Cart" widget="boolean_button"/>&ndash;&gt;-->
+                    <!--</button>-->
+                <!--</xpath>-->
+                <div name="button_box" position="inside">
+                    <button name="add_batar_cart" type="object" class="oe_stat_button" icon="fa-cart-plus" string="Add Cart">
+                    </button>
+                </div>
+            </field>
+        </record>
+    </data>
+</openerp>

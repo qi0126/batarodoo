@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template xml:space="preserve">
+    <t t-name="BatarStockWeighTemplate">
+        <div>
+            <div id="weigh-page-body">
+                <div id="weigh-page-left">
+                    <t t-call="pageStockLeftMenuInfo"/>
+                </div>
+                <div id="weigh-page-right">
+                    <nav class="navbar navbar-static-top " id="weigh-page-right-top"/>
+                    <div id="weigh-info">
+
+                    </div>
+                    <div id="weigh-info-action" class="text-center">
+
+                    </div>
+                    <div id="waring-info" class="text-center">
+
+                    </div>
+                </div>
+      		</div>
+        </div>
+    </t>
+    <t t-name="pageStockLeftMenuInfo">
+        <div class="showking-logo">
+    		<img src="/batar_stock_weigh/static/src/img/showkinglogo.png"  width="70%"/>
+    	</div>
+        <div>
+            <ul class="list-group text-center">
+                <li class="list-group-item" id="quality-check">入库质检</li>
+                <li class="list-group-item" id="mobile-pick-in-order-weigh">入库称重分盘</li>
+                <li class="list-group-item" id="pick-out-order-weigh">出库称重</li>
+            </ul>
+        </div>
+    </t>
+
+</template>

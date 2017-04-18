@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	     <report 
+            id="report_product_label"
+            string="Print Product Label"
+            model="delivery.bill.line" 
+            report_type="qweb-pdf"
+            file="product_label.report_product_label_template" 
+            name="product_label.report_product_label_template" 
+        />
+	     <report 
+            id="report_product_var_label"
+            string="Print Product Label"
+            model="product.label" 
+            report_type="qweb-pdf"
+            file="product_label.report_product_variants_label_template" 
+            name="product_label.report_product_variants_label_template" 
+        />
+	</data>
+</openerp>

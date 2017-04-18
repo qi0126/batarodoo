@@ -1,0 +1,287 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_zhanting_model
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-15 03:18+0000\n"
+"PO-Revision-Date: 2016-08-15 03:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# 供应商账单"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_purchase_order_count
+msgid "# of Purchase Order"
+msgstr "# 采购单"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_sale_order_count
+msgid "# of Sales Order"
+msgstr " # 销售订单"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_account_payable_id
+msgid "Account Payable"
+msgstr "应付科目"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_account_receivable_id
+msgid "Account Receivable"
+msgstr "应收科目"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_bank_account_count
+msgid "Bank"
+msgstr "银行"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "公司是指业务伙伴"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_contract_ids
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_contracts_count
+msgid "Contracts"
+msgstr "合同列表"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_payment_method_count
+msgid "Count Payment Method"
+msgstr "按次数付款方式"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_create_uid_5220
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_create_date_5221
+msgid "Created on"
+msgstr "创建在"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_currency_id
+msgid "Currency"
+msgstr "币种"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_stock_customer
+msgid "Customer Location"
+msgstr "客户库位"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_payment_term_id
+msgid "Customer Payment Term"
+msgstr "客户支付条款"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_display_name_5226
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_account_position_id
+msgid "Fiscal Position"
+msgstr "替换规则"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_has_unreconciled_entries
+msgid "Has unreconciled entries"
+msgstr "未核销的凭证"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_id_5225
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_invoice_ids
+msgid "Invoices"
+msgstr "发票"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_issued_total
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_journal_item_count
+msgid "Journal Items"
+msgstr "会计凭证明细"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move___last_update_5222
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_write_uid_5223
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_write_date_5224
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_last_time_entries_checked
+msgid "Last time the invoices & payments matching was performed for this partner. It is set either if there's not at least an unreconciled debit and an unreconciled credit or if you click the \"Done\" button."
+msgstr "该合作伙伴的发票和付款匹配的最后时间。当不存在至少一个未对帐的借方记录和一个未对账的贷方记录时，或者点击了\"完成\"按钮时设置该时间。"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "发票和付款最后匹配日期"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_debit_limit
+msgid "Payable Limit"
+msgstr "应付账款限额"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_payment_method_ids
+msgid "Payment Methods"
+msgstr "付款方式"
+
+#. module: batar_zhanting_model
+#: model:ir.model,name:batar_zhanting_model.model_product_category
+msgid "Product Category"
+msgstr "产品分类"
+
+#. module: batar_zhanting_model
+#: model:ir.model,name:batar_zhanting_model.model_sale_order
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_sale_order_ids
+msgid "Sales Order"
+msgstr "销售订单"
+
+#. module: batar_zhanting_model
+#: model:ir.model,name:batar_zhanting_model.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "销售订单明细"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "供应商货币"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_account_position_id
+msgid "The fiscal position will determine taxes and accounts used for the partner."
+msgstr "替换规则确定业务伙伴的税替换和科目替换。"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_has_unreconciled_entries
+msgid "The partner has at least one unreconciled debit and credit since last time the invoices & payments matching was performed."
+msgstr "发票和付款后至少有一个借贷方不匹配．"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_account_payable_id
+msgid "This account will be used instead of the default one as the payable account for the current partner"
+msgstr "这科目将替换当前业务伙伴的默认支付科目"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_account_receivable_id
+msgid "This account will be used instead of the default one as the receivable account for the current partner"
+msgstr "这科目将用于替换当前业务伙伴的默认应收账款科目"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_purchase_currency_id
+msgid "This currency will be used, instead of the default one, for purchases from the current partner"
+msgstr "对于从这个业务伙伴的采购，这个货币将被使用，替代默认货币。"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_supplier_payment_term_id
+msgid "This payment term will be used instead of the default one for purchase orders and vendor bills"
+msgstr "此条款将用以取代默认的采购单或供应商账单。"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_payment_term_id
+msgid "This payment term will be used instead of the default one for sale orders and customer invoices"
+msgstr "在销售订单和客户发票上，该付款方式将替换默认的付款方式。"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_stock_customer
+msgid "This stock location will be used, instead of the default one, as the destination location for goods you send to this partner"
+msgstr "这库位替代默认值作为你出库到业务伙伴的目的库位."
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_property_stock_supplier
+msgid "This stock location will be used, instead of the default one, as the source location for goods you receive from the current partner"
+msgstr "默认作为你接收当前业务伙伴产品的源库位"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_total_invoiced
+msgid "Total Invoiced"
+msgstr "已开票总额"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_debit
+msgid "Total Payable"
+msgstr "应付账款合计"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_credit
+msgid "Total Receivable"
+msgstr "应收账款合计"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_credit
+msgid "Total amount this customer owes you."
+msgstr "客户欠款金额合计"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "应付供应商总金额"
+
+#. module: batar_zhanting_model
+#: model:ir.model,name:batar_zhanting_model.model_res_users
+msgid "Users"
+msgstr "用户"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,help:batar_zhanting_model.field_res_users_currency_id
+msgid "Utility field to express amount currency"
+msgstr "字段被用来衡量货币面值的大小"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_stock_supplier
+msgid "Vendor Location"
+msgstr "供应商库位"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_property_supplier_payment_term_id
+msgid "Vendor Payment Term"
+msgstr "供应商的付款期限"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_res_users_product_sample_location
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_sale_order_product_sample_location
+msgid "product sample location"
+msgstr "柜台"
+
+#. module: batar_zhanting_model
+#: model:ir.model,name:batar_zhanting_model.model_stock_move
+msgid "stock_move"
+msgstr "移动明细"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_product_category_top_cate
+msgid "top cate"
+msgstr "是顶级分类"
+
+#. module: batar_zhanting_model
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_sale_order_line_top_product_cate
+#: model:ir.model.fields,field_description:batar_zhanting_model.field_stock_move_top_product_cate
+msgid "top product category"
+msgstr "顶级分类"
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!--<record id="batar_adjustment_view_form" model="ir.ui.view">-->
+            <!--<field name="name">batar adjustment view form</field>-->
+            <!--<field name="model">stock.inventory</field>-->
+            <!--<field name="inherit_id" ref="stock.view_inventory_form"/>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<xpath expr="//button[@name='prepare_inventory']" position="before">-->
+                    <!--<button name="prepare_location" states="draft" string="Adjustment Location" type="object" class="oe_highlight"/>-->
+                <!--</xpath>-->
+            <!--</field>-->
+        <!--</record>-->
+        <!-- 定义库位调整的FORM视图-->
+        <record id="batar_location_adjustment_form" model="ir.ui.view">
+            <field name="name">batar location adjustment from</field>
+            <field name="model">batar.location.adjustment</field>
+            <field name='arch' type="xml">
+                <form name="Location Adjustment">
+                    <header>
+                        <button name="location_adjustment" type="object" class="oe_highlight" states="draft" string="Prepare Location"/>
+                        <button name="action_done" string="Done" states="process" type="object" class="oe_highlight"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,process,done"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" placeholder="e.g. Annual inventory"/></h1>
+                        </div>
+                        <group name="top">
+                            <group name="left">
+                                <field name="location_id" domain="[('child_ids','!=', None)]"/>
+                            </group>
+                            <group name="right">
+                                <field name="date" />
+                            </group>
+                        </group>
+                        <notebook attrs="{'invisible':[('state','=','draft')]}">
+                            <page name="move lines" string="Location Details">
+                                <field name="move_ids" string="Location Details">
+                                    <tree name="location_move_lines">
+                                        <field name="product_id"/>
+                                        <field name="product_uom_qty"/>
+                                        <field name="location_id"/>
+                                        <field name="location_dest_id"/>
+                                        <field name="state" invisible="True"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--定义库位调整的Tree 视图-->
+        <record id="batar_location_adjustment_tree" model="ir.ui.view">
+            <field name="name">batar location adjustment tree</field>
+            <field name="model">batar.location.adjustment</field>
+            <field name="arch" type="xml">
+                <tree name="location_adjustment_tree">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="location_id"/>
+                </tree>
+            </field>
+        </record>
+        <!--定义菜单及打开动作-->
+        <act_window id="action_batar_location_adjustment" name="Batar location Adjustment" view_type="form" view_mode="tree,form" res_model="batar.location.adjustment"/>
+        <menuitem id="menu_batar_location_adjustment" action="action_batar_location_adjustment" parent="stock.menu_stock_inventory_control" sequence="40"/>
+    </data>
+</openerp>

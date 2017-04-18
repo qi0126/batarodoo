@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+trans_mobile_manager,trans.mobile.manager,internal_trans_mobile.model_internal_trans_mobile,base.batar_internal_trans_manager,1,1,1,0
+trans_mobile_line_manager,trans.mobile.line.manager,internal_trans_mobile.model_trans_mobile_lines,base.batar_internal_trans_manager,1,1,1,0

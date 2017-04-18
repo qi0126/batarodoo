@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <menuitem  id="menu_xiao_test" sequence="16" name="Test"/>
+        <menuitem id="menu_xiao_test_m1" sequence="1" name="Test1" parent="menu_xiao_test"/>
+        <record id="xiao_test_form_view" model="ir.ui.view">
+            <field name="name">xiao.test.view</field>
+            <field name="model">xiao.test.graph</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="user_id"/>
+                            </group>
+                            <group>
+                                <field name="price"/>
+                                <field name="datas"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="xiao_test_tree_view" model="ir.ui.view">
+            <field name="name">xiao.test.tree</field>
+            <field name="model">xiao.test.graph</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="price"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+        <record id="xiao_test_graph_view" model="ir.ui.view">
+            <field name="name">xiao.test.graph.view</field>
+            <field name="model">xiao.test.graph</field>
+            <field name="arch" type="xml">
+                <graph string="T graph" type="line">
+                    <field name="price" type="measure"/>
+                    <field name="create_date"/>
+                    <field name="user_id"/>
+                </graph>
+            </field>
+        </record>
+        <record id="xiao_test_search_view" model="ir.ui.view">
+            <field name="name">xiao.test.seach</field>
+            <field name="model">xiao.test.graph</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="price"/>
+                    <field name="create_date"/>
+                    <filter name="today" domain="[('create_date', '=', datetime.datetime.now())]" string="Now"/>
+                </search>
+            </field>
+        </record>
+        <act_window id="action_xiao_test" name='Action xiao test' view_mode="tree,form,graph,kanban" view_type="form" res_model="xiao.test.graph"/>
+        <menuitem id="menu_xiao_test_t2" action="action_xiao_test" parent="menu_xiao_test_m1" sequence="1" name="T2"/>
+        <record id="action_xiao_page" model="ir.actions.client">
+            <field name="name">Home Page</field>
+            <field name="tag">xiaotest.page</field>
+        </record>
+        <menuitem id="menu_xiao_test_t3" action="action_xiao_page" parent="menu_xiao_test_m1" sequence="2" name="T3"/>
+    </data>
+</openerp>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="product_supplier_import_view" model="ir.ui.view">
+            <field name="name">product supplier import</field>
+            <field name="model">product.supplier.import</field>
+            <field name="arch" type="xml">
+                <form string="product supplier import">
+                    <group>
+                        <group>
+                            <field name="file" required="1"/>
+                        </group>
+                        <group></group>
+                         <group><field name="action" required="1" readonly="1"/></group>
+                    </group>
+                    <footer>
+                        <button name="apply" string="Confirm Import" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window
+			id="action_product_supplier_import"
+			multi="False"
+			key2="client_action_relate"
+			name="product supplier import"
+			res_model="product.supplier.import"
+			view_mode="form"
+			target="new"
+			context="{'default_action':'create'}"
+			view_type="form"/>
+        <menuitem id="menu_product_supplier_import" sequence='9' name="product supplier import" parent="product_menu.left_menu_product_templates" action="action_product_supplier_import" />
+    </data>
+</openerp>

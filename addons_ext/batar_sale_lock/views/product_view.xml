@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+
+		<record id="product_product_tree_view" model="ir.ui.view">
+	    	<field name="name">product</field>
+	    	<field name="model">product.product</field>
+	    	<field name="inherit_id" ref="product_info_extend.product_product_tree_view"/>
+	    	<field name="arch" type="xml">
+	    		<data>
+	    		    <!-- <tree position="attributes">
+	    		    	<attribute name="create">false</attribute>
+	    		    </tree> -->
+	    		    <field name="standard_weight" position="after">
+	    		        <field name="has_stock" invisible="1"/>
+	    		    </field>
+	    		</data>
+	    	</field>
+	    </record>
+	</data>
+</openerp>

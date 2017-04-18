@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <menuitem id="root_product_manage" name="Product Manage" parent="product_menu.top_menu_product" sequence="5"/>
+        <record id="product_manage_view_form" model="ir.ui.view">
+            <field name="name">Manage Product Active Form</field>
+            <field name="model">product.manage</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="prepare_product" type="object" string="Prepare Product" states="draft"/>
+                        <button name="active_fasle" type="object" string="Active False" class="oe_highlight" states="draft" groups="base.product_manage_manager"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                    </header>
+                    <sheet>
+                        <group name="top">
+                            <group name="left">
+                                <field name="name"/>
+                                <field name="user_id"/>
+                            </group>
+                            <group name="right">
+                                <field name="create_date" readonly="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="lines" string="Product Lines">
+                                <field name="line_ids">
+                                    <tree editable="top" create="1">
+                                        <field name="product_id"/>
+                                        <field name="uom_id" readonly="1"/>
+                                        <field name="qty"/>
+                                        <field name="percent" readonly="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="product_manage_tree_view" model="ir.ui.view">
+            <field name="name">Product Manage Tree</field>
+            <field name="model">product.manage</field>
+            <field name="arch" type="xml">
+                <tree decoration-success="state=='done'" decoration-danger="state=='cancel'">
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="create_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="product_manage_search_view" model="ir.ui.view">
+            <field name="name">Product manage Search</field>
+            <field name="model">product.manage</field>
+            <field name="arch" type="xml">
+                <search>
+                    <filter name="filter_draft" string="Filter Draft" domain="[('state', '=', 'draft')]"/>
+                    <group name="Group BY">
+                        <filter string="User" name='user_id' domain="[]" context="{'group_by': 'user_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <act_window id="action_product_manage" name="Product active"
+                    res_model="product.manage" view_mode="tree,form"
+                    view_type="form" context="{'search_default_filter_draft':1}"/>
+        <menuitem id="menu_product_manage" action="action_product_manage" parent="root_product_manage" sequence="1"/>
+    </data>
+</openerp>

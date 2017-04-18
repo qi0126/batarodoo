@@ -1,0 +1,238 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_stock_pick_add
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-05 05:57+0000\n"
+"PO-Revision-Date: 2016-12-05 05:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_create_uid
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_create_date
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "Delivery"
+msgstr "出库"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_display_name
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "Generate pick pack out"
+msgstr "生成分拣出库单"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_id
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add___last_update
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_write_uid
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_write_date
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,priority:0
+msgid "Normal"
+msgstr "常规"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,priority:0
+msgid "Not urgent"
+msgstr "非紧急"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "Return draft"
+msgstr "恢复草稿"
+
+#. module: batar_stock_pick_add
+#: model:ir.ui.menu,name:batar_stock_pick_add.menu_stock_pick_add_action
+#: model:ir.ui.menu,name:batar_stock_pick_add.stock_pick_add
+msgid "Stock Pick Add"
+msgstr "补货"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,priority:0
+msgid "Urgent"
+msgstr "紧急"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,priority:0
+msgid "Very Urgent"
+msgstr "特急"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,state:0
+#: selection:stock.pick.add.line,state:0
+msgid "cancel"
+msgstr "取消"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,state:0
+#: selection:stock.pick.add.line,state:0
+msgid "confirm"
+msgstr "确认"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_date_planed
+msgid "date planned"
+msgstr "计划日期"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_delivery_count
+msgid "delivery count"
+msgstr "发货单数量"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,state:0
+#: selection:stock.pick.add.line,state:0
+msgid "done"
+msgstr "已生成分拣单"
+
+#. module: batar_stock_pick_add
+#: selection:stock.pick.add,state:0
+#: selection:stock.pick.add.line,state:0
+msgid "draft"
+msgstr "草稿"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_origin
+msgid "origin"
+msgstr "源单据"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_partner_id
+msgid "partner"
+msgstr "客户"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_priority
+msgid "priority"
+msgstr "优先级"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_group_id
+msgid "procurement group"
+msgstr "需求组"
+
+#. module: batar_stock_pick_add
+#: model:ir.model,name:batar_stock_pick_add.model_procurement_order
+msgid "procurement_order"
+msgstr "需求单"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_product_id
+msgid "product"
+msgstr "产品"
+
+#. module: batar_stock_pick_add
+#: sql_constraint:stock.pick.add.line:0
+msgid "product must be unique per order!"
+msgstr "product must be unique per order!"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_product_qty
+msgid "product qty"
+msgstr "数量"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_product_sample_location
+msgid "product sample location"
+msgstr "柜台"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_state
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_state
+msgid "states"
+msgstr "状态"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_location_id
+msgid "stock location"
+msgstr "库位"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_line_add_id
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_tree
+msgid "stock pick add"
+msgstr "补货"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_add_lines
+#: model:ir.ui.view,arch_db:batar_stock_pick_add.stock_pick_add_form_view
+msgid "stock pick add lines"
+msgstr "补货明细"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_name
+msgid "stock pick add name"
+msgstr "名称"
+
+#. module: batar_stock_pick_add
+#: model:ir.model,name:batar_stock_pick_add.model_stock_pick_add
+msgid "stock.pick.add"
+msgstr "补货"
+
+#. module: batar_stock_pick_add
+#: model:ir.model,name:batar_stock_pick_add.model_stock_pick_add_line
+msgid "stock.pick.add.line"
+msgstr "补货明细"
+
+#. module: batar_stock_pick_add
+#: model:ir.actions.act_window,name:batar_stock_pick_add.stock_pick_add_action
+msgid "stock_pick_add"
+msgstr "补货"
+
+#. module: batar_stock_pick_add
+#: model:ir.model.fields,field_description:batar_stock_pick_add.field_stock_pick_add_warehouse_id
+msgid "ware house"
+msgstr "仓库"
+

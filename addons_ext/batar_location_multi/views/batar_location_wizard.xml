@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="batar_location_wizard_form" model="ir.ui.view">
+            <field name="name">batar location wizard</field>
+            <field name="model">batar.multi.location</field>
+            <field name="arch" type="xml">
+                <form name="batar location wizard">
+                    <group name="top">
+                        <group name="left">
+                            <field name="location_id"/>
+                            <field name="location_volume"/>
+                        </group>
+                        <group name="right">
+                            <field name="volume"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="confirm" type="object" string="Confirm" class="oe_highlight"/>
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window id="action_batar_location_wizard" name="Batar location wizard" view_type="form" view_mode="form" res_model="batar.multi.location" target="new"/>
+        <menuitem id="menu_batar_location_wizard" name="Multi location" action="action_batar_location_wizard" parent="stock.menu_warehouse_config" sequence="40"/>
+    </data>
+</openerp>

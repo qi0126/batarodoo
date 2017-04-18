@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_quality_order,batar_quality.quality_order,model_quality_order,stock.group_stock_user,1,1,1,0
+access_quality_order_line,batar_quality.quality_order_line,model_quality_order_line,stock.group_stock_user,1,1,1,00
+access_quality_reason,batar_quality.quality_reason,model_quality_reason,stock.group_stock_user,1,1,1,0
+access_quality_plate,batar_quality.quality_plate,model_quality_plate,stock.group_stock_user,1,1,1,0
+access_quality_order_check_record,batar_quality.quality_order_check_record,model_quality_order_check_record,stock.group_stock_user,1,1,1,0
+access_quality_back_order,batar_quality.quality_back_order,model_quality_back_order,stock.group_stock_user,1,1,1,0
+access_quality_back_order_line,batar_quality.quality_back_order_line,model_quality_back_order_line,stock.group_stock_user,1,1,1,0
+access_stock_pick_in_order,batar_quality.stock_pick_in_order,model_stock_pick_in_order,stock.group_stock_user,1,1,1,0
+access_stock_pick_in_order_line,batar_quality.stock_pick_in_order_line,model_stock_pick_in_order_line,stock.group_stock_user,1,1,1,0

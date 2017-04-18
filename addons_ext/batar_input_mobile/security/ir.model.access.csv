@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mobile_input_manager,mobile.input.manager,batar_input_mobile.model_batar_input_mobile,base.batar_input_mobile,1,1,1,0
+mobile_input_line_manager,mobile.input.line.manager,batar_input_mobile.model_batar_input_line,base.batar_input_mobile,1,1,1,0

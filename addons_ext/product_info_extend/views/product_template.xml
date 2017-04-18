@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+	<data>
+	  <!--   <record id="product_template_extend_form" model="ir.ui.view">
+	    	<field name="name">product.template.extend.form</field>
+	    	<field name="model">product.template</field>
+	    	<field name="inherit_id" ref="product.product_template_form_view"/>
+	    	<field name="arch" type="xml">
+	    	    <data>
+	    	       
+	    	    </data>
+	    	</field>
+	    </record> -->
+	    <record id="product_template_only_extend_form" model="ir.ui.view">
+	    	<field name="name">product.template.extend.form</field>
+	    	<field name="model">product.template</field>
+	    	<field name="inherit_id" ref="product.product_template_only_form_view"/>
+	    	<field name="arch" type="xml">
+	    	    <data>
+	    	        <field name="list_price" position="attributes">
+	    	            <attribute name="invisible">1</attribute>
+	    	        </field>
+	    	        <xpath expr="//page[@name='variants']/field[@name='attribute_line_ids']/tree//field[@name='value_ids']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	            <attribute name="required">1</attribute>
+	    	            <attribute name="placeholder">No attribute value needs to be created at the property value interface</attribute>
+	    	        </xpath>
+	    	        <xpath expr="//page[@name='variants']/field[@name='attribute_line_ids']/tree//field[@name='attribute_id']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	           
+	    	        </xpath>
+	    	        
+	    	    </data>
+	    	</field>
+	    </record>
+	    <record id="modify_product_template_form_view" model="ir.ui.view">
+	    	<field name="name">product.template.extend.form</field>
+	    	<field name="model">product.template</field>
+	    	<field name="inherit_id" ref="product.product_template_form_view"></field>
+	    	<field name="arch" type="xml">
+	    	    <data>
+	    	        <field name="seller_ids" position="attributes">
+	    	   			<attribute name="invisible">1</attribute>
+	    	        </field>
+	    	         <div name="options" position="inside">
+	                    <div>
+	                        <field name="ponderable"/>
+	                        <label for="ponderable"/>
+	                    </div>
+	                    <div>
+	                        <field name="active"/>
+	                        <label for="active"/>
+	                    </div>
+	                </div>
+	    	        <xpath expr="//notebook/page[position()=2]/group[@name='inventory']/group/field[@name='categ_id']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </xpath>
+	    	        <xpath expr="//group[@name='group_standard_price']/field[@name='uom_id']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </xpath>
+	    	        <xpath expr="//group[@name='group_standard_price']/field[@name='uom_po_id']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </xpath>
+	    	        <xpath expr="//group[@name='group_standard_price']/field[@name='currency_id']" position="attributes">
+	    	            <attribute name="options">{'no_create':True,'no_open':True}</attribute>
+	    	        </xpath> 
+	    	    </data>
+	    	</field>
+	    </record>
+	    <record id="modify_product_template_kanban_view" model="ir.ui.view">
+	    	<field name="name">product template</field>
+	    	<field name="model">product.template</field>
+	    	<field name="inherit_id" ref="product.product_template_kanban_view"></field>
+	    	<field name="arch" type="xml">
+	    	    <xpath expr="//templates/t/div[@class='oe_kanban_global_click']/div[@class='oe_kanban_details']/ul/li[position()=1]" position="attributes">
+	    	         <attribute name="invisible">1</attribute>
+	    	    </xpath>
+	    	    
+	    	</field>
+	    </record>
+	    
+	</data>
+</openerp>

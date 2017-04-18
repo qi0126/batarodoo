@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Sequences for package order -->
+        <record id="seq_batar_input_mobile_order" model="ir.sequence">
+            <field name="name">Batar Input Mobile</field>
+            <field name="code">input_mobile</field>
+            <field name="prefix">MIN%(year)s%(month)s-</field>
+            <field name="padding">0</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!--decimal qty-->
+        <record forcecreate="True" id="decimal_batar_qty" model="decimal.precision">
+            <field name="name">Batar Price</field>
+            <field name="digits">2</field>
+        </record>
+    </data>
+</openerp>

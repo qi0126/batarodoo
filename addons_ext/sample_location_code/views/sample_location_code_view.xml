@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!--在原有库位界面中增加一个按钮跳转至货号-->
+        <record id="x_stock_location_extend_form" model="ir.ui.view">
+            <field name="name">Stock Location Extend Form</field>
+            <field name="model">stock.location</field>
+            <field name="inherit_id" ref="stock.view_location_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button name="action_code_view" type="object" attrs="{'invisible': [('is_sample', '=', False)]}" class="oe_stat_button"
+                            context="{'location_id': active_id}" icon="fa-truck">
+                        <field name="code_counts" widget="statinfo"/>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+        <record id="x_sample_code_tree" model="ir.ui.view">
+            <field name="name">Sample location Code tree</field>
+            <field name="model">sample.location.code</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="location_id" domain="[('is_sample', '=', True)]"/>
+                    <field name="net_weight"/>
+                </tree>
+            </field>
+        </record>
+        <record id="x_sample_code_form" model="ir.ui.view">
+            <field name="name">Sample location Code form</field>
+            <field name="model">sample.location.code</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="location_id"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="x_sample_code_search" model="ir.ui.view">
+            <field name="name">Sample location Code search</field>
+            <field name="model">sample.location.code</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="location_id"/>
+                </search>
+            </field>
+        </record>
+        <act_window id="action_sample_location_code" name="Action sample code" res_model="sample.location.code" view_type="form" view_mode="tree,form"/>
+        <record id="action_location_form_x" model="ir.actions.act_window">
+            <field name="name">Sample Location Code</field>
+            <field name="res_model">stock.location</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('is_sample', '=', True)]</field>
+        </record>
+        <menuitem action="action_location_form_x" parent="batar_stock_menu.batar_stock_menu_root" sequence="20" id="menu_sample_location_code"/>
+        <record id="trans_mobile_extend_x_form" model="ir.ui.view">
+            <field name="name">Trans Mobile Extend</field>
+            <field name="model">internal.trans.mobile</field>
+            <field name="inherit_id" ref="internal_trans_mobile.internal_trans_mobile_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='panwei']" position="after">
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">false</attribute>
+                    <attribute name="editable">top</attribute>
+                    <attribute name="delete">false</attribute>
+                </xpath>
+            </field>
+        </record>
+        <!--调拨申请单明细行中加入货号和克重显示-->
+        <record id="sample_trans_form_view_extend" model="ir.ui.view">
+            <field name="name">sample trans form Extend</field>
+            <field name="model">batar.sample.trans</field>
+            <field name="inherit_id" ref="batar_internal_trans.sample_trans_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='is_pass']" position="before">
+                    <field name="code"/>
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+        <!--添加产品的Wizard明细中加入货号和克重显示-->
+        <record id="internal_trans_wizard_form_view_extend" model="ir.ui.view">
+            <field name="name">sample trans wizard form Extend</field>
+            <field name="model">sample.trans.wizard</field>
+            <field name="inherit_id" ref="batar_internal_trans.internal_trans_wizard_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='dest_location']" position="after">
+                    <field name="code"/>
+                    <field name="net_weight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+
+        <!-- Main template for Website Products -->
+        <template id="product_multi_images" name="Product Multi-Images Carousel" inherit_id="website_sale.product" customize_show="True">
+            <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7 col-md-7 col-lg-7']" position="replace">
+                <input type="hidden" id="product_img_display" t-att-value="product.id"/>
+                <div class="col-sm-7 col-md-7 col-lg-7 o_gallery s_image_gallery o_slideshow o_spc-medium product-image-gallery">
+                    <div class="carousel slide" data-ride="carousel" style="margin: 0 12px;" id="slideshow_product_images" data-interval="0">
+                        <div class="carousel-inner container" style="padding: 0;">
+
+                            <div class="item active">
+                                <div itemprop="image"
+                                     t-field="product.image"
+                                     data-index="0"
+                                     t-field-options='{"widget": "image", "class": "product_detail_img", "alt-field": "name"}'
+                                />
+                            </div>
+
+                            <t t-foreach="product.images" t-as="i">
+                                <div class="item">
+                                    <div t-field="i.image"
+                                         t-att-data-index="str(i_index + 1)"
+                                         t-field-options='{"widget": "image", "class": "img-responsive", "alt-field": "name"}'
+                                    />
+                                </div>
+                            </t>
+
+                        </div>
+                        <t t-if="len(product.images)" id="slideshow_controls">
+                            <ul class="carousel-indicators">
+                                <li data-target="#slideshow_product_images" data-slide-to="0" class="active">
+                                    <div itemprop="image"
+                                         t-field="product.image"
+                                         t-field-options='{"widget": "image", "class": "product_detail_img", "alt-field": "name"}'
+                                    />
+                                </li>
+                                <t t-foreach="product.images" t-as="i">
+                                    <li data-target="#slideshow_product_images" t-att-data-slide-to="str(i_index + 1)" class="false">
+                                        <div t-field="i.image"
+                                             t-field-options='{"widget": "image", "class": "img-responsive", "alt-field": "name"}'
+                                        />
+                                    </li>
+                                </t>
+                            </ul>
+                        </t>
+                    </div>
+                </div>
+                <style>
+                    #slideshow_product_images img { transform: translateY(-50%) !important; }
+                    #slideshow_product_images li div,
+                    #slideshow_product_images .item div { height: 100%; }
+                    .product-image-gallery { height: 420px; }
+                </style>
+            </xpath>
+        </template>
+
+        <!-- Optional template to add in the left/right arrows -->
+        <template id="product_multi_images_chevrons" name="Product Image Chevrons" inherit_id='product_images.product_multi_images' customize_show="True" active="False">
+            <xpath expr="//t[@id='slideshow_controls']" position="inside">
+                <a class="carousel-control left" data-slide="prev" href="#slideshow_product_images"><span class="fa fa-chevron-left"></span></a>
+                <a class="carousel-control right" data-slide="next" href="#slideshow_product_images"><span class="fa fa-chevron-right"></span></a>
+            </xpath>
+        </template>
+    </data>
+</openerp>

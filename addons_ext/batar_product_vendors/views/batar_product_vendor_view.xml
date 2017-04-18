@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <!-- Add vendor page for the product -->
+        <record id="batar_product_vendors_form_view" model="ir.ui.view">
+            <field name="name">Product extend vendors form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <!--<xpath expr="//field[@name='seller_ids']" position="before">-->
+                <xpath expr="//page[@name='notes']" position="before">
+                    <separator string="Vendors Info"/>
+                    <field name="vendor_info">
+                        <tree>
+                            <field name="partner_id"/>
+                            <field name="code"/>
+                            <field name="work_days"/>
+                        </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+        <record id="batar_vendor_info_form_view" model="ir.ui.view">
+            <field name="name">Batar vendor info form</field>
+            <field name="model">batar.product.vendor</field>
+            <field name="arch" type="xml">
+                <form name="vendor_info">
+                    <group name="top">
+                        <group name="left">
+                            <field name="partner_id" domain="[('supplier', '=', True)]"/>
+                            <field name="code"/>
+                        </group>
+                        <group name="right">
+                            <field name="work_days"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="Description" string="Description">
+                            <field name="desc"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

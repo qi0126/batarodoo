@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="purchase_apply_order_line_form_view" model="ir.ui.view">
+            <field name="name">purchase apply order line</field>
+            <field name="model">purchase.apply.order.line</field>
+            <field name="arch" type="xml">
+                <form string="purchase apply order"  >
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,confirm,cancel,generate,done"></field>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="product_id"  required="1" options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="product_qty" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="supplier_id" options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="need_check" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="note" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="purchase_apply_order_line_tree_view" model="ir.ui.view">
+            <field name="name">purchase apply order line</field>
+            <field name="model">purchase.apply.order.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="product_qty"/>
+                    <field name="need_check"/>
+                    <field name="supplier_id"/>
+                    <field name="purchase_order_line"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="purchase_apply_order_line_action" model="ir.actions.act_window">
+            <field name="name">purchase apply order line</field>
+            <field name="res_model">purchase.apply.order.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_purchase_apply_order_line_action" name="purchase apply order line" parent="menu_purchase_apply_order_menu" sequence="2"
+        action="purchase_apply_order_line_action"/>
+    </data>
+</openerp>

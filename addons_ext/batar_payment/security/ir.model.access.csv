@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lailiao_account_user,lailiao.account.user,batar_payment.model_batar_lailiao,base.group_user,1,0,0,0
+access_lailiao_account_manager,lailiao.account.manager,batar_payment.model_batar_lailiao,base.group_sale_manager,1,1,1,1

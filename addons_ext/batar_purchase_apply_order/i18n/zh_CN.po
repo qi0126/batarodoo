@@ -1,0 +1,235 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_purchase_apply_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-15 06:48+0000\n"
+"PO-Revision-Date: 2016-12-15 06:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_purchase_apply_order
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_form_view
+msgid "Confirm Order"
+msgstr "确认订单"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_create_uid
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_create_date
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_display_name
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_id
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,help:batar_purchase_apply_order.field_purchase_apply_order_supplier_id
+msgid "If you choose, all the details are used by the supplier"
+msgstr "If you choose, all the details are used by the supplier"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order___last_update
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_write_uid
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_write_date
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model,name:batar_purchase_apply_order.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "采购单明细"
+
+#. module: batar_purchase_apply_order
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_form_view
+msgid "Reset To Draft"
+msgstr "重设为草稿"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_batch
+msgid "batch send"
+msgstr "一次发货"
+
+#. module: batar_purchase_apply_order
+#: selection:purchase.apply.order,state:0
+#: selection:purchase.apply.order.line,state:0
+msgid "cancel"
+msgstr "取消"
+
+#. module: batar_purchase_apply_order
+#: selection:purchase.apply.order,state:0
+#: selection:purchase.apply.order.line,state:0
+msgid "confirm"
+msgstr "确认"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_customer_id
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_order_line_customer_id
+msgid "customer"
+msgstr "客户"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_note
+msgid "customer note"
+msgstr "客户备注"
+
+#. module: batar_purchase_apply_order
+#: selection:purchase.apply.order,state:0
+#: selection:purchase.apply.order.line,state:0
+msgid "done"
+msgstr "完成"
+
+#. module: batar_purchase_apply_order
+#: selection:purchase.apply.order,state:0
+#: selection:purchase.apply.order.line,state:0
+msgid "draft"
+msgstr "草稿"
+
+#. module: batar_purchase_apply_order
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_form_view
+#: selection:purchase.apply.order,state:0
+#: selection:purchase.apply.order.line,state:0
+msgid "generate purchase order"
+msgstr "生成采购单"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_has_supplier
+msgid "has supplier"
+msgstr "有供应商"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_order_line_need_check
+msgid "need check"
+msgstr "需要质检"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_need_check
+msgid "need quality check"
+msgstr "需要全部质检"
+
+#. module: batar_purchase_apply_order
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_form_view
+msgid "order line"
+msgstr "明细"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_note
+msgid "order line product note"
+msgstr "备注"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_order_line_order_note
+msgid "order note"
+msgstr "order note"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_order_time
+msgid "order time"
+msgstr "下单时间"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_product_id
+msgid "product"
+msgstr "产品"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_product_qty
+msgid "product qty"
+msgstr "数量"
+
+#. module: batar_purchase_apply_order
+#: model:ir.actions.act_window,name:batar_purchase_apply_order.purchase_apply_order_action
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_order_id
+#: model:ir.ui.menu,name:batar_purchase_apply_order.menu_purchase_apply_order_menu
+#: model:ir.ui.menu,name:batar_purchase_apply_order.menu_purchase_apply_orderaction
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_form_view
+#: model:ir.ui.view,arch_db:batar_purchase_apply_order.purchase_apply_order_line_form_view
+msgid "purchase apply order"
+msgstr "申购单"
+
+#. module: batar_purchase_apply_order
+#: model:ir.actions.act_window,name:batar_purchase_apply_order.purchase_apply_order_line_action
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_order_line
+#: model:ir.ui.menu,name:batar_purchase_apply_order.menu_purchase_apply_order_line_action
+msgid "purchase apply order line"
+msgstr "申购单明细"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_name
+msgid "purchase apply order line name"
+msgstr "申购单明细行名称"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_name
+msgid "purchase apply order name"
+msgstr "申购单名称"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_purchase_order_line
+msgid "purchase order line"
+msgstr "采购明细记录"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model,name:batar_purchase_apply_order.model_purchase_apply_order
+msgid "purchase.apply.order"
+msgstr "申购单"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model,name:batar_purchase_apply_order.model_purchase_apply_order_line
+msgid "purchase.apply.order.line"
+msgstr "申购明细"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_send_time
+msgid "send time"
+msgstr "发货时间"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_state
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_state
+msgid "states"
+msgstr "状态"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_line_supplier_id
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_supplier_id
+msgid "supplier"
+msgstr "供应商"
+
+#. module: batar_purchase_apply_order
+#: model:ir.model.fields,field_description:batar_purchase_apply_order.field_purchase_apply_order_user_id
+msgid "user"
+msgstr "业务员"
+

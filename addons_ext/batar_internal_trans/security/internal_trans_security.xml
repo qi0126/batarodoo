@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record model="ir.module.category" id="module_category_trans_sample_management">
+            <field name="name">Sample</field>
+            <field name="description">Sample trans Order</field>
+            <field name="sequence">1</field>
+        </record>
+        <!--add user and manager-->
+        <record id="base.batar_internal_trans_user" model="res.groups">
+            <field name="name">制单</field>
+            <field name="category_id" ref="module_category_trans_sample_management"/>
+            <field name="comment">the user will have access only his records in the Trans Order </field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="base.batar_internal_trans_manager" model="res.groups">
+            <field name="name">审核</field>
+            <field name="category_id" ref="module_category_trans_sample_management"/>
+            <field name="comment">the user will have access all records in the Trans Order </field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="trans_order_user_rule" model="ir.rule">
+            <field name="name">User Orders</field>
+            <field ref="model_batar_sample_trans" name="model_id"/>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('base.batar_internal_trans_user'))]"/>
+        </record>
+    </data>
+</openerp>

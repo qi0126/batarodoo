@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="batar_product_category_import_view" model="ir.ui.view">
+            <field name="name">batar product category import</field>
+            <field name="model">batar.product.category.import</field>
+            <field name="arch" type="xml">
+                <form string="batar product category import">
+                    <group>
+                        <group>
+                            <field name="file" required="1"/>
+                        </group>
+                        <group></group>
+                         <group><field name="action" required="1" readonly="1"/></group>
+                    </group>
+                    <footer>
+                        <button name="apply" string="Confirm Import" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window
+			id="action_batar_product_category_import"
+			multi="False"
+			key2="client_action_relate"
+			name="batar product category import"
+			res_model="batar.product.category.import"
+			view_mode="form"
+			target="new"
+			context="{'default_action':'create'}"
+			view_type="form"/>
+        <menuitem id="menu_batar_product_category_import" sequence='9' name="batar product category import" parent="product_menu.left_menu_product_templates" action="action_batar_product_category_import" />
+    </data>
+</openerp>

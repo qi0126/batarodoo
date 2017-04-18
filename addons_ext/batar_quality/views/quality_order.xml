@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <menuitem id="quality_order_top_menu" name="Quality Check" sequence='1'
+           parent="stock.menu_stock_root" />
+        <record id="quality_order_form_view" model="ir.ui.view">
+            <field name="name">quality order</field>
+            <field name="model">quality.order</field>
+            <field name="arch" type="xml">
+                <form string="quality order" create="false">
+                    <header>
+                        <button name="gen_picking_in_order" type="object" states="wait_check" string="Generate picking in order" class="oe_highlight" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,wait_check,done"></field>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+	                    </div>
+                         <group>
+                        <group>
+                            <field name="check_user" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="location_src_id" readonly="1"/>
+                            <field name="location_dest_id" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="partner_person" readonly="1"/>
+                            <field name="partner_mobile" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="delivery_man" readonly="1"/>
+                            <field name="delivery_method" readonly="1"/>
+                            <field name="delivery_mobile" readonly="1"/>
+                        </group>
+                    </group>
+                        <notebook>
+	                    	<page string="Check Lines">
+	                    	    <field name="line_ids">
+	                    	        <tree string="Check Lines" editable='bottom' delete='0' create='0'>
+										<field name="name" readonly="1"/>
+	                    	            <field name="default_code" readonly="1"/>
+	                    	            <field name="supplier_code"  readonly="1"/>
+	                    	            <field name="product_id" readonly="1"/>
+	                    	            <field name="product_qty" readonly="1"/>
+	                    	            <field name="net_weight"/>
+	                    	            <field name="gross_weight"/>
+                                        <field name="must_check"/>
+                                        <field name="ok"/>
+                                        <field name="state"/>
+	                    	        </tree>
+	                    	    </field>
+	                    	</page>
+                            <page string="check record">
+                                <field name="check_ids">
+                                    <tree editable='bottom' delete='0'>
+                                        <field name="check_user" options="{'no_create': True, 'no_open': True}"/>                                             <field name="order_line_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="product_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="product_qty"/>
+                                        <field name="net_weight"/>
+                                        <field name="gross_weight"/>
+                                        <field name="ok"/>
+                                        <field name="reason" options="{'no_create': True, 'no_open': True}"/>
+                                    </tree>
+                                </field>
+                            </page>
+	                    </notebook>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+        <record id="quality_order_tree_view" model="ir.ui.view">
+            <field name="name">quality order</field>
+            <field name="model">quality.order</field>
+            <field name="arch" type="xml">
+                <tree create="false">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="partner_person"/>
+                    <field name="partner_mobile"/>
+                    <field name="location_dest_id"/>
+                    <field name="location_src_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="quality_order_action" model="ir.actions.act_window">
+	        <field name="name">Quality Check</field>
+	        <field name="res_model">quality.order</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+	    <menuitem name="Quality Check" action="quality_order_action" id="menu_quality_order_action" parent="quality_order_top_menu" sequence='2' />
+
+        <record id="quality_order_line_tree" model="ir.ui.view">
+            <field name="name">quality order line</field>
+            <field name="model">quality.order.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="default_code"/>
+                    <field name="product_id"/>
+                    <field name="product_qty"/>
+                    <field name="net_weight"/>
+                    <field name="gross_weight"/>
+                    <field name="must_check"/>
+                    <field name="state"/>
+
+                </tree>
+            </field>
+
+        </record>
+        <record id="quality_order_line_form" model="ir.ui.view">
+            <field name="name">quality order line</field>
+            <field name="model">quality.order.line</field>
+            <field name="arch" type="xml">
+                 <form string="quality order line" >
+                     <sheet>
+                         <group>
+                             <group>
+                                  <field name="name"/>
+                                  <field name="product_id"/>
+                             </group>
+                             <group>
+                                 <field name="product_qty"/>
+                                <field name="net_weight"/>
+                                <field name="gross_weight"/>
+                             </group>
+                         </group>
+                         <notebook>
+                             <page string="Check Records">
+                                <field name="check_record">
+                                    <tree editable='bottom' delete='0'>
+                                        <field name="check_user" options="{'no_create': True, 'no_open': True}"/>                                             <field name="order_line_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="product_id" options="{'no_create': True, 'no_open': True}"/>
+                                        <field name="product_qty"/>
+                                        <field name="net_weight"/>
+                                        <field name="gross_weight"/>
+                                        <field name="ok"/>
+                                        <field name="reason" options="{'no_create': True, 'no_open': True}"/>
+                                    </tree>
+                                </field>
+                             </page>
+                         </notebook>
+                     </sheet>
+               </form>
+            </field>
+        </record>
+        <record id="quality_order_line_action" model="ir.actions.act_window">
+	        <field name="name">Quality Check</field>
+	        <field name="res_model">quality.order.line</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+	    <menuitem name="Quality Check Line" action="quality_order_line_action" id="menu_quality_order_line_action" parent="quality_order_top_menu" sequence='3' />
+        <record id="quality_plate_form" model="ir.ui.view">
+            <field name="name">quality plate</field>
+            <field name="model">quality.plate</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,wait_pick_in,done"></field>
+                    </header>
+                     <sheet>
+                        <div class="oe_title">
+	                        <h1>
+	                            <field name="name" readonly="1"/>
+	                        </h1>
+	                    </div>
+                         <group>
+                             <group>
+                                 <field name="user_id" options="{'no_create': True, 'no_open': True}"/>
+                             </group>
+                         </group>
+                         <notebook>
+                             <page string="stock pick in order line">
+                                 <field name="line_ids">
+	                    	        <tree string="stock pick in order line" editable='bottom' >
+										<field name="name" />
+                                        <field name="sequence"/>
+	                    	            <field name="default_code" />
+	                    	            <field name="product_id" />
+	                    	            <field name="actual_product_qty" />
+                                        <field name="actual_net_weight"/>
+	                    	            <field name="actual_gross_weight" />
+                                        <field name="state" />
+	                    	        </tree>
+	                    	    </field>
+                             </page>
+                         </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="quality_plate_tree" model="ir.ui.view">
+            <field name="name">quality plate</field>
+            <field name="model">quality.plate</field>
+            <field name="arch" type="xml">
+               <tree>
+                   <field name="user_id"/>
+                   <field name="name"/>
+                   <field name="state"/>
+               </tree>
+            </field>
+        </record>
+        <record id="quality_plate_action" model="ir.actions.act_window">
+	        <field name="name">quality plate</field>
+	        <field name="res_model">quality.plate</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	    </record>
+	    <menuitem name="quality plate" action="quality_plate_action" id="menu_new_quality_plate_action" parent="quality_order_top_menu" sequence='10' />
+    </data>
+</openerp>

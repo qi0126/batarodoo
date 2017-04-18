@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data>
+        <record id="purchase_apply_order_form_view" model="ir.ui.view">
+            <field name="name">purchase apply order</field>
+            <field name="model">purchase.apply.order</field>
+            <field name="arch" type="xml">
+                <form string="purchase apply order"  >
+                    <header>
+                        <button name="confirm" type="object" states="draft" string="Confirm Order" class="oe_highlight" />
+                        <button name="draft" type="object" states="confirm" string="Reset To Draft" class="oe_highlight" />
+                        <button name="generate_purchase_order" type="object" states="confirm" string="generate purchase order" class="oe_highlight" />
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,confirm,cancel,generate,done"></field>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="user_id"  options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="customer_id" domain="[('customer','=',True)]" options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="supplier_id" options="{'no_create': True, 'no_open': True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="order_time" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="send_time" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="note" placeholder="具体发货时间以备注的形式注明" attrs="{'readonly':[('state','!=','draft')]}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="order line">
+                                <field name="order_line">
+                                    <tree editable="bottom">
+                                        <field name="product_id" options="{'no_create': True, 'no_open': True}" required="1"/>
+                                        <field name="product_qty"/>
+                                        <field name="need_check"/>
+                                        <field name="batch"/>
+                                        <field name="supplier_id" options="{'no_create': True, 'no_open': True}" />
+                                        <field name="note"/>
+                                        <field name="purchase_order_line" readonly="1"/>
+                                        <field name="has_supplier"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="purchase_apply_order_tree_view" model="ir.ui.view">
+            <field name="name">purchase apply order</field>
+            <field name="model">purchase.apply.order</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="customer_id"/>
+                    <field name="supplier_id"/>
+                    <field name="order_time"/>
+                    <field name="send_time"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="purchase_apply_order_action" model="ir.actions.act_window">
+            <field name="name">purchase apply order</field>
+            <field name="res_model">purchase.apply.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_purchase_apply_order_menu" name="purchase apply order" parent="base.menu_purchase_root" sequence="2"  />
+        <menuitem id="menu_purchase_apply_orderaction" name="purchase apply order" parent="menu_purchase_apply_order_menu" sequence="1"  action="purchase_apply_order_action"/>
+        <record id="seq_apply_order" model="ir.sequence">
+            <field name="name">Purchase Order</field>
+            <field name="code">purchase.apply.order</field>
+            <field name="prefix">AO</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</openerp>

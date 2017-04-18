@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <template id="line_product_tag">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="internal_trans_mobile.line_product_tag_doc" t-lang="doc.user_id.lang"/>
+                </t>
+        </template>
+        <template id="line_product_tag_doc">
+            <t t-set="doc" t-value="doc.with_context({'lang':doc.user_id.lang})"/>
+            <div class="page" style="margin-left: -8px;margin-right: -8px;">
+                <div class="oe_structure"/>
+                <div>
+                    <p><span t-field="doc.product_id.name"/></p>
+                    <p><span t-field="doc.product_id.default_code"/></p>
+                    <p><span t-field="doc.product_id.material"/></p>
+                    <p><span t-field="doc.product_id.weight"/></p>
+                </div>
+            </div>
+        </template>
+    </data>
+</openerp>

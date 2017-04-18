@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+	<data>
+	     <record model="ir.cron" id="customer_sale_state_check">
+            <field name='name'>当前未完成的客户订单状态改变</field>
+            <field name='interval_number'>24</field>
+            <field name='interval_type'>hours</field>
+            <field name="numbercall">-1</field>
+            <field name="active">False</field>
+            <field name="model">batar.customer.sale</field>
+            <field name="function">check_order</field>
+            <field name="args">()</field>
+        </record>
+
+	</data>
+</openerp>

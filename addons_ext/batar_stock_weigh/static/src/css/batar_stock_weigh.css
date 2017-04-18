@@ -1,0 +1,38 @@
+#main-page-left {
+	width:11%;
+	z-index:1005;
+	height:auto !important;
+	overflow:auto;
+	position:fixed;
+	height:100% !important;
+    border-right:solid 1px #444;
+
+}
+#main-page-right {
+	width:89%;
+	margin-left:11%;
+    float: right;
+}
+.weigh-title{
+    color:red;
+}
+.package-number{
+    width:20%;
+    min-width:200px;
+    height:30px;
+}
+.quality-check-button{
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.plate-info{
+    margin-top:5px;
+    color:red;
+}
+#waring-info{
+    color:red;
+}
+.check-button{
+    margin:5px;
+}

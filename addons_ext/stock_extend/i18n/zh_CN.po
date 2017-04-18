@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_extend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-12 06:41+0000\n"
+"PO-Revision-Date: 2016-07-12 06:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_extend
+#: model:ir.ui.view,arch_db:stock_extend.stock_picking_form
+msgid "After the cancellation is not restored, to determine the cancellation?"
+msgstr "取消后不可恢复，确定取消？"
+
+#. module: stock_extend
+#: model:ir.ui.view,arch_db:stock_extend.stock_picking_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_item_fee
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_item_fee
+msgid "Item Fee"
+msgstr "单件附加费"
+
+#. module: stock_extend
+#: model:ir.model,name:stock_extend.model_stock_pack_operation
+msgid "Packing Operation"
+msgstr "打包作业"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_standard_weight
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_standard_weight
+msgid "Standard Weight"
+msgstr "标准重量"
+
+#. module: stock_extend
+#: model:ir.model,name:stock_extend.model_stock_move
+msgid "Stock Move"
+msgstr "库存调拨"
+
+#. module: stock_extend
+#: model:ir.model,name:stock_extend.model_stock_picking
+msgid "Transfer"
+msgstr "调拨"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_additional_fee
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_additional_fee
+msgid "additional fee"
+msgstr "附加工费"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_all_weights
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_all_weights
+msgid "all line weight"
+msgstr "重量小计"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_ponderable
+msgid "ponderable"
+msgstr "可称量"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_real_time_price_unit
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_real_time_price_unit
+msgid "real time price unit"
+msgstr "实时单价(/g)"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_order_line_id
+msgid "sale order line"
+msgstr "订单明细"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_price_subtotal
+msgid "sub total"
+msgstr "小计"
+
+#. module: stock_extend
+#: model:ir.model.fields,field_description:stock_extend.field_stock_move_weight_fee
+#: model:ir.model.fields,field_description:stock_extend.field_stock_pack_operation_weight_fee
+msgid "weight fee"
+msgstr "基础工费"
+

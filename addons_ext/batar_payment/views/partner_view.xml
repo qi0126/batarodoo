@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="view_partner_batar_form" model="ir.ui.view">
+            <field name="name">Batar partner Form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='internal_notes']" position="before">
+                    <page string="Batar">
+                        <group>
+                            <group>
+                                <field name="lailiao"/>
+                            </group>
+                            <group>
+                                <field name="lailiao_account" />
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button class="oe_stat_button" type="action" name="%(batar_payment.action_batar_lailiao)d" icon="fa-hourglass-half"
+                    context="{'search_default_partner_id': active_id, 'default_partner_id': active_id}">
+                        <field string="Batar payment" name="compute_total" widget="statinfo" />
+                    </button>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_partner_batar_kanban" model="ir.ui.view">
+            <field name="name">Partner Kanban Batar</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+            <field name="arch" type="xml">
+                <field name="mobile" position="after">
+                    <field name="compute_total"/>
+                </field>
+                <xpath expr="//div[@class='oe_kanban_partner_links']" position="inside">
+                    <span t-if="record.compute_total" class="badge"><t t-esc="record.compute_total.value"/>g</span>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

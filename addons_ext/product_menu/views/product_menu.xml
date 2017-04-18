@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<!-- 增加产品顶部菜单 -->
+		<menuitem id="top_menu_product" name="Products" 
+		    groups="base.product_manage_man"/>
+		<!-- 产品侧边栏 -->
+        <menuitem id="menu_product" name="Products"
+            parent="top_menu_product" />
+        <!-- 产品模版侧边栏 -->
+        <menuitem id="left_menu_product_templates" name="Products templates"
+            parent="menu_product" />
+         <!-- 产品系列 -->
+        <menuitem id="left_menu_product_products" name="Product Variants"
+            parent="menu_product" />
+
+        
+
+        <menuitem id="home_product_templates_menu" sequence="2"  name="Products templates" parent="left_menu_product_templates"
+            action="product.product_template_action"/>
+        <menuitem id="home_product_products_menu" sequence="1"  name="Product Variants" parent="left_menu_product_products"
+            action="product.product_normal_action"/>
+       
+        <menuitem id="left_prod_config_main" name="Product Categories and Attributes" parent="menu_product" />
+        <menuitem action="product.attribute_action" id="left_menu_attribute_action" parent="left_prod_config_main" sequence="9" />
+        <menuitem action="product.variants_action" id="left_menu_variants_action"  parent="left_prod_config_main" sequence="10" />
+        <menuitem action="product.product_category_action_form" id="left_menu_product_category_action_form" parent="left_prod_config_main" sequence="2"/>
+	
+	
+	</data>
+</openerp> 

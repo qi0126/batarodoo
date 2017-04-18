@@ -1,0 +1,1199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* im_livechat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 7.saas~4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-27 19:58+0800\n"
+"PO-Revision-Date: 2015-09-27 20:02+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.loader
+msgid ""
+"\", {modules:modules, use_cors: false});\n"
+"                    });\n"
+"\n"
+"                    odoo.define('im_livechat.livesupport', function "
+"(require) {\n"
+"                        var im_livechat = require('im_livechat."
+"im_livechat');\n"
+"                        var button = new im_livechat.LivechatButton(\n"
+"                            $('body'),\n"
+"                            \""
+msgstr ""
+" {modules:modules, use_cors: false});\n"
+"                    });\n"
+"                    odoo.define('im_livechat.livesupport', function "
+"(require) {\n"
+"                        var im_livechat = require('im_livechat."
+"im_livechat');\n"
+"                        var button = new im_livechat.LivechatButton(\n"
+"                            $('body'),\n"
+"                            "
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_nbr_channel
+msgid "# of channel"
+msgstr "#信道"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_nbr_speaker
+msgid "# of speakers"
+msgstr "#发言者"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rating_percentage_satisfaction
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "% Happy"
+msgstr "% 开心"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.support_page
+msgid "&lt;!DOCTYPE html&gt;"
+msgstr "&lt;!DOCTYPE html&gt;"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.loader
+msgid ""
+");\n"
+"                        button.appendTo($('body'));\n"
+"                        window.livechat_button = button;\n"
+"                    });\n"
+"                });"
+msgstr ""
+");\n"
+"                        button.appendTo($('body'));\n"
+"                        window.livechat_button = button;\n"
+"                    });\n"
+"                });"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_action
+msgid ""
+"* Select 'Display the button' to simply display the chat button on the "
+"pages.\n"
+"* Select 'Auto popup' for to display the button, and automatically open the "
+"conversation window.\n"
+"* Select 'Hide the button' to hide the chat button on the pages."
+msgstr ""
+"* 选择”显示按钮”在页面上显示聊天按钮。\n"
+"* 选择”自动弹出“来显示按钮，自动打开会话窗口。\n"
+"* 选择”隐藏按钮“来隐藏页面上的聊天按钮。"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid ""
+"<span>Define rules for your live support channel. You can apply an action "
+"(disable the support, automatically open your support, or just make the "
+"button available) for the given URL, and per country.<br/>To identify the "
+"country, GeoIP must be install on your server, otherwise, the countries of "
+"the rule will not be taken into account.</span>"
+msgstr ""
+"<span>定义你的在线支持频道规则。 你可以应用一个操作(禁用支持，自动打开你的支"
+"持，或者仅是让按钮可用)为指定的URL和每个国家。<br/>为了确认你所在国家，GeoIP "
+"模块必须安装在服务器上，否则，针对国家的规则将不被考虑。</span>"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_action
+msgid "Action"
+msgstr "操作"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_mail_channel_anonymous_name
+msgid "Anonymous Name"
+msgstr "匿名名称"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_are_you_inside
+msgid "Are you inside the matrix?"
+msgstr "你是否在矩阵？"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:108
+#, python-format
+msgid "Ask something ..."
+msgstr "询问某事 ..."
+
+#. module: im_livechat
+#: selection:im_livechat.channel.rule,action:0
+msgid "Auto popup"
+msgstr "自动弹出"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_auto_popup_timer
+msgid "Auto popup timer"
+msgstr "自动弹出计时器"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_duration
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_duration
+msgid "Average duration"
+msgstr "平均持续时间"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_nbr_message
+msgid "Average message"
+msgstr "平均消息"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_operator_time_to_answer
+msgid "Average time to give the first answer to the visitor"
+msgstr "首次给访客相应的平均时间"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/xml/im_livechat.xml:19
+#, python-format
+msgid "Bad"
+msgstr "不好"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_livechat_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_livechat_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_mail_channel_livechat_channel_id
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Channel"
+msgstr "频道"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_channel_name
+msgid "Channel Name"
+msgstr "频道名称"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_rule_view_form
+msgid "Channel Rule"
+msgstr "通道规则"
+
+#. module: im_livechat
+#: model:ir.model,name:im_livechat.model_im_livechat_channel_rule
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "Channel Rules"
+msgstr "通道规则"
+
+#. module: im_livechat
+#: model:ir.ui.menu,name:im_livechat.support_channels
+msgid "Channels"
+msgstr "频道列表"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_input_placeholder
+msgid "Chat Input Placeholder"
+msgstr "聊天输入为空时显示"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:110
+#, python-format
+msgid "Chat with one of our collaborators"
+msgstr "和我们的合作者聊天"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,help:im_livechat.im_livechat_channel_action
+msgid "Click to define a new website live chat channel."
+msgstr "点击定义一个新的即时聊天频道。"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_technical_name
+msgid "Code"
+msgstr "代码"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_channel_id
+msgid "Conversation"
+msgstr "谈话"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid ""
+"Copy and paste this code into your website, within the &amp;lt;head&amp;gt; "
+"tag:"
+msgstr "将此代码复制并粘贴到你的网站&amp;lt;head&amp;gt; 标签："
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_country_ids
+msgid "Country"
+msgstr "国家"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_create_uid
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_create_date
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Creation date (day)"
+msgstr "创建日期（天）"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+msgid "Creation date (hour)"
+msgstr "创建日期（小时）"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Creation date (month)"
+msgstr "创建日期（月）"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Creation date (week)"
+msgstr "创建日期（周）"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Creation date (year)"
+msgstr "创建日期（年）"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_button_text
+msgid "Default text displayed on the Livechat Support Button"
+msgstr "在聊天支持按钮上显示的默认文本"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_auto_popup_timer
+msgid ""
+"Delay (in seconds) to automatically open the converssation window. Note : "
+"the selected action must be 'Auto popup', otherwise this parameter will not "
+"be take into account."
+msgstr ""
+"延迟自动打开对话窗口(以秒为单位)。注意：选定的动作必须是自动弹出，否则此参数"
+"将不被考虑。"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/xml/im_livechat.xml:13
+#, python-format
+msgid "Did we correctly answer your question ?"
+msgstr "我们正确地回答了你的问题吗？"
+
+#. module: im_livechat
+#: model:ir.model,name:im_livechat.model_mail_channel
+msgid "Discussion channel"
+msgstr "讨论频道"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_display_name
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_display_name
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_display_name
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: im_livechat
+#: selection:im_livechat.channel.rule,action:0
+msgid "Display the button"
+msgstr "显示按钮"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_channel_duration
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_operator_duration
+msgid "Duration of the conversation (in seconds)"
+msgstr "会话持续时间（以秒为单位）"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,help:im_livechat.im_livechat_channel_action
+msgid ""
+"Each channel has it's own URL that you can send by email to\n"
+"                your customers in order to start chatting with you."
+msgstr ""
+"每个频道都有它自己的URL,你可以通过电子邮件发送到\n"
+"你的客户为了跟你聊天。"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/xml/im_livechat.xml:22
+#, python-format
+msgid "Explain your note"
+msgstr "备注"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
+msgid "Feedback"
+msgstr "产品反馈"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid ""
+"For website built with Odoo CMS, please install the website_livechat module. "
+"Then go to Settings &gt; Website Settings and select the Website Live Chat "
+"Channel you want to add on your website."
+msgstr ""
+"对于带有Odoo CMS 的网站，请安装 website_livechat 模块。 然后到 设置&gt; 网站"
+"设置，选择要添加到你的站点的即时聊天频道。"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
+msgid "General"
+msgstr "常规"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_sequence
+msgid ""
+"Given the order to find a matching rule. If 2 rules are matching for the "
+"given url/country, the one with the lowest sequence will be chosen."
+msgstr ""
+"给定序列寻找一个匹配的规则。 如果2个规则匹配给定的URL/国家，选择最低的一个序"
+"列。"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/xml/im_livechat.xml:17
+#, python-format
+msgid "Good"
+msgstr "很好"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Group By..."
+msgstr "分组按"
+
+#. module: im_livechat
+#: selection:im_livechat.channel.rule,action:0
+msgid "Hide the button"
+msgstr "隐藏按钮"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,name:im_livechat.mail_channel_action
+#: model:ir.ui.menu,name:im_livechat.session_history
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_tree
+msgid "History"
+msgstr "历史"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_start_date_hour
+msgid "Hour of start Date of session"
+msgstr "开始时间"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:111
+#, python-format
+msgid "How may I help you?"
+msgstr "有什么可以帮你的吗？"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "How to use the Website Live Chat widget?"
+msgstr "如何使用网站实时对话插件？"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:273
+#, python-format
+msgid "I rated you with :rating_%d"
+msgstr "我给你的评分：rating_%d"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_id
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_id
+msgid "ID"
+msgstr "ID"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_image
+msgid "Image"
+msgstr "图像"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
+msgid "Join"
+msgstr "加入"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "Join Channel"
+msgstr "加入频道"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+msgid "Last 24h"
+msgstr "最后24小时"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel___last_update
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule___last_update
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel___last_update
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator___last_update
+msgid "Last Modified on"
+msgstr "上次修改于"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_write_uid
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_write_uid
+msgid "Last Updated by"
+msgstr "上次更新人"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_write_date
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_write_date
+msgid "Last Updated on"
+msgstr "上次更新日期"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+msgid "Last Week"
+msgstr "上周"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "Leave Channel"
+msgstr "离开频道"
+
+#. module: im_livechat
+#: model:ir.module.category,name:im_livechat.module_category_im_livechat
+msgid "Live Support"
+msgstr "在线支持"
+
+#. module: im_livechat
+#: model:ir.model,name:im_livechat.model_im_livechat_channel
+msgid "Livechat Channel"
+msgstr "即时聊天频道"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,help:im_livechat.im_livechat_report_channel_action
+#: model:ir.actions.act_window,help:im_livechat.im_livechat_report_operator_action
+msgid ""
+"Livechat Support Channel Statistics allows you to easily check and analyse "
+"your company livechat session performance. Extract informations about the "
+"missed sessions, the audiance, the duration of a session, etc."
+msgstr ""
+"Livechat支持分析并且允许你便捷地检查和分析你公司交流效率。提取错过了的会话、"
+"听众、会话持续时间等信息。"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.support_page
+msgid "Livechat Support Page"
+msgstr "即时聊天支持页面"
+
+#. module: im_livechat
+#: model:ir.model,name:im_livechat.model_im_livechat_report_channel
+#: model:ir.model,name:im_livechat.model_im_livechat_report_operator
+msgid "Livechat Support Report"
+msgstr "即时聊天支持报表"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,name:im_livechat.im_livechat_report_channel_action
+#: model:ir.actions.act_window,name:im_livechat.im_livechat_report_operator_action
+msgid "Livechat Support Report Channel"
+msgstr "Livechat支持报告频道"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_graph
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_pivot
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_graph
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_pivot
+msgid "Livechat Support Statistics"
+msgstr "Livechat支持报告频道"
+
+#. module: im_livechat
+#: model:res.groups,name:im_livechat.im_livechat_group_manager
+msgid "Manager"
+msgstr "管理员"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_sequence
+msgid "Matching order"
+msgstr "匹配顺序"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_image_medium
+msgid "Medium"
+msgstr "渠道"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_image_medium
+msgid ""
+"Medium-sized photo of the group. It is automatically resized as a 128x128px "
+"image, with aspect ratio preserved. Use this field in form views or some "
+"kanban views."
+msgstr ""
+"中等大小图片组。它能自动调整大小为128x128px图像，按纵横比保存。在窗体视图或看"
+"板视图使用这个字段。"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+msgid "Missed sessions"
+msgstr "丢失的会话"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "My sessions"
+msgstr "我的会话"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_name
+msgid "Name"
+msgstr "名称"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:219
+#, python-format
+msgid ""
+"None of our collaborators seems to be available, please try again later."
+msgstr "你的合作者似乎都不在先，请稍后再次尝试。"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_nbr_channel
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_operator_nbr_channel
+msgid "Number of conversation"
+msgstr "对话中的消息数"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_channel_nbr_speaker
+msgid "Number of different speakers"
+msgstr "不同发言人的数量"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_channel_nbr_message
+msgid "Number of message in the conversation"
+msgstr "对话中的消息数"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/xml/im_livechat.xml:18
+#, python-format
+msgid "OK"
+msgstr "好"
+
+#. module: im_livechat
+#: model:ir.actions.client,name:im_livechat.ir_action_client_open_livechat_menu
+msgid "Open Livechat Channel Menu"
+msgstr "打开即时聊天频道菜单"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_partner_id
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+msgid "Operator"
+msgstr "操作员"
+
+#. module: im_livechat
+#: model:ir.ui.menu,name:im_livechat.menu_reporting_livechat_operator
+msgid "Operator Analysis"
+msgstr "操作分析"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_user_ids
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "Operators"
+msgstr "操作员"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
+msgid ""
+"Operators\n"
+"                                            <br/>\n"
+"                                            <i class=\"fa fa-comments\"/>"
+msgstr ""
+"操作员\n"
+"                                            <br/>\n"
+"                                            <i class=\"fa fa-comments\"/>"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_partner_id
+msgid "Opertor"
+msgstr "运算符"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "Options"
+msgstr "选项"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
+msgid "Quit"
+msgstr "退出"
+
+#. module: im_livechat
+#: model:ir.model,name:im_livechat.model_rating_rating
+#: model:ir.model.fields,field_description:im_livechat.field_mail_channel_rating_ids
+msgid "Rating"
+msgstr "收听率"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_regex_url
+msgid ""
+"Regular expression identifying the web page on which the rules will be "
+"applied."
+msgstr "正则表达式识别网页上的哪些规则将被应用。"
+
+#. module: im_livechat
+#: model:ir.ui.menu,name:im_livechat.menu_reporting_livechat
+msgid "Report"
+msgstr "报表"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_ids
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_rule_view_tree
+msgid "Rules"
+msgstr "规则"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_script_external
+msgid "Script (external)"
+msgstr "脚本（外部）"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
+msgid "Search history"
+msgstr "搜索记录"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
+msgid "Search report"
+msgstr "查找报表"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+msgid "Session"
+msgstr "会话"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
+msgid "Session Form"
+msgstr "会话窗体"
+
+#. module: im_livechat
+#: model:ir.ui.menu,name:im_livechat.menu_reporting_livechat_channel
+msgid "Session Statistics"
+msgstr "会话统计"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,name:im_livechat.mail_channel_action_from_livechat_channel
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_channel_ids
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
+msgid "Sessions"
+msgstr "会话"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_image_small
+msgid ""
+"Small-sized photo of the group. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+"小尺寸图片组。它能自动调整大小为64x64px图像，按纵横比保存。在任何一个需要小的"
+"图像的位置使用这个字段。"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_start_date
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_start_date
+msgid "Start Date of session"
+msgstr "会话开始日期"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_channel_start_date
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_report_operator_start_date
+msgid "Start date of the conversation"
+msgstr "对话开始日期"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_button_text
+msgid "Text of the Button"
+msgstr "按钮上的文字"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_country_ids
+msgid ""
+"The actual rule will match only for this country. So if you set select "
+"'Belgium' and 'France' and you set the action to 'Hide Buttun', this 2 "
+"country will not be see the support button for the specified URL. This "
+"feature requires GeoIP installed on your server."
+msgstr ""
+"此规则适用的国家。如果你选择'比利时'和'法国'，你将操作设置到'隐藏按钮，来自这"
+"两个国家的用户不会看到支持指定的URL的按钮。(此功能需要根据地理位置安装在你的"
+"服务器上）"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule_channel_id
+msgid "The channel of the rule"
+msgstr "频道规则"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_name
+msgid "The name of the channel"
+msgstr "频道名称"
+
+#. module: im_livechat
+#: model:res.groups,comment:im_livechat.im_livechat_group_manager
+msgid "The user will be able to delete support channels."
+msgstr "允许用户删除支持频道。"
+
+#. module: im_livechat
+#: model:res.groups,comment:im_livechat.im_livechat_group_user
+msgid "The user will be able to join support channels."
+msgstr "允许用户加入支持频道"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_image
+msgid ""
+"This field holds the image used as photo for the group, limited to "
+"1024x1024px."
+msgstr "这个字段保存的图片作为群组的照片，限制为  1024x1024px。"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_default_message
+msgid ""
+"This is an automated 'welcome' message that your visitor will see when they "
+"initiate a new conversation."
+msgstr "这是一个自动化的 '欢迎' 消息，你的访问者发起一个新的对话时将可以看到。"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_image_small
+msgid "Thumbnail"
+msgstr "缩略图"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator_time_to_answer
+msgid "Time to answer"
+msgstr "回复时间"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
+msgid "Treated sessions"
+msgstr "已处理的会话"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule_regex_url
+msgid "URL Regex"
+msgstr "URL正则表达式"
+
+#. module: im_livechat
+#: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_web_page
+msgid ""
+"URL to a static page where you client can discuss with the operator of the "
+"channel."
+msgstr "你的客户可以和频道的操作员进行讨论额静态页面URL。"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_channel_uuid
+msgid "UUID"
+msgstr "UUID"
+
+#. module: im_livechat
+#: model:res.groups,name:im_livechat.im_livechat_group_user
+msgid "User"
+msgstr "用户"
+
+#. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/controllers/main.py:27
+#: code:addons/im_livechat/static/src/js/im_livechat.js:109
+#, python-format
+msgid "Visitor"
+msgstr "访问者"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_web_page
+msgid "Web Page"
+msgstr "网页"
+
+#. module: im_livechat
+#: model:ir.ui.menu,name:im_livechat.menu_livechat_root
+msgid "Website Live Chat"
+msgstr "网站在线聊天"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,name:im_livechat.im_livechat_channel_action
+msgid "Website Live Chat Channels"
+msgstr "网站实时聊天频道"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.support_page
+msgid "Website Live Chat Powered by <strong>Odoo</strong>."
+msgstr "在线实时聊天，推进者<strong>Odoo</strong>"
+
+#. module: im_livechat
+#: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_default_message
+msgid "Welcome Message"
+msgstr "欢迎信息"
+
+#. module: im_livechat
+#: model:ir.actions.act_window,help:im_livechat.im_livechat_channel_action
+msgid ""
+"You can create channels for each website on which you want\n"
+"                to integrate the website live chat widget, allowing you "
+"website\n"
+"                visitors to talk in real time with your operators."
+msgstr ""
+"你可以为每个想集成即时聊天插件的网站，创建频道，\n"
+"使你的网站的访问者\n"
+"和你的操作员进行实时交谈。"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.loader
+msgid ""
+"document.addEventListener(\"DOMContentLoaded\", function(event) {\n"
+"\n"
+"                    odoo.define('web.session', function (require) {\n"
+"                        var Session = require('web.Session');\n"
+"                        var modules = odoo._modules;\n"
+"                        return new Session(undefined, \""
+msgstr ""
+"document.addEventListener(\"DOMContentLoaded\", function(event) {\n"
+"\n"
+"                    odoo.define('web.session', function (require) {\n"
+"                        var Session = require('web.Session');\n"
+"                        var modules = odoo._modules;\n"
+"                        return new Session(undefined, \""
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "e.g. Hello, how may I help you?"
+msgstr "例如：你好，有什么可以帮你的吗？"
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "e.g. YourWebsite.com"
+msgstr "例如：你的网站地址 "
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
+msgid "or copy this url and send it by email to your customers or suppliers:"
+msgstr "或者拷贝这个URL并且通过邮件发送给你的客户、供应商："
+
+#. module: im_livechat
+#: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_rule_view_form
+msgid "seconds"
+msgstr "秒"
+
+#~ msgid ""
+#~ "\" || '',\n"
+#~ "                            auto: window.oe_im_livechat_auto || false,\n"
+#~ "                            defaultUsername: \""
+#~ msgstr ""
+#~ "\" || '',\n"
+#~ "                            auto: window.oe_im_livechat_auto || false,\n"
+#~ "                            defaultUsername: \""
+
+#~ msgid ""
+#~ "\" || undefined,\n"
+#~ "                        },"
+#~ msgstr ""
+#~ "\" || undefined,\n"
+#~ "                        },"
+
+#~ msgid "\","
+#~ msgstr "\","
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                            defaultMessage: \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                        默认信息： \""
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                            inputPlaceholder: \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                        输入占位符： \""
+
+#~ msgid ""
+#~ "\",\n"
+#~ "                        \""
+#~ msgstr ""
+#~ "\",\n"
+#~ "                    \""
+
+#~ msgid ""
+#~ ");\n"
+#~ "                });\n"
+#~ "            });"
+#~ msgstr ""
+#~ ");\n"
+#~ "                });\n"
+#~ "            });"
+
+#~ msgid ""
+#~ ",\n"
+#~ "                        {\n"
+#~ "                            buttonText: \""
+#~ msgstr ""
+#~ ",\n"
+#~ "                    {\n"
+#~ "                        按钮文本： \""
+
+#~ msgid ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "                Click to define a new live chat channel.\n"
+#~ "              </p><p>\n"
+#~ "                You can create channels for each website on which you "
+#~ "want\n"
+#~ "                to integrate the live chat widget, allowing you website\n"
+#~ "                visitors to talk in real time with your operators.\n"
+#~ "              </p><p>\n"
+#~ "                Each channel has it's own URL that you can send by email "
+#~ "to\n"
+#~ "                your customers in order to start chatting with you.\n"
+#~ "              </p>\n"
+#~ "            "
+#~ msgstr ""
+#~ "<p class=\"oe_view_nocontent_create\">\n"
+#~ "               点击来创建一个新的即时聊天频道。.\n"
+#~ "              </p><p>\n"
+#~ "                你可以在集成了即时聊天插件的每一个网站创建频道。\n"
+#~ "               这将允许你的网站参观者来和你的操作员进行实时谈话。\n"
+#~ "              \n"
+#~ "              </p><p>\n"
+#~ "                每一个频道都有自己的网址。\n"
+#~ "               你可以通过电子邮件将其发给要进行谈话的客户。\n"
+#~ "              </p>\n"
+#~ "            "
+
+#~ msgid "Average number of message per user"
+#~ msgstr "人均消息数量"
+
+#~ msgid "Average of messages/user"
+#~ msgstr "平均消息数/人"
+
+#~ msgid "Average time the user spend in the conversation"
+#~ msgstr "人均回话时长"
+
+#~ msgid "Complete Name"
+#~ msgstr "完整名称"
+
+#~ msgid "Last 24h stats"
+#~ msgstr "最后24小时统计"
+
+#~ msgid "Operators stats"
+#~ msgstr "操作员统计"
+
+#~ msgid "Script (internal)"
+#~ msgstr "脚本（内部）"
+
+#~ msgid "Session Name"
+#~ msgstr "会话名称"
+
+#~ msgid "Sessions by day"
+#~ msgstr "会话按天"
+
+#~ msgid "Time in session"
+#~ msgstr "加入会话时间"
+
+#~ msgid "false"
+#~ msgstr "false"
+
+#~ msgid ""
+#~ ");\n"
+#~ "                });\n"
+#~ "                odoo.init();\n"
+#~ "            });"
+#~ msgstr ""
+#~ ");\n"
+#~ "                });\n"
+#~ "                odoo.init();\n"
+#~ "            });"
+
+#~ msgid "Odoo"
+#~ msgstr "Odoo"
+
+#~ msgid ""
+#~ "To identify the country, GeoIP must be install on your server, otherwise, "
+#~ "the countries of the rule will not be taken into account."
+#~ msgstr ""
+#~ "为了识别国家，地理位置匹配必须安装在你的服务器上，否则，该规则的国家将不被"
+#~ "考虑。"
+
+#~ msgid ""
+#~ ");\n"
+#~ "            })();"
+#~ msgstr ""
+#~ ");\n"
+#~ "            })();"
+
+#~ msgid "Channel on which the rules applies"
+#~ msgstr "规则适用的频道"
+
+#~ msgid "Livechat"
+#~ msgstr "即时聊天"
+
+#~ msgid "Medium-sized photo"
+#~ msgstr "中等大小的照片"
+
+#~ msgid "Photo"
+#~ msgstr "图片"
+
+#~ msgid "Small-sized photo"
+#~ msgstr "小尺寸的照片"
+
+#~ msgid "Support Channels"
+#~ msgstr "Support Channels"
+
+#~ msgid "Test"
+#~ msgstr "测试"
+
+#~ msgid "Users"
+#~ msgstr "用户"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Anonymous"
+#~ msgstr "匿名用户"
+
+#~ msgid ""
+#~ "(function() {\n"
+#~ "                window.livesupport = new openerp.im_livechat."
+#~ "LiveSupport(\n"
+#~ "                    \""
+#~ msgstr ""
+#~ "(function() {\n"
+#~ "                window.livesupport = new openerp.im_livechat."
+#~ "LiveSupport(\n"
+#~ "                    \""
+
+#~ msgid ""
+#~ "body {\n"
+#~ "                            height: 100%;\n"
+#~ "                            font-size: 16px;\n"
+#~ "                            font-weight: 400;\n"
+#~ "                            font-family: \"Lato\", \"Lucida Grande\", "
+#~ "\"Helvetica neue\", \"Helvetica\", \"Verdana\", \"Arial\", sans-serif;\n"
+#~ "                            overflow: hidden;\n"
+#~ "                            overflow-y: auto;\n"
+#~ "                            display: block;\n"
+#~ "                            margin: 0;\n"
+#~ "                            padding: 0;\n"
+#~ "                            border: none;\n"
+#~ "                            width: 100%;\n"
+#~ "                            height: 100%;\n"
+#~ "                            background: #C9C8E0;\n"
+#~ "                            background-image: -webkit-linear-"
+#~ "gradient(top, #7c7bad, #ddddee);\n"
+#~ "                            background-image: -moz-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: -ms-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: -o-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: linear-gradient(to bottom, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            filter: progid:DXImageTransform.Microsoft."
+#~ "gradient( startColorstr='#7c7bad', endColorstr='#ddddee',"
+#~ "GradientType=0 );\n"
+#~ "                            -webkit-background-size: cover;\n"
+#~ "                            -moz-background-size: cover;\n"
+#~ "                            -o-background-size: cover;\n"
+#~ "                            background-size: cover;\n"
+#~ "                            background-repeat: no-repeat;\n"
+#~ "                            background-attachment: fixed;\n"
+#~ "                        }\n"
+#~ "                        .main {\n"
+#~ "                            position: absolute;\n"
+#~ "                            opacity: 0;\n"
+#~ "                            top: 50%;\n"
+#~ "                            width: 100%;\n"
+#~ "                            margin-top: -150px;\n"
+#~ "                            color: white;\n"
+#~ "                            text-shadow: 0 1px 0 rgba(34, 52, 72, 0.2);\n"
+#~ "                            text-align: center;\n"
+#~ "                        }\n"
+#~ "                        .main h1 {\n"
+#~ "                            font-size: 54px;\n"
+#~ "                        }\n"
+#~ "                        .main div {\n"
+#~ "                            font-style: italic;\n"
+#~ "                        }"
+#~ msgstr ""
+#~ "body {\n"
+#~ "                            height: 100%;\n"
+#~ "                            font-size: 16px;\n"
+#~ "                            font-weight: 400;\n"
+#~ "                            font-family: \"Lato\", \"Lucida Grande\", "
+#~ "\"Helvetica neue\", \"Helvetica\", \"Verdana\", \"Arial\", sans-serif;\n"
+#~ "                            overflow: hidden;\n"
+#~ "                            overflow-y: auto;\n"
+#~ "                            display: block;\n"
+#~ "                            margin: 0;\n"
+#~ "                            padding: 0;\n"
+#~ "                            border: none;\n"
+#~ "                            width: 100%;\n"
+#~ "                            height: 100%;\n"
+#~ "                            background: #C9C8E0;\n"
+#~ "                            background-image: -webkit-linear-"
+#~ "gradient(top, #7c7bad, #ddddee);\n"
+#~ "                            background-image: -moz-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: -ms-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: -o-linear-gradient(top, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            background-image: linear-gradient(to bottom, "
+#~ "#7c7bad, #ddddee);\n"
+#~ "                            filter: progid:DXImageTransform.Microsoft."
+#~ "gradient( startColorstr='#7c7bad', endColorstr='#ddddee',"
+#~ "GradientType=0 );\n"
+#~ "                            -webkit-background-size: cover;\n"
+#~ "                            -moz-background-size: cover;\n"
+#~ "                            -o-background-size: cover;\n"
+#~ "                            background-size: cover;\n"
+#~ "                            background-repeat: no-repeat;\n"
+#~ "                            background-attachment: fixed;\n"
+#~ "                        }\n"
+#~ "                        .main {\n"
+#~ "                            position: absolute;\n"
+#~ "                            opacity: 0;\n"
+#~ "                            top: 50%;\n"
+#~ "                            width: 100%;\n"
+#~ "                            margin-top: -150px;\n"
+#~ "                            color: white;\n"
+#~ "                            text-shadow: 0 1px 0 rgba(34, 52, 72, 0.2);\n"
+#~ "                            text-align: center;\n"
+#~ "                        }\n"
+#~ "                        .main h1 {\n"
+#~ "                            font-size: 54px;\n"
+#~ "                        }\n"
+#~ "                        .main div {\n"
+#~ "                            font-style: italic;\n"
+#~ "                        }"
+
+#~ msgid "im_livechat.channel"
+#~ msgstr "im即时聊天频道"
+
+#~ msgid "Script"
+#~ msgstr "脚本"

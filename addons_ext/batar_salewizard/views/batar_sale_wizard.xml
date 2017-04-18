@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<openerp>
+    <data>
+        <record id="batar_sale_wizard" model="ir.ui.view">
+            <field name="name">Batar Sale order Wizard</field>
+            <field name="model">batar.sale.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="product_id" options="{'no_create': True,'no_open':True}"/>
+                        </group>
+                        <group>
+                            <!--<field name="test"/>-->
+                        </group>
+                    </group>
+                    <!--<group>-->
+                        <!--<field name="attribute_value_ids" widget="many2many_tags" options="{'no_create': True}"/>-->
+                    <!--</group>-->
+
+                    <group>
+                        <field name="attribute_line_ids" widget="one2many_list" >
+                            <tree editable="button" create="false">
+                                <field name="attribute_id" options="{'no_create_edit': True}"/>
+                                <field name="value_ids" widget="many2many_tags" options="{'no_create_edit': True}" domain="[('attribute_id', '=', attribute_id)]" context="{'default_attribute_id': attribute_id}" />
+                            </tree>
+                        </field>
+                    </group>
+
+                    <div class="oe_right">
+                        <button name="confirm_attributes" string="Add" type="object" class="oe_highlight"/>
+                        <!--<button name="confirm_attribute" string="Add" type="object" class="oe_highlight"/>-->
+                    </div>
+
+                    <field name="sale_line">
+                        <tree editable="top" create="false">
+                            <field name="product_id"/>
+                            <field name="qty"/>
+                            <!--<field name="name"/>-->
+                            <!--<field name="product_uom_qty"/>-->
+                        </tree>
+                    </field>
+
+
+                    <footer>
+                        <!--
+                        <button name="next_choose_product" type="object" string="继续挑选" />
+                        -->
+                        <button name="confirm" string="Confirm" type="object" class="oe_highlight"/>
+                        <button name="cancel" string="Cancel" type="object"/>
+                        <!--
+                        <button special="cancel" string="取消"/>
+                        -->
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_batar_sale_wizard" model="ir.actions.act_window">
+            <field name="name">Batar Sale Wizard</field>
+            <field name="res_model">batar.sale.wizard</field>
+            <field name="src_model">sale.order</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <field name="target">new</field>
+        </record>
+        <record id="batar_wizard_sale_order_form" model="ir.ui.view">
+            <field name="name">Sale order Wizard button</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_cancel']" position="after">
+                    <button name="batar_salewizard.action_batar_sale_wizard" type="action" string="Multi Product"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

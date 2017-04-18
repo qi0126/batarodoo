@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record id="batar_product_multi_images_form" model="ir.ui.view">
+            <field name="name">Batar Product Multi Images</field>
+            <field name="model">batar.product.images</field>
+            <field name="arch" type="xml">
+                <form name="multi_images">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="sequence"/>
+                                <field name="name"/>
+                                <field name="datas_fname"/>
+                            </group>
+                            <group>
+                                <field name="image"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="batar_product_inherit_multi_images" model="ir.ui.view">
+            <field name="name">batar product inherit multi image</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='sales']" position="before">
+                    <page name="multi_images" string="Images" autofocus="autofocus">
+                        <field name="multi_images" mode="kanban">
+                            <kanban>
+                                <field name="name"/>
+                                <field name="sequence"/>
+                                <field name="image"/>
+                                <templates>
+                                    <t t-name="kanban-box">
+                                        <div class="oe_kanban_global_click">
+                                            <a t-if="!read_only_mode" type="delete" class="fa fa-times pull-right"/>
+                                            <div class="o_kanban_image" style="width: 50%">
+                                                <img t-if="record.image.raw_value" t-att-src="'data:image/png;base64,'+record.image.raw_value"/>
+                                            </div>
+                                            <div class="oe_kanban_details">
+                                                <div t-if="record.name.raw_value"><field name="name"/></div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </templates>
+                            </kanban>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

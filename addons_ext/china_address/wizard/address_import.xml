@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id='whole_address_import_view_form' model='ir.ui.view'>
+			<field name='name'>whole.address.import</field>
+			<field name='model'>address.import</field>
+			<field name='arch' type='xml'>
+				<form string='address import'>
+					<group>
+						<group>
+							<field name='file' required='1'/>
+						</group>
+					</group>
+					<footer>
+						<button name="apply" string="confirm import" type="object" class="oe_highlight"/> 
+                        <button string="cancel" class="oe_link" special="cancel"/>
+					</footer>
+				</form>
+			</field>
+		</record>
+		<act_window
+			id="action_address_import"
+			multi="False"
+			key2="client_action_relate"
+			name="address import"
+			res_model="address.import"
+			view_mode="form"
+			target="new"
+			context="{'default_data_type':'json'}"
+			view_type="form"/>
+        <menuitem id="menu_address_import" sequence='1' name="address import" parent="base.menu_config_address_book" action="action_address_import" groups='base.group_erp_manager' />
+	</data>
+</openerp>

@@ -1,0 +1,354 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* batar_internal_trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-21 09:19+0000\n"
+"PO-Revision-Date: 2016-12-21 09:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.internal_trans_wizard_form_view
+msgid "Add"
+msgstr "添加"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_form_view
+msgid "Add product"
+msgstr "添加产品"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_attribute_id
+msgid "Attribute"
+msgstr "属性"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_value_ids
+msgid "Attribute value"
+msgstr "属性值"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_attribute_line_ids
+msgid "Attrs"
+msgstr "属性"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.internal_trans_wizard_form_view
+#: selection:sample.trans.wizard,process_type:0
+msgid "Auto"
+msgstr "自动匹配"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,state:0
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_form_view
+msgid "Cancel"
+msgstr "不通过"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,state:0
+#: model:ir.ui.view,arch_db:batar_internal_trans.internal_trans_wizard_form_view
+msgid "Confirm"
+msgstr "确认"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_picking_counts
+msgid "Counts of Picking"
+msgstr "调拨单"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_create_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_create_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_create_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_create_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_create_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_create_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_create_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_create_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_dest_location
+msgid "Dest Location"
+msgstr "目标库位"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_dest_location
+msgid "Destination Location"
+msgstr "目的库位"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_display_name
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_display_name
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_display_name
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_display_name
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,state:0
+msgid "Draft"
+msgstr "新建"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_id
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_id
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_id
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_id
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,type:0
+#: selection:sample.trans.lines,type:0
+msgid "In"
+msgstr "调入"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans___last_update
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute___last_update
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line___last_update
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines___last_update
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_write_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_write_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_write_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_write_uid
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_write_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_attribute_write_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_write_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_write_date
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_line_ids
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_form_view
+msgid "Lines"
+msgstr "明细"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_location_id
+msgid "Location"
+msgstr "库位"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_name
+msgid "Name"
+msgstr "名称"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_order_type
+msgid "Order type"
+msgstr "订单类型"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,type:0
+#: selection:sample.trans.lines,type:0
+msgid "Out"
+msgstr "调出"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_form_view
+msgid "Part Confirm"
+msgstr "审核通过"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_is_pass
+msgid "Pass"
+msgstr "通过"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_picking_ids
+msgid "Picking"
+msgstr "引用"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.internal_trans_wizard_form_view
+msgid "Please Input Product number"
+msgstr "请输入产品编码"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,state:0
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_form_view
+msgid "Process"
+msgstr "提交"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_process_type
+msgid "Process Type"
+msgstr "推荐方式"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_product_id
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_product_id
+#: selection:sample.trans.wizard,process_type:0
+msgid "Product"
+msgstr "产品"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_product_code
+msgid "Product Code"
+msgstr "产品编码"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_product_id
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_qty
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_ref
+msgid "Ref"
+msgstr "引用"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,order_type:0
+msgid "Review Doc"
+msgstr "Review Doc"
+
+#. module: batar_internal_trans
+#: model:ir.module.category,name:batar_internal_trans.module_category_trans_sample_management
+msgid "Sample"
+msgstr "调拨助手"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_wizard_sample_code
+msgid "Sample Code"
+msgstr "样品编码"
+
+#. module: batar_internal_trans
+#: model:ir.actions.act_window,name:batar_internal_trans.action_sample_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_stock_picking_sample_trans_id
+#: model:ir.ui.menu,name:batar_internal_trans.menu_sample_trans
+msgid "Sample Trans"
+msgstr "样品申请"
+
+#. module: batar_internal_trans
+#: model:ir.module.category,description:batar_internal_trans.module_category_trans_sample_management
+msgid "Sample trans Order"
+msgstr "样品申请单"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_shenhe_user
+msgid "ShenHe User"
+msgstr "审核人"
+
+#. module: batar_internal_trans
+#: selection:batar.sample.trans,order_type:0
+msgid "Source Doc"
+msgstr "Source Doc"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_line_src_location
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_src_location
+msgid "Source Location"
+msgstr "源库位"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_state
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_state
+msgid "State"
+msgstr "状态"
+
+#. module: batar_internal_trans
+#: selection:sample.trans.wizard,process_type:0
+msgid "Template"
+msgstr "产品款式"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_line_ids
+msgid "Trans Lines"
+msgstr "申请明细"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_trans_id
+msgid "Trans Order"
+msgstr "申请单"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_type
+msgid "Trans Type"
+msgstr "类型"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_stock_picking
+msgid "Transfer"
+msgstr "调拨"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_sample_trans_lines_type
+msgid "Type"
+msgstr "类型"
+
+#. module: batar_internal_trans
+#: model:ir.ui.view,arch_db:batar_internal_trans.sample_trans_search_view
+msgid "Undone"
+msgstr "未完成"
+
+#. module: batar_internal_trans
+#: model:ir.model.fields,field_description:batar_internal_trans.field_batar_sample_trans_user_id
+msgid "User"
+msgstr "制单人"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_batar_sample_trans
+msgid "batar.sample.trans"
+msgstr "batar.sample.trans"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_sample_trans_attribute
+msgid "sample.trans.attribute"
+msgstr "sample.trans.attribute"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_sample_trans_line
+msgid "sample.trans.line"
+msgstr "sample.trans.line"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_sample_trans_lines
+msgid "sample.trans.lines"
+msgstr "sample.trans.lines"
+
+#. module: batar_internal_trans
+#: model:ir.model,name:batar_internal_trans.model_sample_trans_wizard
+msgid "sample.trans.wizard"
+msgstr "sample.trans.wizard"
+

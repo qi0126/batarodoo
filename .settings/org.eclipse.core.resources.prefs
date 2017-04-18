@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//addons_ext/batar_batch_order/__init__.py=utf-8
+encoding//addons_ext/batar_batch_order/__openerp__.py=utf-8
+encoding//addons_ext/batar_mobile_pick/models/tuopan.py=utf-8
+encoding//addons_ext/batar_mobile_pick/models/zhanting.py=utf-8
+encoding//addons_ext/batar_stock_weigh/models/stock_weigh.py=utf-8
+encoding//addons_ext/batar_zhanting_extend/models/zhanting.py=utf-8
+encoding//addons_ext/mobile_picking_v2/models/mobile_picking.py=utf-8
+encoding//addons_ext/mobile_picking_v2/models/zhanting.py=utf-8
+encoding//addons_ext/product_attribute_import/wizard/product_attribute_value_import.py=utf-8
+encoding//openerp/modules/module.py=utf-8

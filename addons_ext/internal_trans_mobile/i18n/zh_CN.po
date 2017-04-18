@@ -1,0 +1,215 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* internal_trans_mobile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-19 01:49+0000\n"
+"PO-Revision-Date: 2016-12-19 01:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: internal_trans_mobile
+#: selection:internal.trans.mobile,state:0
+msgid "Assign"
+msgstr "已指派"
+
+#. module: internal_trans_mobile
+#: model:ir.ui.view,arch_db:internal_trans_mobile.internal_trans_mobile_form_view
+msgid "Confirm Tag"
+msgstr "挂签完成"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_create_uid
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_create_date
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,help:internal_trans_mobile.field_trans_mobile_lines_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "所有库存操作的默认计量单位"
+
+#. module: internal_trans_mobile
+#: model:ir.ui.view,arch_db:internal_trans_mobile.internal_trans_mobile_form_view
+msgid "Delivery"
+msgstr "发运"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_dest_location
+msgid "Dest Location"
+msgstr "目标库位"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_display_name
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: internal_trans_mobile
+#: selection:internal.trans.mobile,state:0
+#: selection:trans.mobile.lines,state:0
+msgid "Done"
+msgstr "完成"
+
+#. module: internal_trans_mobile
+#: selection:internal.trans.mobile,state:0
+#: selection:trans.mobile.lines,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_gross_weight
+msgid "Gross Weight"
+msgstr "毛重"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_id
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_id
+msgid "ID"
+msgstr "ID"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile___last_update
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_write_uid
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_write_date
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_line_ids
+#: model:ir.ui.view,arch_db:internal_trans_mobile.internal_trans_mobile_form_view
+msgid "Lines"
+msgstr "明细"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_name
+msgid "Name"
+msgstr "名称"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_net_weight
+msgid "Net Weight"
+msgstr "净重"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_op_id
+msgid "Operation"
+msgstr "操作"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_order_id
+msgid "Order"
+msgstr "订单"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_panwei
+msgid "Panwei"
+msgstr "盘位"
+
+#. module: internal_trans_mobile
+#: selection:trans.mobile.lines,state:0
+msgid "Process"
+msgstr "处理"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_product_id
+msgid "Product"
+msgstr "产品"
+
+#. module: internal_trans_mobile
+#: model:ir.actions.report.xml,name:internal_trans_mobile.line_producttag
+msgid "Product Tag"
+msgstr "产品标签"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_qty
+msgid "Qty"
+msgstr "数量"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_sequence
+msgid "Sequence"
+msgstr "序列号"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_batar_sample_trans_shenhe_user
+msgid "ShenHe User"
+msgstr "审核人"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_src_location
+msgid "Src location"
+msgstr "源库位"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_state
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_state
+msgid "State"
+msgstr "状态"
+
+#. module: internal_trans_mobile
+#: selection:internal.trans.mobile,state:0
+msgid "Tag"
+msgstr "挂签"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_trans_id
+msgid "Trans"
+msgstr "调拨申请单"
+
+#. module: internal_trans_mobile
+#: model:ir.actions.act_window,name:internal_trans_mobile.action_trans_mobile
+#: model:ir.ui.menu,name:internal_trans_mobile.menu_trans_mobile
+msgid "Trans mobile"
+msgstr "手机调拨"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_uom_id
+msgid "Uom"
+msgstr "单位"
+
+#. module: internal_trans_mobile
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_internal_trans_mobile_user_id
+#: model:ir.model.fields,field_description:internal_trans_mobile.field_trans_mobile_lines_user_id
+msgid "User"
+msgstr "用户"
+
+#. module: internal_trans_mobile
+#: model:ir.model,name:internal_trans_mobile.model_batar_sample_trans
+msgid "batar.sample.trans"
+msgstr "batar.sample.trans"
+
+#. module: internal_trans_mobile
+#: model:ir.model,name:internal_trans_mobile.model_internal_trans_mobile
+msgid "internal.trans.mobile"
+msgstr "internal.trans.mobile"
+
+#. module: internal_trans_mobile
+#: model:ir.model,name:internal_trans_mobile.model_trans_mobile_lines
+msgid "trans.mobile.lines"
+msgstr "trans.mobile.lines"
+

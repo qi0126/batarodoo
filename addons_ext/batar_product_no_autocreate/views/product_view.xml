@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+		<record id="product.product_normal_action" model="ir.actions.act_window">
+		    <field name="context">{'domain': {'attribute_value_ids': [('id', 'in', [])]}}</field>
+		</record>
+        <record model="ir.ui.view" id="product_category_no_variant_form_view">
+            <field name="name">product.category.no.variant.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view" />
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="no_create_variants" />
+                </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="product_template_no_variant_form_view">
+            <field name="name">product.template.no.variant.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+            <field name="arch" type="xml">
+                <field name="attribute_line_ids" position="before">
+                    <group>
+                        <field name="variants_create_auto" />
+                    </group>
+                </field>
+            </field>
+        </record>
+
+        <record id="batar_product_product_view_form" model="ir.ui.view">
+            <field name="name">batar.product.product.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="product_tmpl_id" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                    <attribute name="required">1</attribute>
+                    <attribute name="readonly">0</attribute>
+                    <attribute name="options">{'no_create': True,'no_open':True}</attribute>
+                    <!--<attribute name="context">{'product_tmpl_id': active_id}</attribute>-->
+                </field>
+                <!--<field name="attribute_value_ids" position="attributes">-->
+                    <!--<attribute name="domain">[('id', 'in', product_tmpl_id.attri)]</attribute>-->
+                <!--</field>-->
+            </field>
+        </record>
+        <!-- 取消产品类别显示看板中，内部货号的显示-->
+        <record id="batar_product_view_kanban" model="ir.ui.view">
+            <field name="name">Batar Product kanban</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_kanban_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_kanban_details']/strong/span" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

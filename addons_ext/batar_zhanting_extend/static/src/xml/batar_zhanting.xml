@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<template xml:space="preserve">
+    <t t-name="BatarHomePageTemplate">
+      <div>
+
+  			<div id="page-body">
+                <div id="page-left">
+                    <t t-call="pageLeftCustomerInfo"></t>
+                </div>
+                <div id="page-right">
+                    <t t-call="pageRightTop"></t>
+                    <t t-call="pageRightInfo"></t>
+                </div>
+
+      		</div>
+
+          <div>
+              <div class="modal fade" id="addCustomerModal" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+
+                              <p style="margin:0;">添加客户</p>
+                          </div>
+                          <div class="modal-body">
+
+                              <label>客户信息</label>
+                              <input id='input-add-customer' type="text" name="addCustomer" list="listCustomers" placeholder="请输入客户名称/编码/手机号码"/>
+                              <datalist id="listCustomers">
+                              </datalist>
+                              <p id="error-info"></p>
+
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" disabled="disabled" id="confirm-add" class="btn btn-primary">确认</button>
+                              <button type="button" class="btn btn-default" id="confirm-cancel" data-dismiss="modal">取消</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </t>
+    <t t-name="pageLeftCustomerInfo">
+    	<div class="showking-logo">
+    		<img src="/batar_zhanting_extend/static/src/img/showkinglogo.png"  width="70%"></img>
+    	</div>
+        <div>
+            <p id="page-title" style="padding:0">客户信息</p>
+        </div>
+        <div>
+
+            <button id="today-customer-manager">今日客户</button>
+            <button id="add-customer-btn" data-toggle="modal"  data-target="#addCustomerModal">添加客户</button>
+        </div>
+        <div class="customer-title">
+            <p class="left-customer-info-label">当前客户</p>
+        </div>
+        <div class="current-customer">
+            <t t-if="currentCustomer">
+                <button class="currentCustomer" t-att-id="currentCustomer.id">
+                    名称:<t t-esc="currentCustomer.name"/>
+                    <br/>
+                    编号:<t t-esc="currentCustomer.code"/>
+                    <br/>
+                    电话:<t t-esc="currentCustomer.phone"/>
+                </button>
+            </t>
+            <div>
+            	<button class="subStore-btn">门店1</button>
+            </div>
+            <div>
+            	<button class="subStore-btn">门店2</button>
+            </div>
+            <div>
+            	<button class="subStore-btn">门店3</button>
+            </div>
+            <div>
+              <button class="Add-Store-btn">添加新门店</button>
+            </div>
+        </div>
+        <div class="customer-title">
+            <p class="left-customer-info-label">最近客户</p>
+        </div>
+        <div class="current-customer-list">
+            <t t-if="recentCustomerList">
+                <t t-foreach="recentCustomerList" t-as="recentCustomer">
+                    <button class="recentCustomer" t-att-id="recentCustomer.id">
+                        名称:<t t-esc="recentCustomer.name"/>
+                        <br/>
+                        编号:<t t-esc="recentCustomer.code"/>
+                        <br/>
+                        电话:<t t-esc="recentCustomer.phone"/>
+                    </button>
+                </t>
+            </t>
+        </div>
+    </t>
+    <t t-name="pageRightTop">
+        <div class="page-right-top">
+            <ul class="ul-page-right-top">
+                <li>
+                    <p class="top-title" id="exhibition_hall"><t t-esc="topTitle"/></p>
+                </li>
+                <li>
+                    <input type="text" class="search-query product-code-search" id="product-code-search" placeholder="输入产品编码搜索"/>
+                </li>
+                <li><p>总克重(g)：<t t-esc="totalWeight"/></p></li>
+                <li><p> 预总估价(元)：<t t-esc="totalMoney"/></p></li>
+                <li><button class="top-button enter-draft-order">查看我的托盘</button></li>
+                <li><button class="top-button enter-confirm-order">查看我的订单</button></li>
+            </ul>
+        </div>
+    </t>
+    <t t-name="pageRightInfo">
+        <div class="pageRightInfo">
+            <t t-if="tab_location_products">
+                <ul id="locationTab" class="nav nav-tabs">
+                    <t t-foreach="tab_location_products" t-as="tabLocation">
+                        <t t-if="tabLocation_first">
+                            <li class="active">
+                                <a t-att-href="tabLocation.location_id_href" class="tab" data-toggle="tab">
+                                    <t t-esc="tabLocation.name"/>
+                                </a>
+                            </li>
+                        </t>
+                        <t t-if="tabLocation_index &gt;= 1">
+                            <li  >
+                                <a t-att-href="tabLocation.location_id_href" class="tab"  data-toggle="tab">
+                                    <t t-esc="tabLocation.name"/>
+                                </a>
+                            </li>
+                        </t>
+                    </t>
+                </ul>
+            </t>
+            <t t-if="tab_location_products">
+                <div id="locationTabContent" class="tab-content">
+                    <t t-foreach="tab_location_products" t-as="tabLocation">
+                        <t t-if="tabLocation.products">
+                        <t t-set="first_loop" t-value="''"/>
+                        <t t-if="tabLocation_first">
+                            <t t-set="first_loop" t-value="' currentPageLocation'"/>
+                        </t>
+                        <div t-att-class="tabLocation.tab_location_class" t-att-id="tabLocation.location_id">
+                            <table class="table table-bordered table-hover table-condensed text-center">
+                                <thead>
+                                    <tr>
+                                        <th>产品名称</th>
+                                        <th>内部货号</th>
+                                        <th>可售单位</th>
+                                        <th>饰品价(元/g)</th>
+                                        <th>工费(元/g)</th>
+                                        <th>标准克重(g)</th>
+                                        <th width="160px">预定单位</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                        <t t-foreach="tabLocation.products" t-as="product">
+                                            <tr>
+                                                <td>
+                                                    <span><t t-esc="product.name"/></span>
+                                                </td>
+                                                <td>
+                                                    <span><t t-esc="product.default_code"/></span>
+                                                </td>
+                                                <td class="available-qty">
+                                                    <span t-att-class="product.unitClass"><t t-esc="product.virtual_available"/></span>
+                                                </td>
+                                                <td>
+                                                    <span><t t-esc="product.real_time_price_unit"/></span>
+                                                </td>
+                                                <td>
+                                                    <span><t t-esc="product.weight_fee"/></span>
+                                                </td>
+                                                <td>
+                                                     <span class="weightClass" ><t t-esc="product.standard_weight"/></span>
+                                                </td>
+                                                <td >
+                                                    <button class="product-sub btn-sm">-</button>
+                                                        <input type="text" t-att-value="product.order_qty" t-att-data-step="product.step"  class="product-order-qty" t-att-id="product.id"/>
+                                                    <button class="product-add btn-sm">+</button>
+                                                </td>
+
+                                            </tr>
+                                        </t>
+
+                                </tbody>
+                            </table>
+                            <div>
+                                <div t-attf-class="page-content page{{tabLocation.location_id}}{{first_loop}}">
+                                    <t t-if="tabLocation.page_last">
+                                        <button class="btn-sm page page-1" >首页</button>
+                                    </t>
+                                    <t t-if="tabLocation.page_list">
+                                        <t t-foreach="tabLocation.page_list" t-as="page">
+                                            <t t-if="page == tabLocation.current_page">
+                                                <button  t-attf-class="btn-sm page current-page page-{{ page }}"><t t-esc="page"/></button>
+                                            </t>
+                                            <t t-if="page != tabLocation.current_page">
+                                                <button  t-attf-class="btn-sm page page-{{ page }}"><t t-esc="page"/></button>
+                                            </t>
+                                        </t>
+                                    </t>
+                                    <t t-if="tabLocation.page_last">
+                                        <button t-attf-class="btn-sm page page-{{tabLocation.page_last}}">尾页</button>
+                                        <label for="go-page">跳转</label>
+                                        <input type="text" id='go-page' name="goPage" t-attf-max="{{tabLocation.page_last}}" min="1"/>
+                                        <p>共<t t-esc="tabLocation.page_last">页</t></p>
+                                    </t>
+
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+
+                    </t>
+                </div>
+            </t>
+            <t t-if="! tab_location_products">
+                <div class="warning-info"><h1>暂无数据</h1></div>
+            </t>
+        </div>
+    </t>
+
+
+
+
+</template>

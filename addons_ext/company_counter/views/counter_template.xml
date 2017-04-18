@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="counter_list" name="Counter">
+            <t t-call="company_counter.clean_layout">
+                <t t-set="title">柜台</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <div class="row">
+                             <t t-foreach="counters" t-as="counter">
+                              <div class="col-sm-4 col-md-4">
+                                <div class="thumbnail">
+                                  <div class="caption">
+                                    <h4><t t-esc="counter.company_id.name"/>:<t t-esc="counter.name"/></h4>
+                                    <p> <a t-attf-href="/counter/{{counter.id}}" class="btn btn-success" role="button">进入柜台</a></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+        <template id="counter_info" name="Counter Info">
+            <t t-call="company_counter.clean_layout">
+                <t t-set="title"><t t-esc="counter.name"/></t>
+                <div class="row">
+                    <t t-if="products">
+                        <table class="table table-bordered table-hover table-condensed table-striped">
+                            <caption class="text-center danger">所属柜台:<t t-esc="counter.name"/></caption>
+                            <thead>
+                                <tr class="info">
+                                    <td>产品名称</td>
+                                    <td>可售数量</td>
+                                    <td>操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="products" t-as="product">
+                                    <tr>
+                                        <td>
+                                            <t t-esc="product.product.name"/>
+                                        </td>
+                                        <td  class="text-center">
+                                            <t t-esc="product.product.qty_available"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-xs product-inactive" t-att-data-product='product.product.id' t-att-data-counter="counter.id"  >下架</button>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-if="not products">
+                        <p class="text-center text-danger"> 没有可售产品 </p>
+                    </t>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
